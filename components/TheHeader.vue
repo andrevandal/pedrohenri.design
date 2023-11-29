@@ -143,7 +143,7 @@ const navigation = [
 
 const callToAction = {
   name: 'Contato',
-  href: '/contato/',
+  href: 'https://wa.me/551196571-2919',
 }
 
 const isOpen = ref(false)

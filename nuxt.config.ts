@@ -5,7 +5,6 @@ const { GA_MEASUREMENT_ID } = process.env
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/google-fonts',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
