@@ -56,5 +56,10 @@
   "bugs": {
     "url": "https://github.com/andrevandal/pedrohenri.design/issues"
   },
-  "homepage": "https://pedrohenri.design"
+  "homepage": "https://pedrohenri.design",
+  "pnpm": {
+    "overrides": {
+      "tailwindcss": "insiders"
+    }
+  }
 }
