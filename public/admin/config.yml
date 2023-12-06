@@ -18,7 +18,7 @@ collections:
     create: true
     slug: "{{title}}"
     editor:
-      - preview: false
+      preview: false
     fields:
       - label: "Title"
         name: "title"
@@ -32,7 +32,7 @@ collections:
         create: true
         slug: "{{slug}}"
         editor:
-          - preview: false
+          preview: false
         fields:
           - label: "Title"
             name: "title"
@@ -95,7 +95,7 @@ collections:
     create: true
     slug: "{{slug}}"
     editor:
-      - preview: false
+      preview: false
     fields:
       - label: "Name"
         name: "name"
@@ -130,7 +130,7 @@ collections:
     create: true
     slug: "{{slug}}"
     editor:
-      - preview: false
+      preview: false
     fields:
       - label: "Title"
         name: "title"
