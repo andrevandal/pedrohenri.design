@@ -5,8 +5,8 @@
       v-for="(category, index) in categories"
       :key="`category-${index}`"
       :class="{
-        'mt-[6.25rem]': index !== categories.length - 1,
-        'my-[6.25rem]': index === categories.length - 1,
+        'mt-[7.5rem]': index !== categories.length - 1,
+        'my-[7.5rem]': index === categories.length - 1,
       }"
       :category="category"
     />

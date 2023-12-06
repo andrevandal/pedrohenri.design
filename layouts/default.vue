@@ -17,7 +17,7 @@
             to="https://wa.me/5511965712919"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center justify-center w-full h-12 px-6 py-3 mt-2 text-center transition-colors bg-gray-900 rounded-lg lg:h-10 text-gray-50 hover:bg-gray-700 focus:bg-gray-500 sm:w-fit"
+            class="flex items-center justify-center w-full h-12 px-6 py-3 mt-2 text-center transition-colors bg-gray-900 rounded-lg text-gray-50 hover:bg-gray-700 focus:bg-gray-500 sm:w-fit"
             >Solicite uma proposta</NuxtLink
           >
         </div>

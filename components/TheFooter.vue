@@ -1,7 +1,7 @@
 <template>
-  <footer class="flex flex-col mt-5">
+  <footer class="flex flex-col gap-y-12">
     <slot />
-    <div class="container flex flex-col mx-auto mt-4 gap-y-4">
+    <div class="container flex flex-col mx-auto gap-y-4">
       <div class="flex justify-between w-full">
         <NuxtLink
           to="/"

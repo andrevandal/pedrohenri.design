@@ -1,13 +1,7 @@
 <template>
   <section class="flex flex-col flex-wrap gap-6 lg:flex-row">
     <h2
-      :class="[
-        'block text-center text-gray-900 text-[2rem] leading-[2.421rem] lg:leading-[3.026rem] font-bold lg:text-[2.5rem] order-1',
-        {
-          'lg:mr-auto': !!category?.cta?.href,
-          'text-center w-full': !category?.cta?.href,
-        },
-      ]"
+      class="block text-gray-900 text-[2rem] leading-[2.421rem] lg:leading-[3.026rem] font-bold lg:text-[2.5rem] order-1 lg:mr-auto"
     >
       {{ category.title }}
     </h2>
@@ -32,7 +26,7 @@
     >
       <NuxtLink
         :to="category?.cta?.href"
-        class="flex items-center justify-center w-full h-12 px-6 py-3 text-center text-gray-900 transition-colors border border-gray-900 rounded-lg lg:h-10 hover:bg-gray-50 focus:bg-transparent focus:border-transparent sm:w-fit"
+        class="flex items-center justify-center w-full h-12 px-6 py-3 text-center text-gray-900 transition-colors border border-gray-900 rounded-lg hover:bg-gray-50 focus:bg-transparent focus:border-transparent sm:w-fit"
       >
         {{ category?.cta?.text }}
       </NuxtLink>

@@ -4,14 +4,14 @@
       class="container relative flex items-center justify-between mx-auto"
       aria-label="Global"
     >
-      <div class="flex justify-between w-full py-4 gap-x-12">
+      <div class="flex items-center justify-between w-full py-4 gap-x-12">
         <NuxtLink to="/">
           <span class="sr-only">Pedro Henrique Design</span>
           <NuxtImg
-            class="w-auto h-10 lg:h-12 aspect-[256/48]"
+            class="w-auto h-10 aspect-[213/40]"
             src="/images/logo-horizontal.svg"
-            height="48"
-            width="256"
+            height="40"
+            width="214"
             alt=""
           />
         </NuxtLink>
@@ -30,7 +30,7 @@
               v-if="callToAction.href"
               :href="callToAction.href"
               :as="NuxtLink"
-              class="inline-flex items-center justify-center h-12 px-6 py-3 mt-2 text-base font-medium text-center text-gray-900 transition-all border border-gray-900 rounded-lg lg:mt-0 lg:ml-4 lg:h-10 lg:px-4 lg:py-2 hover:text-white focus:text-white hover:bg-gray-900 focus:right-1 focus:ring-gray-900"
+              class="inline-flex items-center justify-center h-12 px-6 py-3 mt-2 text-base font-medium text-center text-gray-900 transition-all border border-gray-900 rounded-lg lg:mt-0 lg:ml-4 lg:px-4 lg:py-2 hover:text-white focus:text-white hover:bg-gray-900 focus:right-1 focus:ring-gray-900"
             >
               {{ callToAction.name }}
             </NuxtLink>

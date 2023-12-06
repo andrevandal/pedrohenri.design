@@ -3,31 +3,22 @@
     <TheHeader />
     <slot />
     <TheFooter>
-      <div class="container flex flex-col gap-6 mx-auto lg:flex-row">
-        <div class="flex flex-col lg:flex-1 gap-y-4 lg:justify-center">
+      <div class="mt-12 bg-gray-900">
+        <div
+          class="container flex flex-col items-center py-6 mx-auto gap-y-2 sm:flex-row lg:gap-x-8 lg:justify-center"
+        >
           <h2
-            class="font-bold text-[2rem] lg:text-[3rem] leading-[2.375rem] lg:leading-[3.375rem] tracking-[-0.1rem] lg:tracking-[-0.15rem] text-gray-900 max-w-[38ch]"
+            class="text-white font-bold text-2xl leading-[1.875rem] text-center sm:text-left tracking-[-0.075rem] w-full lg:text-[2rem] lg:leading-[2.421rem] lg:tracking-[-0.1rem] lg:w-auto"
           >
             Quer desenvolver o seu projeto comigo?
           </h2>
-          <p class="max-w-[38ch] text-xl lg:text-2xl text-gray-900">
-            Dê o primeiro passo agora.
-          </p>
           <NuxtLink
             to="https://wa.me/5511965712919"
             target="_blank"
             rel="noopener noreferrer"
-            class="flex items-center justify-center w-full h-12 px-6 py-3 mt-2 text-center transition-colors bg-gray-900 rounded-lg lg:h-10 text-gray-50 hover:bg-gray-700 focus:bg-gray-500 sm:w-fit"
+            class="flex items-center justify-center h-12 px-6 py-3 text-center text-gray-900 transition-colors bg-white rounded-lg hover:bg-gray-200 focus:bg-gray-500 sm:w-fit text-nowrap"
             >Solicite uma proposta</NuxtLink
           >
-        </div>
-        <div class="lg:flex-1">
-          <LazyNuxtImg
-            src="/images/footer.png"
-            alt=""
-            sizes="343px sm:540px lg:352px"
-            class="w-full h-auto rounded-lg aspect-square"
-          />
         </div>
       </div>
     </TheFooter>

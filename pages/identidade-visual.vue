@@ -1,7 +1,7 @@
 <template>
   <div class="container flex flex-col mx-auto">
     <TheHomeCategoryListing
-      class="mt-4 lg:mt-[3.25rem] mb-[6.25rem]"
+      class="mt-4 lg:mt-[3.25rem] mb-[7.5rem]"
       :category="category"
     />
   </div>
