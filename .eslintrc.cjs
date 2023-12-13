@@ -23,6 +23,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
 
   rules: {
+    'vue/multi-word-component-names': 'off',
     'vue/script-setup-no-uses-vars': 'off',
     semi: ['error', 'never'],
     'comma-dangle': ['error', 'only-multiline'],

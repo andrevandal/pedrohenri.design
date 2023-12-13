@@ -132,12 +132,12 @@ const navigation = [
   {
     name: 'Identidade Visual',
     shortName: 'ID Visual',
-    href: '/identidade-visual/',
+    href: '/categorias/identidade-visual/',
   },
   {
     name: 'Design de Interfaces',
     shortName: 'Interfaces',
-    href: '/design-de-interfaces/',
+    href: '/categorias/design-de-interfaces/',
   },
 ]
 

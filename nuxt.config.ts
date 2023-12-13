@@ -1,10 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-const { GA_MEASUREMENT_ID } = process.env
+const { GA_MEASUREMENT_ID, IMAGEKIT_BASE_URL } = process.env
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
+    '@nuxt/content',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
@@ -28,6 +29,13 @@ export default defineNuxtConfig({
     disallow: '*',
     allow: '',
   },
+
+  image: {
+    imagekit: {
+      baseURL: IMAGEKIT_BASE_URL,
+    },
+  },
+
   postcss: {
     plugins: {
       'postcss-import': {},

@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col flex-wrap gap-6 lg:flex-row">
+  <section v-if="category" class="flex flex-col flex-wrap gap-6 lg:flex-row">
     <h2
       class="block text-gray-900 text-[2rem] leading-[2.421rem] lg:leading-[3.026rem] font-bold lg:text-[2.5rem] order-1 lg:mr-auto"
     >
@@ -10,10 +10,12 @@
         v-for="(post, pIndex) in category.posts"
         :key="`post-${pIndex}`"
         class="block"
+        :to="`/posts/${post.slug}/`"
       >
         <NuxtImg
-          :src="post.src"
-          :alt="post.alt"
+          :src="post.cover.image"
+          :alt="post.cover.alternativeText"
+          :provider="post.cover.provider"
           class="rounded-lg aspect-square"
           width="600"
           height="600"
@@ -21,14 +23,14 @@
       </NuxtLink>
     </div>
     <div
-      v-if="!!category?.cta?.href"
+      v-if="!!category?.slug"
       class="flex items-center order-3 sm:flex sm:justify-center lg:order-2"
     >
       <NuxtLink
-        :to="category?.cta?.href"
+        :to="`/categorias/${category?.slug}/`"
         class="flex items-center justify-center w-full h-12 px-6 py-3 text-center text-gray-900 transition-colors border border-gray-900 rounded-lg hover:bg-gray-50 focus:bg-transparent focus:border-transparent sm:w-fit"
       >
-        {{ category?.cta?.text }}
+        {{ category?.ctaText }}
       </NuxtLink>
     </div>
     <div class="order-4 mt-[3.25rem] lg:mt-12">
@@ -68,25 +70,30 @@
 </template>
 
 <script setup lang="ts">
-type Props = {
-  category: {
+type Category = {
+  title: string
+  slug: string
+  description: string
+  ctaText: string
+  featuresTitle: string
+  features: {
+    iconName: string
     title: string
-    posts: {
-      href: string
-      src: string
-      alt: string
-    }[]
-    cta?: {
-      text: string
-      href: string
+    description: string
+  }[]
+  posts: {
+    title: string
+    slug: string
+    cover: {
+      provider: string
+      image: string
+      alternativeText: string
     }
-    featuresTitle: string
-    features: {
-      iconName: string
-      title: string
-      description: string
-    }[]
-  }
+  }[]
+}
+
+type Props = {
+  category?: Category | null
 }
 
 const { category } = defineProps<Props>()
