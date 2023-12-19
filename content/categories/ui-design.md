@@ -1,11 +1,12 @@
 ---
-title: 'UI Design'
+name: 'UI Design'
 slug: 'design-de-interfaces'
 description: 'Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.'
 ctaText: 'Portifólio completo'
 featuresTitle: 'Concepção orientada a resultado'
 private: false
 draft: false
+socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/100-960x538.jpg
 features:
   - iconName: 'mapeamento'
     title: 'Mapeamento'

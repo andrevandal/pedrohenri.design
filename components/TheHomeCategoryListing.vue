@@ -23,7 +23,7 @@
       </NuxtLink>
     </div>
     <div
-      v-if="!!category?.slug"
+      v-if="!!category?.ctaText"
       class="flex items-center order-3 sm:flex sm:justify-center lg:order-2"
     >
       <NuxtLink
@@ -70,27 +70,7 @@
 </template>
 
 <script setup lang="ts">
-type Category = {
-  title: string
-  slug: string
-  description: string
-  ctaText: string
-  featuresTitle: string
-  features: {
-    iconName: string
-    title: string
-    description: string
-  }[]
-  posts: {
-    title: string
-    slug: string
-    cover: {
-      provider: string
-      image: string
-      alternativeText: string
-    }
-  }[]
-}
+import type { Category } from '@/types'
 
 type Props = {
   category?: Category | null

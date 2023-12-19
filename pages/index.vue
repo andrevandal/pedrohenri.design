@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Category } from '@/types'
+import type { Category, Post } from '@/types'
 
 const categoriesToFetch = ['design-de-interfaces', 'identidade-visual']
 
@@ -33,22 +33,22 @@ const { data: categories } = await useAsyncData('categories', async () => {
       .find(),
     queryContent('/posts')
       .where({
-        categories: { $in: categoriesToFetch[0] },
+        categoriesSlug: { $in: categoriesToFetch[0] },
         draft: false,
         private: false,
       })
-      .only(['cover', 'title', 'slug', 'categories'])
+      .only(['cover', 'title', 'slug', 'categoriesSlug', 'categoriesName'])
       .sort({ createdAt: -1 })
       .limit(4)
       .find(),
 
     queryContent('/posts')
       .where({
-        categories: { $in: categoriesToFetch[1] },
+        categoriesSlug: { $in: categoriesToFetch[1] },
         draft: false,
         private: false,
       })
-      .only(['cover', 'title', 'slug', 'categories'])
+      .only(['cover', 'title', 'slug', 'categoriesSlug', 'categoriesName'])
       .sort({ createdAt: -1 })
       .limit(4)
       .find(),
@@ -56,11 +56,11 @@ const { data: categories } = await useAsyncData('categories', async () => {
   return categories.map((category) => {
     const postsByCategory = posts
       .flat()
-      .filter((post) => post.categories.includes(category.slug))
+      .filter((post) => post.categoriesSlug.includes(category.slug))
 
     return {
-      ...category,
-      posts: postsByCategory,
+      ...(category as Category),
+      posts: postsByCategory as Post[],
     }
   }) as Category[]
 })

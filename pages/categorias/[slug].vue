@@ -17,22 +17,15 @@ const { data: category } = await useAsyncData(`category-${slug}`, async () => {
   const [category, posts] = await Promise.all([
     queryContent('/categories')
       .where({ slug, draft: false })
-      .only([
-        'title',
-        'slug',
-        'description',
-        'ctaText',
-        'featuresTitle',
-        'features',
-      ])
+      .only(['title', 'slug', 'description', 'featuresTitle', 'features'])
       .find(),
     queryContent('/posts')
       .where({
-        categories: { $in: [slug] },
+        categoriesSlug: { $in: [slug] },
         draft: false,
         private: false,
       })
-      .only(['cover', 'title', 'slug', 'categories'])
+      .only(['cover', 'title', 'slug', 'categoriesSlug', 'categoriesName'])
       .sort({ createdAt: -1 })
       .limit(4)
       .find(),
@@ -41,6 +34,6 @@ const { data: category } = await useAsyncData(`category-${slug}`, async () => {
   return {
     ...category[0],
     posts,
-  } as unknown as Category
+  } as Category
 })
 </script>

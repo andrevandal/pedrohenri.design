@@ -5,143 +5,103 @@ backend:
   auth_endpoint: /api/auth
   repo: andrevandal/pedrohenri.design
 
+site_url: https://sandbox.pedrohenri.design/
+logo_url: https://sandbox.pedrohenri.design/images/logo-horizontal.svg
+show_preview_links: false
+
 media_folder: public/images/uploads # Media files will be stored in the repo under static/images/uploads
 public_folder: /images/uploads # The src attribute for uploaded media will begin with /images/uploads
 
-slug: 
-  encoding: ascii
+slug:
+  encoding: "ascii"
   clean_accents: true
 
 collections:
   - name: "categories"
     label: "Categories"
+    label_singular: "Category"
+    description: "Post categories"
     folder: "content/categories"
     create: true
-    slug: "{{title}}"
+    identifier_field: name
+    publish_mode: editorial_workflow
+    slug: "{{fields.slug}}"
     editor:
       preview: false
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
-      - label: "Description"
-        name: "description"
-        widget: "string"
-        label: "Posts"
-        folder: "content/posts"
-        create: true
-        slug: "{{slug}}"
-        editor:
-          preview: false
-        fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "Cover"
-            name: "cover"
-            widget: "object"
-            summary: "{{fields.source}}: {{fields.alternativeText}}"
-            fields:
-              - label: "image"
-                name: "image"
-                widget: "image"
-                allow_multiple: false
-                choose_url: false
-              - label: "Alternative Text"
-                name: "alternativeText"
-                widget: "string"
-                required: false
-              - label: "Source"
-                name: "source"
-                widget: "string"
-                required: false
-          - label: "Description"
-            name: "description"
-            widget: "text"
-            required: false
-          - label: "Draft"
-            name: "draft"
-            widget: "boolean"
-            default: true
-          - label: "Categories"
-            name: "categories"
-            widget: "relation"
-            collection: "categories"
-            search_fields: ["title"]
-            value_field: "{{slug}}"
-            display_fields: ["title"]
-            multiple: true
-            max: 1
-          - label: "updated at"
-            name: "updatedAt"
-            widget: "datetime"
-            required: false
-          - label: "created at"
-            name: "createdAt"
-            widget: "datetime"
-          - label: "Body"
-            name: "body"
-            widget: "markdown"
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Social Image", name: "socialImage", widget: "string" }
+      - {label: "Private", name: "private", widget: "boolean", default: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "CTA Text", name: "ctaText", widget: "string"}
+      - {label: "Features Title", name: "featuresTitle", widget: "string"}
+      - label: "features"
+        name: "Features"
+        widget: "list"
+        summary: '{{fields.title}}'
+        field: 
+          - {label: Icon, name: iconName, widget: string}
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text}
+    view_filters:
+      - {label: All, field: draft, pattern: false}
+      - {label: Drafts, field: draft, pattern: true}
+      - {label: Private, field: private, pattern: true}
+      - {label: Public, field: private, pattern: false}
+    view_groups:
+      - {label: Draft, field: draft }
+      - {label: Private, field: private }
   - name: "posts"
     label: "Posts"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     editor:
       preview: false
     fields:
-      - label: "Title"
-        name: "title"
-        widget: "string"
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Slug", name: "slug", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Social Image", name: "socialImage", widget: "string" }
       - label: "Cover"
         name: "cover"
         widget: "object"
-        summary: "{{fields.source}}: {{fields.alternativeText}}"
+        summary: "{{fields.alternativeText}}: {{fields.image}}"
         fields:
-          - label: "image"
-            name: "image"
-            widget: "image"
-            allow_multiple: false
-            choose_url: false
-          - label: "Alternative Text"
-            name: "alternativeText"
-            widget: "string"
-            required: false
-          - label: "Source"
-            name: "source"
-            widget: "string"
-            required: false
-      - label: "Description"
-        name: "description"
-        widget: "text"
-        required: false
-      - label: "Draft"
-        name: "draft"
-        widget: "boolean"
-        default: true
-      - label: "Author"
-        name: "author"
-        widget: "relation"
-        collection: "authors"
-        search_fields: ["name"]
-        value_field: "{{slug}}"
-        display_fields: ["name"]
-      - label: "Categories"
-        name: "categories"
+          - {label: "image", name: "image", widget: "string"}
+          - {label: "Alternative Text", name: "alternativeText", widget: "string", required: false}
+          - {label: "Source", name: "source", widget: "string", required: false}
+          - {label: "Provider", name: "provider", widget: "string", default: "imagekit", required: false}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Private", name: "private", widget: "boolean", default: false}
+      - label: "Category Name"
+        name: "categoriesName"
         widget: "relation"
         collection: "categories"
-        search_fields: ["title"]
-        value_field: "{{slug}}"
-        display_fields: ["title"]
+        search_fields: ["name"]
+        value_field: "categories.name"
+        display_fields: ["name"]
         multiple: true
         max: 1
-      - label: "updated at"
-        name: "updatedAt"
-        widget: "datetime"
-        required: false
-      - label: "created at"
-        name: "createdAt"
-        widget: "datetime"
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+      - label: "Category Slug"
+        name: "categoriesSlug"
+        widget: "relation"
+        collection: "categories"
+        search_fields: ["name"]
+        value_field: "categories.slug"
+        display_fields: ["name"]
+        multiple: true
+        max: 1
+      - {label: "updated at", name: "updatedAt", widget: "datetime", required: false}
+      - {label: "created at", name: "createdAt", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+    view_filters:
+      - {label: All, field: draft, pattern: false}
+      - {label: Drafts, field: draft, pattern: true}
+      - {label: Private, field: private, pattern: true}
+      - {label: Public, field: private, pattern: false}
+    view_groups:
+      - {label: Draft, field: draft }
+      - {label: Private, field: private }

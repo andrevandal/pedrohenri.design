@@ -1,3 +1,15 @@
+export type Post = {
+  title: string
+  slug: string
+  content: string
+  cover: {
+    provider: string
+    image: string
+    alternativeText: string
+  }
+  categoriesName: string
+  categoriesSlug: string
+}
 export type Category = {
   title: string
   slug: string
@@ -9,13 +21,5 @@ export type Category = {
     title: string
     description: string
   }[]
-  posts: {
-    title: string
-    slug: string
-    cover: {
-      provider: string
-      image: string
-      alternativeText: string
-    }
-  }[]
+  posts: Post[]
 }

@@ -10,7 +10,9 @@ cover:
   alternativeText: ""
   source: " "
 draft: false
-categories:
+categoriesName: 
+  - 'Identidade Visual'
+categoriesSlug:
   - identidade-visual
 updatedAt: 2023-02-13T19:18:39.757Z
 createdAt: 2023-02-13T19:18:39.770Z

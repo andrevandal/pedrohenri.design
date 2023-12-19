@@ -10,7 +10,9 @@ cover:
   alternativeText: ""
   source: " "
 draft: false
-categories:
+categoriesName: 
+  - 'UI Design'
+categoriesSlug:
   - design-de-interfaces
 updatedAt: 2023-12-13T19:18:39.757Z
 createdAt: 2023-12-13T19:18:39.770Z
