@@ -26,18 +26,20 @@
     </div>
     <div class="order-1 lg:order-2">
       <NuxtImg
-        src="/images/primeira-dobra.png"
+        src="/posts/primeira-dobra.png"
         sizes="343px sm:540px lg:352px"
         class="w-full h-auto aspect-[9/10]"
+        provider="imagekit"
       />
     </div>
   </section>
   <section class="flex flex-col mt-6 mb-5 gap-y-6 lg:flex-row lg:gap-x-6">
     <div class="order-1 lg:order-2 lg:flex-1">
       <NuxtImg
-        src="/images/sessao_crio-para-marcas.png"
+        src="/posts/sessao_crio-para-marcas.png"
         sizes="343px sm:540px lg:352px"
         class="w-full h-auto rounded-lg aspect-square"
+        provider="imagekit"
       />
     </div>
     <div

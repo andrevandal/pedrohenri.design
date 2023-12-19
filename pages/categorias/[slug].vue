@@ -36,4 +36,13 @@ const { data: category } = await useAsyncData(`category-${slug}`, async () => {
     posts,
   } as Category
 })
+
+useSeoMeta({
+  title: category.value?.title,
+  ogTitle: category.value?.title,
+  description: category.value?.description,
+  ogDescription: category.value?.description,
+  ogImage: category.value?.socialImage,
+  twitterCard: 'summary_large_image',
+})
 </script>

@@ -8,7 +8,7 @@
           class="transition-opacity hover:opacity-80 focus:opacity-60"
         >
           <span class="sr-only">Pedro Henrique Design</span>
-          <NuxtImg
+          <img
             class="w-auto h-8 aspect-[171/32]"
             src="/images/logo-horizontal.svg"
             height="32"

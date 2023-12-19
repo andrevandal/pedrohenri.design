@@ -20,10 +20,6 @@
 <script setup lang="ts">
 import type { Post } from '~/types'
 
-definePageMeta({
-  layout: 'post',
-})
-
 const route = useRoute()
 const slug = route.params?.slug?.toString()
 
@@ -33,6 +29,7 @@ const { data } = await useAsyncData(`post-${slug}`, async () => {
       slug,
       draft: false,
     })
+
     .findOne()
 
   return {
@@ -40,5 +37,18 @@ const { data } = await useAsyncData(`post-${slug}`, async () => {
     categorySlug: post?.categoriesSlug?.[0],
     categoryName: post?.categoriesName?.[0],
   }
+})
+
+definePageMeta({
+  layout: 'post',
+})
+
+useSeoMeta({
+  title: data.value?.title,
+  ogTitle: data.value?.title,
+  description: data.value?.description,
+  ogDescription: data.value?.description,
+  ogImage: data.value?.socialImage,
+  twitterCard: 'summary_large_image',
 })
 </script>

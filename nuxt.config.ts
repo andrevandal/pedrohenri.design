@@ -1,8 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-const { GA_MEASUREMENT_ID, IMAGEKIT_BASE_URL } = process.env
+const { GA_MEASUREMENT_ID, IMAGEKIT_BASE_URL, NUXT_PUBLIC_SITE_URL } =
+  process.env
 
 export default defineNuxtConfig({
+  ssr: true,
   devtools: { enabled: true },
   modules: [
     '@nuxt/content',
@@ -18,7 +20,7 @@ export default defineNuxtConfig({
   ],
 
   site: {
-    url: 'https://pedrohenri.design',
+    url: NUXT_PUBLIC_SITE_URL,
     name: 'PedroHenri Design',
     description: 'Welcome to my awesome site!',
     defaultLocale: 'pt-br',
@@ -56,6 +58,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       gaMeasurementID: GA_MEASUREMENT_ID,
+      siteURL: NUXT_PUBLIC_SITE_URL,
     },
   },
   linkChecker: {

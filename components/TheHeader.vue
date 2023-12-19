@@ -7,7 +7,7 @@
       <div class="flex items-center justify-between w-full py-4 gap-x-12">
         <NuxtLink to="/">
           <span class="sr-only">Pedro Henrique Design</span>
-          <NuxtImg
+          <img
             class="w-auto h-10 aspect-[213/40]"
             src="/images/logo-horizontal.svg"
             height="40"
@@ -70,7 +70,7 @@
                   <div class="flex flex-row justify-between py-4 gap-x-12">
                     <NuxtLink to="/">
                       <span class="sr-only">Pedro Henrique Design</span>
-                      <NuxtImg
+                      <img
                         class="w-auto h-10 lg:h-12 aspect-[256/48]"
                         src="/images/logo-horizontal.svg"
                         height="48"

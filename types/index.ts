@@ -2,6 +2,8 @@ export type Post = {
   title: string
   slug: string
   content: string
+  socialImage: string
+  description: string
   cover: {
     provider: string
     image: string
@@ -15,6 +17,12 @@ export type Category = {
   slug: string
   description: string
   ctaText: string
+  socialImage: string
+  cover: {
+    provider: string
+    image: string
+    alternativeText: string
+  }
   featuresTitle: string
   features: {
     iconName: string

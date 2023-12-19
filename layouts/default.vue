@@ -23,10 +23,11 @@
         </div>
         <div class="lg:flex-1">
           <LazyNuxtImg
-            src="/images/footer.png"
+            src="/posts/footer.png"
             alt=""
             sizes="343px sm:540px lg:352px"
             class="w-full h-auto rounded-lg aspect-square"
+            provider="imagekit"
           />
         </div>
       </div>
