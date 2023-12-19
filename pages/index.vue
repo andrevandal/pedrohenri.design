@@ -64,4 +64,13 @@ const { data: categories } = await useAsyncData('categories', async () => {
     }
   }) as Category[]
 })
+
+useSeoMeta({
+  title: 'Pedro Henri Design',
+  ogTitle: 'Pedro Henri Design',
+  description: '',
+  ogDescription: '',
+  ogImage: 'https://ik.imagekit.io/pedrohenri/images/imagem-social.png',
+  twitterCard: 'summary_large_image',
+})
 </script>
