@@ -1,17 +1,18 @@
 ---
-title: 'Sample page'
-slug: 'sample-page'
-description: 'Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.'
+title: Sample page
+slug: sample-page
+description: Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in
+  eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/100-960x538.jpg
-private: false
 cover:
   provider: imagekit
-  image: /posts/100-960x538.jpg
+  image: /posts/Paula%20Van%20Dal/main-animation.gif
   alternativeText: ""
   source: " "
 draft: false
-categoriesName: 
-  - 'Identidade Visual'
+private: false
+categoriesName:
+  - Identidade Visual
 categoriesSlug:
   - identidade-visual
 updatedAt: 2023-12-13T19:18:39.757Z
