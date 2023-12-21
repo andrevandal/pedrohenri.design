@@ -6,7 +6,7 @@ description: Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/100-960x538.jpg
 cover:
   provider: imagekit
-  image: /posts/Paula%20Van%20Dal/main-animation.gif
+  image: /posts/Paula%20Van%20Dal/logo-animation_paula.gif
   alternativeText: ""
   source: " "
 draft: false
@@ -19,7 +19,7 @@ updatedAt: 2023-12-13T19:18:39.757Z
 createdAt: 2023-12-13T19:18:39.770Z
 ---
 :image{src="/posts/237-960x538.jpg" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
-:image{src="/posts/Paula%20Van%20Dal/main-animation.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="/posts/Paula%20Van%20Dal/logo-animation_paula.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="/posts/28-960x538.jpg" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="/posts/100-960x538.jpg" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="/posts/120-960x538.jpg" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
