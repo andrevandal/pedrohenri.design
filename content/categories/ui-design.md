@@ -1,5 +1,5 @@
 ---
-name: UI Design
+name: Design de Interfaces
 slug: design-de-interfaces
 description: Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in
   eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.
