@@ -24,7 +24,7 @@ createdAt: 2023-12-13T19:18:39.770Z
 :image{src="posts/idv_belly-pao/idv_belly-pao_03.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_belly-pao/idv_belly-pao_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_belly-pao/idv_belly-pao_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/idv_belly-pao/idv_belly-pao_06.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }\
-:image{src="posts/idv_belly-pao/idv_belly-pao_07.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }\
+:image{src="posts/idv_belly-pao/idv_belly-pao_06.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_belly-pao/idv_belly-pao_07.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_belly-pao/idv_belly-pao_08.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_belly-pao/idv_belly-pao_09.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
