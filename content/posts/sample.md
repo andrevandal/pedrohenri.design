@@ -1,12 +1,13 @@
 ---
 title: Belly Pão
-slug: belly-pao
-description: Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in
-  eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.
-socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/100-960x538.jpg
+slug: idv_belly-pao
+description: A Belly Pão é uma padaria familiar localizada no bairro Cidade
+  Jardim Cumbica, especializando-se na arte de criar pães, bolos e salgados de
+  alta qualidade para cafés da manhã e lanches.
+socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_belly-pao/social-image.png
 cover:
   provider: imagekit
-  image: /posts/Paula%20Van%20Dal/logo-animation_paula.gif
+  image: posts/idv_belly-pao/cover.png
   alternativeText: ""
   source: " "
 draft: false
@@ -18,10 +19,12 @@ categoriesSlug:
 updatedAt: 2023-12-13T19:18:39.757Z
 createdAt: 2023-12-13T19:18:39.770Z
 ---
-:image{src="posts/Belly%20P%C3%A3o/idv_belly-pao_01.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
-:image{src="posts/Belly%20P%C3%A3o/idv_belly-pao_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/Belly%20P%C3%A3o/idv_belly-pao_03.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/Belly%20P%C3%A3o/idv_belly-pao_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/120-960x538.jpg" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/180-960x538.jpg" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/56-960x538.jpg" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
+:image{src="posts/idv_belly-pao/idv_belly-pao_01.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
+:image{src="posts/idv_belly-pao/idv_belly-pao_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_belly-pao/idv_belly-pao_03.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_belly-pao/idv_belly-pao_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_belly-pao/idv_belly-pao_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_belly-pao/idv_belly-pao_06.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }\
+:image{src="posts/idv_belly-pao/idv_belly-pao_07.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }\
+:image{src="posts/idv_belly-pao/idv_belly-pao_08.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_belly-pao/idv_belly-pao_09.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
