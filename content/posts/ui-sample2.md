@@ -1,17 +1,17 @@
 ---
-title: 'Sample page 2'
-slug: 'ui-sample2'
-description: 'Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.'
+title: "Landing Page - Paula Van Dal "
+slug: lp-paula-van-dal
+description: Página de captura Paula Van Dal
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/28-960x538.jpg
-private: false
 cover:
   provider: imagekit
-  image: /posts/28-960x538.jpg
+  image: /posts/ui-design_paula-van-dal/cover.png
   alternativeText: ""
   source: " "
 draft: false
-categoriesName: 
-  - 'UI Design'
+private: false
+categoriesName:
+  - Design de Interfaces
 categoriesSlug:
   - design-de-interfaces
 updatedAt: 2023-12-13T19:18:39.757Z
