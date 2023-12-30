@@ -5,7 +5,7 @@ description: Página de captura Paula Van Dal
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/28-960x538.jpg
 cover:
   provider: imagekit
-  image: /posts/ui-design_paula-van-dal/cover.png
+  image: /posts/ui-design_paula-van-dal/cover1.png
   alternativeText: ""
   source: " "
 draft: false
