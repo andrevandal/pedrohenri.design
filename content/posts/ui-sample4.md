@@ -5,7 +5,7 @@ description: Lucas Ribeiro é um programador web especializado em SEO e
   performance, dedicado a otimizar sites para melhorar a visibilidade online, a
   experiência do usuário e a conversão, garantindo que empresas alcance novos
   patamares de sucesso na web.
-socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/237-960x538.jpg
+socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/ui-design_lucas-ribeiro/social-image.png
 cover:
   provider: imagekit
   image: /posts/ui-design_lucas-ribeiro/cover.png
