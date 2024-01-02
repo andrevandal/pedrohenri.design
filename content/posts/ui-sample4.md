@@ -1,17 +1,17 @@
 ---
-title: 'Sample page 4'
-slug: 'ui-sample'
-description: 'Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.'
+title: Sample page 4
+slug: lp-lucas-ribeiro
+description: Lucas Ribeiro é um desenvolvedor web especializado em SEO e performance
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/237-960x538.jpg
-private: false
 cover:
   provider: imagekit
-  image: /posts/237-960x538.jpg
+  image: /posts/ui-design_lucas-ribeiro/cover.png
   alternativeText: ""
   source: " "
 draft: false
-categoriesName: 
-  - 'UI Design'
+private: false
+categoriesName:
+  - UI Design
 categoriesSlug:
   - design-de-interfaces
 updatedAt: 2023-12-13T19:18:39.757Z
