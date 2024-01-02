@@ -5,7 +5,7 @@ description: O trabalho de Paula Van Dal é focado em ajudar líderes e gestores
   de empresas a alcançar resultados mais assertivos. Por meio de formações e
   treinamentos personalizados, Paula orienta suas equipes para atingir sua
   máxima performance.
-socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/28-960x538.jpg
+socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/ui-design_paula-van-dal/social-image.png
 cover:
   provider: imagekit
   image: /posts/ui-design_paula-van-dal/cover.png
