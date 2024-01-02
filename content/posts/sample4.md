@@ -1,5 +1,5 @@
 ---
-title: Advanced Circuit CTP
+title: Advanced Circuit CTP - Identidade Visual
 slug: idv_advanced-circuit-ctp
 description: A marca Advanced Circuit representa uma abordagem dinâmica e
   exclusiva à atividade física. Sua identidade visual capta a essência de ser
