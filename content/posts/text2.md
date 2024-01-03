@@ -1,17 +1,18 @@
 ---
-title: 'Sample page'
-slug: 'text2'
-description: 'Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.'
+title: Teste página privada
+slug: text2
+description: Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in
+  eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/180-960x538.jpg
-private: true
 cover:
   provider: imagekit
   image: /posts/180-960x538.jpg
   alternativeText: ""
   source: " "
 draft: false
-categoriesName: 
-  - 'UI Design'
+private: true
+categoriesName:
+  - UI Design
 categoriesSlug:
   - ui-design
 updatedAt: 2023-02-13T19:18:39.757Z
