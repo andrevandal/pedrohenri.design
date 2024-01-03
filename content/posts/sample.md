@@ -16,8 +16,8 @@ categoriesName:
   - Identidade Visual
 categoriesSlug:
   - identidade-visual
-updatedAt: 2023-12-13T19:18:39.757Z
-createdAt: 2023-12-13T19:18:39.770Z
+updatedAt: 2024-01-03T22:09:03.834Z
+createdAt: 2024-01-03T22:09:04.425Z
 ---
 :image{src="posts/idv_belly-pao/idv_belly-pao_01.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
 :image{src="posts/idv_belly-pao/idv_belly-pao_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
