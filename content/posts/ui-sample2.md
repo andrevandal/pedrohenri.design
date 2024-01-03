@@ -17,8 +17,8 @@ categoriesName:
   - Design de Interfaces
 categoriesSlug:
   - design-de-interfaces
-updatedAt: 2023-12-13T19:18:39.757Z
-createdAt: 2023-12-13T19:18:39.770Z
+updatedAt: 2024-01-03T02:11:43.127Z
+createdAt: 2024-01-03T02:11:41.961Z
 ---
 :image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_01.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
 :image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
