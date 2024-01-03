@@ -1,5 +1,5 @@
 ---
-title: Belly Pão
+title: Belly Pão - Identidade Visual
 slug: idv_belly-pao
 description: A Belly Pão é uma padaria familiar localizada no bairro Cidade
   Jardim Cumbica, especializando-se na arte de criar pães, bolos e salgados de
