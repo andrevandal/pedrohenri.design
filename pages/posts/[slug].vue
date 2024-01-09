@@ -8,7 +8,7 @@
           class="text-sm leading-[1.059rem] text-gray-500 uppercase"
           >{{ data.categoryName }}</NuxtLink
         >
-        <h1 class="font-bold text-[2rem] leading-[2.421rem]">
+        <h1 class="font-bold text-gray-900 text-[2rem] leading-[2.421rem]">
           {{ data.title }}
         </h1>
       </header>
@@ -50,5 +50,8 @@ useSeoMeta({
   ogDescription: data.value?.description,
   ogImage: data.value?.socialImage,
   twitterCard: 'summary_large_image',
+  twitterTitle: data.value?.title,
+  twitterDescription: data.value?.description,
+  twitterImage: data.value?.socialImage,
 })
 </script>

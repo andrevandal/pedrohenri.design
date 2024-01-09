@@ -61,8 +61,5 @@
     "overrides": {
       "tailwindcss": "insiders"
     }
-  },
-  "dependencies": {
-    "@nuxt/content": "^2.9.0"
   }
 }

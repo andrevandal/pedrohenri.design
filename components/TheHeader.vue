@@ -30,7 +30,7 @@
               v-if="callToAction.href"
               :href="callToAction.href"
               :as="NuxtLink"
-              class="inline-flex items-center justify-center h-12 px-6 py-3 mt-2 text-base font-medium text-center text-gray-900 transition-all border border-gray-900 rounded-lg lg:mt-0 lg:ml-4 lg:px-4 lg:py-2 hover:text-white focus:text-white hover:bg-gray-900 focus:right-1 focus:ring-gray-900"
+              class="inline-flex items-center justify-center h-12 px-6 py-3 mt-2 text-base font-medium text-center text-gray-900 transition-all border border-gray-900 rounded-lg lg:mt-0 lg:ml-4 lg:py-2 hover:text-white focus:text-white hover:bg-gray-900 focus:right-1 focus:ring-gray-900"
             >
               {{ callToAction.name }}
             </NuxtLink>

@@ -65,11 +65,17 @@ const { data: categories } = await useAsyncData('categories', async () => {
   }) as Category[]
 })
 
+useHead({
+  title: 'Pedro Henri Design - Inovação em cada pixel',
+  titleTemplate: '%s',
+})
+
 useSeoMeta({
-  title: 'Pedro Henri Design',
-  ogTitle: 'Pedro Henri Design',
-  description: '',
-  ogDescription: '',
+  ogTitle: 'Pedro Henri Design - Inovação em cada pixel',
+  description:
+    'O poder do design que se destaca em um mundo de ruídos. Crio identidades visuais, sites e experiências de UI/UX para marcas que visam o crescimento e inovação.',
+  ogDescription:
+    'O poder do design que se destaca em um mundo de ruídos. Crio identidades visuais, sites e experiências de UI/UX para marcas que visam o crescimento e inovação.',
   ogImage: 'https://ik.imagekit.io/pedrohenri/images/imagem-social.png',
   twitterCard: 'summary_large_image',
 })

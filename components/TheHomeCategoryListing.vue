@@ -1,5 +1,9 @@
 <template>
-  <section v-if="category" class="flex flex-col flex-wrap gap-6 lg:flex-row">
+  <section
+    v-if="category"
+    :id="category?.slug"
+    class="flex flex-col flex-wrap gap-6 lg:flex-row"
+  >
     <h2
       class="block text-gray-900 text-[2rem] leading-[2.421rem] lg:leading-[3.026rem] font-bold lg:text-[2.5rem] order-1 lg:mr-auto"
     >

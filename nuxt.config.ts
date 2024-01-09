@@ -21,15 +21,28 @@ export default defineNuxtConfig({
 
   site: {
     url: NUXT_PUBLIC_SITE_URL,
-    name: 'PedroHenri Design',
-    description: 'Welcome to my awesome site!',
+    name: 'Pedro Henri Design',
+    description:
+      'O poder do design que se destaca em um mundo de ruídos. Crio identidades visuais, sites e experiências de UI/UX para marcas que visam o crescimento e inovação.',
     defaultLocale: 'pt-br',
     trailingSlash: true,
   },
 
-  robots: {
-    disallow: '*',
-    allow: '',
+  app: {
+    head: {
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+      charset: 'utf-8',
+      lang: 'pt-br',
+      templateParams: {
+        separator: '|',
+        siteName: 'Pedro Henri Design',
+      },
+      titleTemplate: '%s %separator %siteName',
+      htmlAttrs: {
+        lang: 'pt-br',
+        class: 'scroll-smooth scroll-pt-4',
+      },
+    },
   },
 
   image: {
@@ -49,12 +62,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  app: {
-    head: {
-      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-      charset: 'utf-8',
-    },
-  },
+
   runtimeConfig: {
     public: {
       gaMeasurementID: GA_MEASUREMENT_ID,

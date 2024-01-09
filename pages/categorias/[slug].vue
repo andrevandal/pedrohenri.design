@@ -17,7 +17,14 @@ const { data: category } = await useAsyncData(`category-${slug}`, async () => {
   const [category, posts] = await Promise.all([
     queryContent('/categories')
       .where({ slug, draft: false })
-      .only(['title', 'slug', 'description', 'featuresTitle', 'features'])
+      .only([
+        'title',
+        'slug',
+        'description',
+        'featuresTitle',
+        'features',
+        'socialImage',
+      ])
       .find(),
     queryContent('/posts')
       .where({
@@ -44,5 +51,8 @@ useSeoMeta({
   ogDescription: category.value?.description,
   ogImage: category.value?.socialImage,
   twitterCard: 'summary_large_image',
+  twitterTitle: category.value?.title,
+  twitterDescription: category.value?.description,
+  twitterImage: category.value?.socialImage,
 })
 </script>
