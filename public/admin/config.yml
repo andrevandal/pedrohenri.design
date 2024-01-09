@@ -1,12 +1,12 @@
 backend:
   name: github
-  branch: main # Branch to update (optional; defaults to master)
-  base_url: https://sandbox.pedrohenri.design/
+  branch: prod # Branch to update (optional; defaults to master)
+  base_url: https://pedrohenri.design/
   auth_endpoint: /api/auth
   repo: andrevandal/pedrohenri.design
 
-site_url: https://sandbox.pedrohenri.design/
-logo_url: https://sandbox.pedrohenri.design/images/logo-horizontal.svg
+site_url: https://pedrohenri.design/
+logo_url: https://pedrohenri.design/images/logo-horizontal.svg
 show_preview_links: false
 
 media_folder: public/images/uploads # Media files will be stored in the repo under static/images/uploads
