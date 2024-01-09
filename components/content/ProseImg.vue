@@ -24,8 +24,8 @@ import { LazyNuxtImg, NuxtImg } from '#components'
 
 type Props = {
   src: string
-  width?: string
-  height?: string
+  width?: number
+  height?: number
   sizes?: string
   provider?: string
   roundedB?: boolean
@@ -35,8 +35,8 @@ type Props = {
 }
 const { provider, src, alt, width, height, sizes, roundedB, roundedT, lazy } =
   withDefaults(defineProps<Props>(), {
-    width: '375',
-    height: '210',
+    width: 375,
+    height: 210,
     sizes: '375px, sm:496px, lg:960px',
     provider: undefined,
     roundedB: false,
