@@ -13,7 +13,9 @@
         'rounded-b-lg': roundedB,
       },
     ]"
-    :alt="alt"
+    :alt="alt === true ? '' : alt"
+    :loading="lazy ? 'lazy' : 'eager'"
+    :decoding="lazy ? 'async' : 'sync'"
   />
 </template>
 
@@ -29,16 +31,17 @@ type Props = {
   roundedB?: boolean
   roundedT?: boolean
   lazy?: boolean
-  alt: string
+  alt: any
 }
-
-const { provider, src } = withDefaults(defineProps<Props>(), {
-  width: '375',
-  height: '210',
-  sizes: '375px, sm:496px, lg:960px',
-  provider: undefined,
-  roundedB: false,
-  roundedT: false,
-  lazy: true,
-})
+const { provider, src, alt, width, height, sizes, roundedB, roundedT, lazy } =
+  withDefaults(defineProps<Props>(), {
+    width: '375',
+    height: '210',
+    sizes: '375px, sm:496px, lg:960px',
+    provider: undefined,
+    roundedB: false,
+    roundedT: false,
+    lazy: true,
+    alt: '',
+  })
 </script>
