@@ -1,5 +1,6 @@
 {
   "name": "@andrevandal/pedrohenri.design",
+  "version": "1.0.0",
   "private": false,
   "type": "module",
   "scripts": {
