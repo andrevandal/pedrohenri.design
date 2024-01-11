@@ -22,22 +22,28 @@
         Conheça meu trabalho
       </NuxtLink>
     </div>
-    <div class="order-1 lg:order-2">
+    <div class="order-1 lg:order-2 w-full h-auto aspect-[9/10] block">
       <NuxtImg
-        src="/posts/primeira-dobra.png"
-        sizes="343px sm:540px lg:352px"
+        src="/images/primeira-dobra.png?updatedAt=1704811637285"
+        sizes="268px xs:288px sm:496px lg:525px"
         class="w-full h-auto aspect-[9/10]"
         provider="imagekit"
+        alt="Pedro Henrique pensativo segurando sua caneta (da mesa digitalizadora) olhado para frente."
+        loading="eager"
+        preload
       />
     </div>
   </section>
   <section class="flex flex-col mt-6 mb-5 gap-y-6 lg:flex-row lg:gap-x-6">
     <div class="order-1 lg:order-2 lg:flex-1">
       <NuxtImg
-        src="/posts/sessao_crio-para-marcas.png"
-        sizes="343px sm:540px lg:352px"
+        src="/images/sessao_crio-para-marcas.png?updatedAt=1704811637276"
+        sizes="268px xs:288px sm:496px"
         class="w-full h-auto rounded-lg aspect-square"
         provider="imagekit"
+        alt="Pedro Henrique pensativo segurando sua caneta (da mesa digitalizadora) sentado em sua cadeira. Algo comum em seu cotidiano."
+        loading="lazy"
+        decoding="async"
       />
     </div>
     <div

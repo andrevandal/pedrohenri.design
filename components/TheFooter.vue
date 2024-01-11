@@ -24,7 +24,7 @@
             class="transition-opacity hover:opacity-80 focus:opacity-60"
           >
             <span class="sr-only">Instagram</span>
-            <NuxtIcon name="instagram" filled />
+            <Icon name="instagram" filled />
           </NuxtLink>
           <NuxtLink
             href="https://www.linkedin.com/in/pedro-henrique-92b806bb/"
@@ -33,7 +33,7 @@
             class="transition-opacity hover:opacity-80 focus:opacity-60"
           >
             <span class="sr-only">LinkedIn</span>
-            <NuxtIcon name="linkedin" filled />
+            <Icon name="linkedin" filled />
           </NuxtLink>
         </div>
       </div>

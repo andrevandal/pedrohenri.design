@@ -23,6 +23,8 @@
           class="rounded-lg aspect-square"
           width="600"
           height="600"
+          loading="lazy"
+          decoding="async"
         />
       </NuxtLink>
     </div>
@@ -51,7 +53,7 @@
           :key="`feature-${fIndex}`"
           class="flex flex-col items-start justify-center gap-2"
         >
-          <NuxtIcon
+          <Icon
             :name="feature.iconName"
             class="flex items-center justify-center w-12 h-12 text-2xl leading-6 text-gray-900 rounded-lg bg-gray-50"
             :class="[

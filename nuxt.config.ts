@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-const { GA_MEASUREMENT_ID, IMAGEKIT_BASE_URL, NUXT_PUBLIC_SITE_URL } =
-  process.env
+const { IMAGEKIT_BASE_URL, NUXT_PUBLIC_SITE_URL } = process.env
 
 export default defineNuxtConfig({
   ssr: true,
@@ -16,7 +15,7 @@ export default defineNuxtConfig({
     'nuxt-simple-robots',
     'nuxt-icons',
     '@nuxt/image',
-    '@nuxtjs/fontaine',
+    'nuxt-gtag',
   ],
 
   site: {
@@ -30,7 +29,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+      viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
       charset: 'utf-8',
       lang: 'pt-br',
       templateParams: {
@@ -46,6 +45,12 @@ export default defineNuxtConfig({
   },
 
   image: {
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+    },
     imagekit: {
       baseURL: IMAGEKIT_BASE_URL,
     },
@@ -65,14 +70,15 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      gaMeasurementID: GA_MEASUREMENT_ID,
       siteURL: NUXT_PUBLIC_SITE_URL,
     },
   },
+
   linkChecker: {
     enabled: false,
   },
-  fontMetrics: {
-    fonts: ['Inter'],
+
+  gtag: {
+    loadingStrategy: 'async',
   },
 })

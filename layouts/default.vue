@@ -23,11 +23,13 @@
         </div>
         <div class="lg:flex-1">
           <LazyNuxtImg
-            src="/posts/footer.png"
-            alt=""
+            src="/images/footer.png?updatedAt=1704811637375"
+            alt="Pedro Henrique sorrindo com as mãos cruzadas a frente e vestido socialmente."
             sizes="343px sm:540px lg:352px"
             class="w-full h-auto rounded-lg aspect-square"
             provider="imagekit"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>
@@ -49,7 +51,13 @@ useHead({
     },
     {
       href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap',
-      rel: 'stylesheet',
+      rel: 'preload',
+      onload: "this.rel='stylesheet'",
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://ik.imagekit.io/pedrohenri/',
+      crossorigin: true,
     },
     {
       rel: 'icon',
@@ -63,9 +71,3 @@ useHead({
   ],
 })
 </script>
-
-<style>
-.nuxt-icon svg {
-  margin-bottom: 0;
-}
-</style>

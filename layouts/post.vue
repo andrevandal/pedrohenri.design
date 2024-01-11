@@ -39,7 +39,13 @@ useHead({
     },
     {
       href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap',
-      rel: 'stylesheet',
+      rel: 'preload',
+      onload: "this.rel='stylesheet'",
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://ik.imagekit.io/pedrohenri/',
+      crossorigin: true,
     },
     {
       rel: 'icon',
@@ -53,9 +59,3 @@ useHead({
   ],
 })
 </script>
-
-<style>
-.nuxt-icon svg {
-  margin-bottom: 0;
-}
-</style>
