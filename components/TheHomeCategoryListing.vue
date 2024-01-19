@@ -7,7 +7,7 @@
     <h2
       class="block text-gray-900 text-[2rem] leading-[2.421rem] lg:leading-[3.026rem] font-bold lg:text-[2.5rem] order-1 lg:mr-auto"
     >
-      {{ category.title }}
+      {{ category.name }}
     </h2>
     <div class="flex flex-col order-2 gap-4 lg:grid lg:order-3 lg:grid-cols-2">
       <NuxtLink

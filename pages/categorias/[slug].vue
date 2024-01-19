@@ -18,7 +18,7 @@ const { data: category } = await useAsyncData(`category-${slug}`, async () => {
     queryContent('/categories')
       .where({ slug, draft: false })
       .only([
-        'title',
+        'name',
         'slug',
         'description',
         'featuresTitle',
@@ -45,13 +45,13 @@ const { data: category } = await useAsyncData(`category-${slug}`, async () => {
 })
 
 useSeoMeta({
-  title: category.value?.title,
-  ogTitle: category.value?.title,
+  title: category.value?.name,
+  ogTitle: category.value?.name,
   description: category.value?.description,
   ogDescription: category.value?.description,
   ogImage: category.value?.socialImage,
   twitterCard: 'summary_large_image',
-  twitterTitle: category.value?.title,
+  twitterTitle: category.value?.name,
   twitterDescription: category.value?.description,
   twitterImage: category.value?.socialImage,
 })

@@ -13,7 +13,7 @@ export type Post = {
   categoriesSlug: string
 }
 export type Category = {
-  title: string
+  name: string
   slug: string
   description: string
   ctaText: string

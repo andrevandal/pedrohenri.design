@@ -23,7 +23,7 @@ const { data: categories } = await useAsyncData('categories', async () => {
     queryContent('/categories')
       .where({ slug: { $in: categoriesToFetch }, draft: false, private: false })
       .only([
-        'title',
+        'name',
         'slug',
         'description',
         'ctaText',
