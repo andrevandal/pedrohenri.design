@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    '@nuxtseo/module',
     'nuxt-simple-sitemap',
     'nuxt-simple-robots',
     'nuxt-icons',
@@ -31,7 +30,6 @@ export default defineNuxtConfig({
     head: {
       viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
       charset: 'utf-8',
-      lang: 'pt-br',
       templateParams: {
         separator: '|',
         siteName: 'Pedro Henri Design',
@@ -72,10 +70,6 @@ export default defineNuxtConfig({
     public: {
       siteURL: NUXT_PUBLIC_SITE_URL,
     },
-  },
-
-  linkChecker: {
-    enabled: false,
   },
 
   gtag: {
