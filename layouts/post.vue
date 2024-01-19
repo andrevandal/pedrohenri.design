@@ -40,6 +40,7 @@ useHead({
     {
       href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap',
       rel: 'preload',
+      as: 'style',
       onload: "this.rel='stylesheet'",
     },
     {
