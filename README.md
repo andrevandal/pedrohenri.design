@@ -1,75 +1,36 @@
-# Nuxt 3 Minimal Starter
+# pedrohenri.design
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![Pedro Henri Design Logo](/public/images/logo-horizontal.svg)
+
+## Sobre
+
+Neste repositório é mantido o site [pedrohenri.design](https://pedrohenri.design/) desenvolvido por [André Vandal](https://andrevandal.dev/) junto com o [pedrohenri.design](https://pedrohenri.design/).
+
+## Objetivo
+
+O objetivo do site é ser um espaço para exposição dos trabalhos realizado por pedro (portifólio).
 
 ## Setup
 
-Make sure to install the dependencies:
+Instale as dependências via:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## Desenvolvimento
 
-Start the development server on `http://localhost:3000`:
+Inicie o servidor de desenvolvimeto em `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Produção
 
-Build the application for production:
+Atualmente, este projeto é deployado no Cloudflare Pages como estático usando:
 
 ```bash
-# npm
-npm run build
-
 # pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm run generate
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
