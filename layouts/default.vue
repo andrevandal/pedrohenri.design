@@ -1,8 +1,8 @@
 <template>
   <main>
-    <TheHeader />
+    <LazyTheHeader />
     <slot />
-    <TheFooter>
+    <LazyTheFooter>
       <div class="container flex flex-col gap-6 mx-auto lg:flex-row">
         <div class="flex flex-col lg:flex-1 gap-y-4 lg:justify-center">
           <h2
@@ -33,7 +33,7 @@
           />
         </div>
       </div>
-    </TheFooter>
+    </LazyTheFooter>
   </main>
 </template>
 

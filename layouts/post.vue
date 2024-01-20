@@ -1,8 +1,8 @@
 <template>
   <main>
-    <TheHeader />
+    <LazyTheHeader />
     <slot />
-    <TheFooter>
+    <LazyTheFooter>
       <div class="mt-12 bg-gray-900">
         <div
           class="container flex flex-col items-center py-6 mx-auto gap-y-2 sm:flex-row lg:gap-x-8 lg:justify-center"
@@ -21,7 +21,7 @@
           >
         </div>
       </div>
-    </TheFooter>
+    </LazyTheFooter>
   </main>
 </template>
 
