@@ -24,7 +24,9 @@ categoriesSlug:
 updatedAt: 2024-01-02T19:02
 createdAt: 2024-01-02T19:02
 ---
-:image{ src="posts/idv_paula-van-dal/idv_paula-van-dal_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
+:image{ src="posts/idv_paula-van-dal/idv_paula-van-dal_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b }
+
+
 
 # **A marca**
 
