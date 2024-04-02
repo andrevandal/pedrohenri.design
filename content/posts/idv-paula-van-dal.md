@@ -28,12 +28,11 @@ createdAt: 2024-01-02T19:02
 
 
 
-# **A marca**
+**A marca**
 
 Seu trabalho é focado em ajudar líderes e gestores de empresas a alcançar resultados mais assertivos. Por meio de formações e treinamentos personalizados, Paula orienta suas equipes para atingir sua máxima performance.
 
 Com uma abordagem única, que combina neurociência, processos otimizados e liderança saudável, ela se destaca na vanguarda da discussão sobre a atuação da liderança em prol de resultados.
-
 
 :image{src="posts/idv_paula-van-dal/idv_paula-van-dal_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_paula-van-dal/idv_paula-van-dal_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
