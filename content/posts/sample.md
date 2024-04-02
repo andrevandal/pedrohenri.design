@@ -32,5 +32,5 @@ Fundada com amor e dedicação, cada item é feito com ingredientes frescos e se
 :image{src="posts/idv_belly-pao/1idv_belly-pao_06.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_belly-pao/1idv_belly-pao_07.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_belly-pao/1idv_belly-pao_08.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/idv_belly-pao/1idv_belly-pao_09.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }\
+:image{src="posts/idv_belly-pao/1idv_belly-pao_09.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_belly-pao/1idv_belly-pao_10.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" roudend-b }
