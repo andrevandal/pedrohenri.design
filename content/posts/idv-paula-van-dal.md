@@ -24,7 +24,9 @@ categoriesSlug:
 updatedAt: 2024-01-02T19:02
 createdAt: 2024-01-02T19:02
 ---
-:image{ src="posts/idv_paula-van-dal/idv_paula-van-dal_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b } \
+:image{ src="posts/idv_paula-van-dal/idv_paula-van-dal_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b }
+
+.
 
 # A marca
 
@@ -32,6 +34,8 @@ O trabalho da Paula é focado em ajudar líderes e gestores de empresas a alcan�
 
 Com uma abordagem única, que combina neurociência, processos otimizados e liderança saudável, ela se destaca na vanguarda da discussão sobre a atuação da liderança em prol de resultados.
 :image{src="posts/idv_paula-van-dal/idv_paula-van-dal_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+
+.
 
 # A ideia durante o processo de criação do símbolo, foi além de destaca-lá da concorrência, trazer significado para a marca.
 
