@@ -25,9 +25,8 @@ updatedAt: 2024-01-02T19:02
 createdAt: 2024-01-02T19:02
 ---
 :image{ src="posts/idv_paula-van-dal/idv_paula-van-dal_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
-:image{src="posts/idv_paula-van-dal/idv_paula-van-dal_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
-**A marca**
+# **A marca**
 
 Seu trabalho é focado em ajudar líderes e gestores de empresas a alcançar resultados mais assertivos. Por meio de formações e treinamentos personalizados, Paula orienta suas equipes para atingir sua máxima performance.
 
@@ -42,3 +41,5 @@ Com uma abordagem única, que combina neurociência, processos otimizados e lide
 :image{src="posts/idv_paula-van-dal/idv_paula-van-dal_08.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_paula-van-dal/idv_paula-van-dal_09.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_paula-van-dal/idv_paula-van-dal_10.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
+
+Também trabalhei no desenvolvimento do blog da Paula, você pode conferir [clicando aqui](https://pedrohenri.design/posts/lp-paula-van-dal/).
