@@ -20,8 +20,14 @@ categoriesSlug:
 updatedAt: 2024-01-03T22:02:48.051Z
 createdAt: 2024-01-03T22:02:48.829Z
 ---
-:image{ src="posts/idv_ana-longhini/1idv_ana-longhini_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
-:image{src="posts/idv_ana-longhini/1idv_ana-longhini_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{ src="posts/idv_ana-longhini/1idv_ana-longhini_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b }
+
+
+## A marca
+
+Ana Longhini é uma profissional especialista em marketing digital, com foco em tráfego pago e gestão de redes sociais. Com estratégias eficazes e personalizadas, e através de consultorias, ajuda empreendedores a alcançarem o máximo do seu potencial online.
+
+A marca de Ana Longhini é uma extensão direta de seus valores e trabalho. Ela representa profissionalismo, empatia, inovação, aprendizado contínuo e parceria, refletindo seu compromisso em fornecer serviços de alta qualidade com padrões éticos elevados.
 :image{src="posts/idv_ana-longhini/1idv_ana-longhini_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_ana-longhini/1idv_ana-longhini_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_ana-longhini/1idv_ana-longhini_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
