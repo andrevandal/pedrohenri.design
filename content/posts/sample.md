@@ -19,9 +19,9 @@ categoriesSlug:
 updatedAt: 2024-01-03T22:09:03.834Z
 createdAt: 2024-01-03T22:09:04.425Z
 ---
-:image{src="posts/idv_belly-pao/1idv_belly-pao_01.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b } \
+:image{src="posts/idv_belly-pao/idv_belly-pao_01.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b } \
 
-**A marca**
+## A marca
 
 A Belly Pão é uma padaria familiar localizada no bairro Cidade Jardim Cumbica, especializando-se na arte de criar pães, bolos e salgados de alta qualidade para cafés da manhã e lanches.
 
