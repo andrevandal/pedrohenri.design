@@ -22,8 +22,7 @@ createdAt: 2023-12-13T19:18:39.770Z
 ---
 :image{src="posts/idv_advanced-circuit/idv_advanced-circuit_01.png" provider="imagekit"  width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
 
-## 
-A marca
+## A marca
 
 A marca Advanced Circuit representa uma abordagem dinâmica e exclusiva à atividade física.
 
