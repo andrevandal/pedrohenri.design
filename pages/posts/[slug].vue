@@ -55,3 +55,13 @@ useSeoMeta({
   twitterImage: data.value?.socialImage,
 })
 </script>
+
+<style lang="postcss">
+.prose :where(h2),
+.prose :where(h3),
+.prose :where(h4) {
+  a {
+    @apply no-underline;
+  }
+}
+</style>
