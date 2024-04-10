@@ -28,7 +28,6 @@ createdAt: 2024-04-10T00:52:00.000Z
 Perfeito para os amantes de um bom espeto e chopp gelado, Santo Espeto é um local para quem busca uma experiência gastronômica descontraída e cheia de sabor. Pensado especialmente para o público que preza por um ambiente aconchegante e extrovertido, a Santo Espeto promete ser o próximo hotspot para os amigos se reunirem e criarem memórias inesquecíveis.
 
 Com um menu que abraça a diversidade dos petiscos e o prazer de um chopp bem tirado, a petiscaria abriu suas portas e definiu um novo padrão de hospitalidade e diversão na região de Maringá. Em um espaço onde cada detalhe é pensado para promover o conforto e a leveza, os clientes da Santo Espeto encontrarão um convite sempre aberto para brindes e comemorações.
-:image{src="posts/idv_santo-espeto/idv_santo-espeto_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
 ## O símbolo
 
@@ -36,7 +35,7 @@ O símbolo que acompanha o logotipo são ilustrações de um espetinho juntament
 
 No topo da caneca, uma espuma generosa e uma auréola brincam com o nome, transmitindo a qualidade divina da marca.
 
-:image{src="posts/idv_santo-espeto/idv_santo-espeto_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/idv_santo-espeto_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
 ## O logotipo
 
@@ -45,6 +44,8 @@ A fonte, com seu design levemente serifado e arredondado, foi selecionada para t
 A leveza das formas arredondadas da tipografia comunica a abordagem alegre e amigável da marca, enquanto as sutis serifas adicionam um toque de elegância. Este equilíbrio tipográfico é uma homenagem à essência da Santo Espeto: um espaço onde a modernidade e a leveza coexistem, criando um ambiente extrovertido e aconchegante para todos os visitantes.
 
 Através do logotipo, estabelecemos um ponto de partida visual que é tanto distintivo quanto acolhedor, convidando todos a desfrutar da experiência Santo Espeto.
+
+:image{src="posts/idv_santo-espeto/idv_santo-espeto_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
 :image{src="posts/idv_santo-espeto/idv_santo-espeto_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
