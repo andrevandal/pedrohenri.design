@@ -21,13 +21,13 @@ categoriesSlug:
 updatedAt: 2024-04-10T00:52:00.000Z
 createdAt: 2024-04-10T00:52:00.000Z
 ---
-:image{ src="posts/idv_santo-espeto/idv_santo-espeto_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b }
-
 ## A marca
 
 Perfeito para os amantes de um bom espeto e chopp gelado, Santo Espeto é um local para quem busca uma experiência gastronômica descontraída e cheia de sabor. Pensado especialmente para o público que preza por um ambiente aconchegante e extrovertido, a Santo Espeto promete ser o próximo hotspot para os amigos se reunirem e criarem memórias inesquecíveis.
 
 Com um menu que abraça a diversidade dos petiscos e o prazer de um chopp bem tirado, a petiscaria abriu suas portas e definiu um novo padrão de hospitalidade e diversão na região de Maringá. Em um espaço onde cada detalhe é pensado para promover o conforto e a leveza, os clientes da Santo Espeto encontrarão um convite sempre aberto para brindes e comemorações.
+
+:image{ src="posts/idv_santo-espeto/idv_santo-espeto_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b }
 
 ## O símbolo
 
