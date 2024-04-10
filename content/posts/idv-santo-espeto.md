@@ -67,7 +67,7 @@ Em um mar de concorrentes que apelam para os tons quentes, nosso azul se destaca
 
 O uso deste tom não só nos diferencia, mas dialoga com um estilo neon e moderno, integrando-se harmoniosamente à energia da noite e atraindo os olhares para o alternativo e o excepcional.
 
-:image{src="posts/idv_santo-espeto/idv_santo-espeto_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/color-variation_vertical-logo.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_santo-espeto/idv_santo-espeto_06.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_santo-espeto/idv_santo-espeto_07.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_santo-espeto/idv_santo-espeto_08.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
