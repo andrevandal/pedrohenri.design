@@ -73,4 +73,4 @@ O uso deste tom não só nos diferencia, mas dialoga com um estilo neon e modern
 :image{src="posts/idv_santo-espeto/idv_santo-espeto_08.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_santo-espeto/idv_santo-espeto_09.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_santo-espeto/idv_santo-espeto_10.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/idv_paula-van-dal/idv_paula-van-dal_11.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
+:image{src="posts/idv_santo-espeto/idv_santo-espeto_11.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
