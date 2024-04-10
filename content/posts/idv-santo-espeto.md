@@ -45,7 +45,7 @@ Através do logotipo, estabelecemos um ponto de partida visual que é tanto dist
 
 :image{src="posts/idv_santo-espeto/1idv_santo-espeto_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/1idv_santo-espeto_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b }
 
 ## O amarelo
 Vibrante e convidativo, o amarelo é a cor do estímulo e da energia, escolhido meticulosamente pela sua capacidade comprovada de despertar o apetite.
@@ -59,13 +59,11 @@ Este tom quase preto é a base perfeita para a nossa paleta. Ele não apenas rea
 Esse marrom representa a robustez e a profundidade dos sabores que o cliente encontrará em cada petisco.
 
 ## O Azul
-Um toque de estratégica, o azul traz à nossa identidade o elemento da diferenciação. 
-
-Em um mar de concorrentes que apelam para os tons quentes, nosso azul se destaca com confiança e frescor. 
+Um toque de estratégica, o azul traz à nossa identidade o elemento da diferenciação. Em um mar de concorrentes que apelam para os tons quentes, nosso azul se destaca com confiança e frescor. 
 
 O uso deste tom não só nos diferencia, mas dialoga com um estilo neon e moderno, integrando-se harmoniosamente à energia da noite e atraindo os olhares para o alternativo e o excepcional.
 
-:image{src="posts/idv_santo-espeto/color-variation_vertical-logo.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/color-variation_vertical-logo.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
 :image{src="posts/idv_santo-espeto/1idv_santo-espeto_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_santo-espeto/1idv_santo-espeto_06.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 :image{src="posts/idv_santo-espeto/1idv_santo-espeto_07.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
