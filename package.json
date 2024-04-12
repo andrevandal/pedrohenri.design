@@ -1,56 +1,29 @@
 {
   "name": "@andrevandal/pedrohenri.design",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": false,
   "type": "module",
   "scripts": {
-    "start": "nuxt start",
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "engines": {
     "node": ">=20"
   },
-  "devDependencies": {
-    "@headlessui/vue": "^1.7.19",
-    "@heroicons/vue": "^2.1.3",
-    "@nuxt/content": "^2.12.1",
-    "@nuxt/devtools": "1.1.5",
-    "@nuxt/image": "^1.5.0",
-    "@nuxtjs/eslint-config-typescript": "^12.1.0",
-    "@nuxtjs/eslint-module": "^4.1.0",
-    "@nuxtjs/fontaine": "^0.4.1",
-    "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/sitemap": "^5.1.2",
-    "@nuxtjs/tailwindcss": "^6.11.4",
-    "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/sitemap": "^3.1.2",
+    "@astrojs/tailwind": "^5.1.0",
     "@tailwindcss/typography": "^0.5.12",
-    "@typescript-eslint/eslint-plugin": "^7.5.0",
-    "@typescript-eslint/parser": "^7.5.0",
-    "@vue/eslint-config-standard": "^8.0.1",
-    "@vueuse/core": "^10.9.0",
-    "@vueuse/nuxt": "^10.9.0",
-    "consola": "^3.2.3",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-vue": "^9.24.0",
-    "nuxt": "^3.11.1",
-    "nuxt-gtag": "^2.0.5",
-    "nuxt-icons": "^3.2.1",
-    "nuxt-simple-robots": "^4.0.0-rc.16",
-    "postcss-import": "^16.1.0",
-    "postcss-nested": "^6.0.1",
-    "postcss-preset-env": "^9.5.4",
-    "prettier": "^3.2.5",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "astro": "^4.6.0",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   },
   "repository": {
     "type": "git",
@@ -60,9 +33,13 @@
     "url": "https://github.com/andrevandal/pedrohenri.design/issues"
   },
   "homepage": "https://pedrohenri.design",
-  "pnpm": {
-    "overrides": {
-      "tailwindcss": "insiders"
-    }
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-astro": "^0.34.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "typescript-eslint": "^7.6.0"
   }
 }
