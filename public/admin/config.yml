@@ -75,20 +75,20 @@ collections:
               label: 'Alternative Text',
               name: 'alternativeText',
               widget: 'string',
-              required: false,
+              required: false
             }
           - {
               label: 'Source',
               name: 'source',
               widget: 'string',
-              required: false,
+              required: false
             }
           - {
               label: 'Provider',
               name: 'provider',
               widget: 'string',
               default: 'imagekit',
-              required: false,
+              required: false
             }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
       - { label: 'Private', name: 'private', widget: 'boolean', default: false }
@@ -114,7 +114,7 @@ collections:
           label: 'updated at',
           name: 'updatedAt',
           widget: 'datetime',
-          required: false,
+          required: false
         }
       - { label: 'created at', name: 'createdAt', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

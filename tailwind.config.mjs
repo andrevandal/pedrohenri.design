@@ -12,13 +12,13 @@ export default {
         DEFAULT: '375px',
         sm: '640px',
         lg: '1024px',
-        xl: '1280px',
+        xl: '1280px'
       },
       padding: {
         DEFAULT: '1rem',
         sm: '4.5rem',
-        lg: '2rem',
-      },
+        lg: '2rem'
+      }
     },
     extend: {
       colors: {
@@ -33,16 +33,16 @@ export default {
           700: '#424547',
           800: '#2A2D30',
           900: '#131619',
-          default: '#131619',
+          default: '#131619'
         },
         link: '#055FC8',
         success: '#009959',
-        error: '#D44431',
+        error: '#D44431'
       },
       fontFamily: {
-        sans: ['Inter', 'Inter Fallback', ...defaultTheme.fontFamily.sans],
-      },
-    },
+        sans: ['Inter', 'Inter Fallback', ...defaultTheme.fontFamily.sans]
+      }
+    }
   },
-  plugins: [tailwindTypography],
+  plugins: [tailwindTypography]
 }

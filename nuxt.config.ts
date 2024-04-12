@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     'nuxt-simple-robots',
     'nuxt-icons',
     '@nuxt/image',
-    'nuxt-gtag',
+    'nuxt-gtag'
   ],
 
   site: {
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     description:
       'O poder do design que se destaca em um mundo de ruídos. Crio identidades visuais, sites e experiências de UI/UX para marcas que visam o crescimento e inovação.',
     defaultLocale: 'pt-br',
-    trailingSlash: true,
+    trailingSlash: true
   },
 
   app: {
@@ -32,14 +32,14 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       templateParams: {
         separator: '|',
-        siteName: 'Pedro Henri Design',
+        siteName: 'Pedro Henri Design'
       },
       titleTemplate: '%s %separator %siteName',
       htmlAttrs: {
         lang: 'pt-br',
-        class: 'scroll-smooth scroll-pt-4',
-      },
-    },
+        class: 'scroll-smooth scroll-pt-4'
+      }
+    }
   },
 
   image: {
@@ -47,11 +47,11 @@ export default defineNuxtConfig({
       xs: 320,
       sm: 640,
       md: 768,
-      lg: 1024,
+      lg: 1024
     },
     imagekit: {
-      baseURL: IMAGEKIT_BASE_URL,
-    },
+      baseURL: IMAGEKIT_BASE_URL
+    }
   },
 
   postcss: {
@@ -61,18 +61,18 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
       'postcss-preset-env': {
-        features: { 'nesting-rules': false },
-      },
-    },
+        features: { 'nesting-rules': false }
+      }
+    }
   },
 
   runtimeConfig: {
     public: {
-      siteURL: NUXT_PUBLIC_SITE_URL,
-    },
+      siteURL: NUXT_PUBLIC_SITE_URL
+    }
   },
 
   gtag: {
-    loadingStrategy: 'async',
-  },
+    loadingStrategy: 'async'
+  }
 })

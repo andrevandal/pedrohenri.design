@@ -8,7 +8,7 @@ export async function onRequest(context) {
     params, // if filename includes [id] or [[path]]
     waitUntil, // same as ctx.waitUntil in existing Worker API
     next, // used for middleware or to fetch assets
-    data, // arbitrary space for passing data between middlewares
+    data // arbitrary space for passing data between middlewares
   } = context
 
   const client_id = env.GITHUB_CLIENT_ID
@@ -21,12 +21,12 @@ export async function onRequest(context) {
     redirectUrl.searchParams.set('scope', 'repo user')
     redirectUrl.searchParams.set(
       'state',
-      crypto.getRandomValues(new Uint8Array(12)).join(''),
+      crypto.getRandomValues(new Uint8Array(12)).join('')
     )
     return Response.redirect(redirectUrl.href, 301)
   } catch (error) {
     return new Response(error.message, {
-      status: 500,
+      status: 500
     })
   }
 }
