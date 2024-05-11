@@ -9,7 +9,7 @@ description: Perfeito para os amantes de um bom espeto e chopp gelado, Santo
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_santo-espeto/social-image.png
 cover:
   provider: imagekit
-  image: posts/idv_santo-espeto/cover.png
+  image: posts/idv_santo-espeto/cover1.png
   alternativeText: ""
   source: " "
 draft: false
