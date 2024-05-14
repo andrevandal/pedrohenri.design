@@ -11,7 +11,7 @@ cover:
   image: posts/idv_liryo-kids/cover.png
   alternativeText: ""
   source: " "
-draft: true
+draft: false
 private: false
 categoriesName:
   - Identidade Visual
@@ -24,7 +24,7 @@ createdAt: 2024-05-13T17:49:00.000Z
 
 A Liryo Kids é uma marca de acessórios infantis que une a delicadeza da infância com a alegria do cotidiano. Com produtos exclusivos e uma identidade visual vibrante, busca proporcionar beleza, estilo e praticidade às famílias, inspirando confiança e sorrisos em cada momento.
 
-:image{ src="posts/idv_santo-espeto/idv_santo-espeto_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b }
+:image{ src="posts/idv_liryo-kids/idv_liryo-kids_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b }
 
 ## O símbolo
 
@@ -34,7 +34,7 @@ A flor de lírio é conhecida por representar sentimentos de pureza, inocência 
 
 Assim, o símbolo representa não apenas a identidade visual da marca, mas também os valores e a essência enraizados na sua concepção.
 
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/idv_liryo-kids_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
 ## O logotipo
 
@@ -44,32 +44,21 @@ As demais letras, em uma fonte sem serifa com bordas arredondadas, expressam mod
 
 Juntas, essas características visuais formam um logotipo distintivo e memorável, que captura a personalidade e os valores da Liryo Kids.
 
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/idv_liryo-kids_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t rounded-b }
+:image{src="posts/idv_liryo-kids/idv_liryo-kids_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
 
-## O amarelo
+:image{src="posts/idv_liryo-kids/idv_liryo-kids_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
-Vibrante e convidativo, o amarelo é a cor do estímulo e da energia, escolhido meticulosamente pela sua capacidade comprovada de despertar o apetite.
+:image{src="posts/idv_liryo-kids/variacoes-vertical.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
-Essa escolha transcende a funcionalidade: ressoa com a tonalidade dourada do chopp servido com perfeição, um convite visual à degustação que
-espera pelo cliente.
+:image{src="posts/idv_liryo-kids/variacoes-horizontal.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
-## O marrom escuro
+:image{src="posts/idv_liryo-kids/variacoes-icon.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
-Este tom quase preto é a base perfeita para a nossa paleta. Ele não apenas realça o brilho do amarelo, garantindo uma leitura fácil e agradável, como também evoca a textura e o sabor dos espetos grelhados que são a assinatura da casa.
-
-Esse marrom representa a robustez e a profundidade dos sabores que o cliente encontrará em cada petisco.
-
-## O Azul
-
-Um toque de estratégica, o azul traz à nossa identidade o elemento da diferenciação. Em um mar de concorrentes que apelam para os tons quentes, nosso azul se destaca com confiança e frescor. 
-
-O uso deste tom não só nos diferencia, mas dialoga com um estilo neon e moderno, integrando-se harmoniosamente à energia da noite e atraindo os olhares para o alternativo e o excepcional.
-
-:image{src="posts/idv_santo-espeto/color-variation_vertical-logo.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_06.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_07.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_08.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_09.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
+:image{src="posts/idv_liryo-kids/fhd_caneca.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/fhd_embalagem.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/fhd_sacola.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/fhd_etiqueta.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }\
+:image{src="posts/idv_liryo-kids/fhd_quadros.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }\
+:image{src="posts/idv_liryo-kids/fhd_instagram.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
