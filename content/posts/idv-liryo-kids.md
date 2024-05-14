@@ -54,11 +54,16 @@ Juntas, essas características visuais formam um logotipo distintivo e memoráve
 
 :image{src="posts/idv_liryo-kids/variacoes-horizontal.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
-:image{src="posts/idv_liryo-kids/variacoes-icon.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/variacoes-icons.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
 :image{src="posts/idv_liryo-kids/fhd_caneca.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+
 :image{src="posts/idv_liryo-kids/fhd_embalagem.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+
 :image{src="posts/idv_liryo-kids/fhd_sacola.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="posts/idv_liryo-kids/fhd_etiqueta.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }\
-:image{src="posts/idv_liryo-kids/fhd_quadros.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }\
+
+:image{src="posts/idv_liryo-kids/fhd_etiqueta.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+
+:image{src="posts/idv_liryo-kids/fhd_quadros.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+
 :image{src="posts/idv_liryo-kids/fhd_instagram.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
