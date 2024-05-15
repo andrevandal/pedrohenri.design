@@ -46,9 +46,7 @@ Juntas, essas características visuais formam um logotipo distintivo e memoráve
 
 :image{src="posts/idv_liryo-kids/idv_liryo-kids_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
-:image{src="posts/idv_liryo-kids/idv_liryo-kids_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
-
-:image{src="posts/idv_liryo-kids/idv_liryo-kids_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/idv_liryo-kids_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
 
 :image{src="posts/idv_liryo-kids/variacoes-vertical.gif" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
 
