@@ -1,0 +1,62 @@
+---
+import Image from './Image.astro'
+---
+
+<section
+  class='flex flex-col rounded-lg bg-gray-100 py-4 sm:pb-8 lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:py-8'
+>
+  <div
+    class='order-2 flex flex-col gap-2 px-4 sm:px-10 lg:order-1 lg:max-w-[29.25rem] lg:px-0'
+  >
+    <h1
+      class='max-w-[38ch] text-[2rem] font-bold leading-[2.375rem] tracking-[-0.1rem] text-gray-900 lg:text-[3rem] lg:leading-[3.375rem] lg:tracking-[-0.15rem]'
+    >
+      Em um mundo cheio de barulho,<br />
+      o design fala mais alto.
+    </h1>
+    <p class='max-w-[38ch] text-xl text-gray-900 lg:text-2xl'>
+      As marcas com crescimento mais expressivo são aquelas que valorizam e
+      investem em design.
+    </p>
+    <a
+      href='/#identidade-visual'
+      class='mt-4 flex h-12 w-full items-center justify-center rounded-lg bg-gray-900 px-6 py-3 text-center text-gray-50 transition-colors hover:bg-gray-700 focus:bg-gray-500 sm:w-fit'
+    >
+      Conheça meu trabalho
+    </a>
+  </div>
+  <div class='order-1 block aspect-[9/10] h-auto w-full lg:order-2'>
+    <Image
+      src='/images/primeira-dobra.png'
+      sizes='268px xs:288px sm:496px lg:525px'
+      class='aspect-[9/10] h-auto w-full'
+      alt='Pedro Henrique pensativo segurando sua caneta (da mesa digitalizadora) olhado para frente.'
+      loading='eager'
+    />
+  </div>
+</section>
+<section class='mb-5 mt-6 flex flex-col gap-y-6 lg:flex-row lg:gap-x-6'>
+  <div class='order-1 lg:order-2 lg:flex-1'>
+    <Image
+      src='/images/sessao_crio-para-marcas.png'
+      sizes='268px xs:288px sm:496px'
+      class='aspect-square h-auto w-full rounded-lg'
+      alt='Pedro Henrique pensativo segurando sua caneta (da mesa digitalizadora) sentado em sua cadeira. Algo comum em seu cotidiano.'
+      loading='lazy'
+      decoding='async'
+    />
+  </div>
+  <div
+    class='order-2 lg:order-1 lg:flex lg:flex-1 lg:flex-col lg:justify-center'
+  >
+    <h2
+      class='max-w-[38ch] text-[2rem] font-bold leading-[2.375rem] tracking-[-0.1rem] text-gray-900 lg:text-[3rem] lg:leading-[3.375rem] lg:tracking-[-0.15rem]'
+    >
+      Crio para marcas que visam o crescimento e inovação.
+    </h2>
+    <p class='mt-2 max-w-[38ch] text-xl text-gray-900 lg:text-2xl'>
+      Transformo a essência singular da sua marca em soluções para conduzi-la ao
+      sucesso.
+    </p>
+  </div>
+</section>

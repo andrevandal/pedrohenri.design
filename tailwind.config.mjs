@@ -3,16 +3,22 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
 import tailwindTypography from '@tailwindcss/typography'
 
+export const screens = {
+  sm: '640px',
+  lg: '1024px'
+  // xl: '1280px'
+}
+
 export default {
   darkMode: 'class',
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
+    screens,
     container: {
+      center: true,
       screens: {
         DEFAULT: '375px',
-        sm: '640px',
-        lg: '1024px',
-        xl: '1280px'
+        ...screens
       },
       padding: {
         DEFAULT: '1rem',
@@ -21,6 +27,9 @@ export default {
       }
     },
     extend: {
+      transitionProperty: {
+        'max-height': 'max-height'
+      },
       colors: {
         gray: {
           50: '#E7E8E8',
@@ -40,7 +49,7 @@ export default {
         error: '#D44431'
       },
       fontFamily: {
-        sans: ['Inter', 'Inter Fallback', ...defaultTheme.fontFamily.sans]
+        sans: ['Stara', 'Stara Fallback', ...defaultTheme.fontFamily.sans]
       }
     }
   },

@@ -1,11 +1,12 @@
 ---
 name: Design de Interfaces
-slug: design-de-interfaces
+slug: ui-design
 description: Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in
   eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/100-960x538.jpg
 private: false
 draft: false
+showcase: true
 ctaText: Portfólio completo
 featuresTitle: Concepção orientada a resultado
 features:

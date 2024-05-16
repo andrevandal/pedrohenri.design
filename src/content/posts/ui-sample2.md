@@ -13,18 +13,16 @@ cover:
   source: ' '
 draft: false
 private: false
-categoriesName:
-  - Design de Interfaces
-categoriesSlug:
-  - design-de-interfaces
+categories:
+  - ui-design
 updatedAt: 2024-01-03T02:11:43.127Z
 createdAt: 2024-01-03T02:11:41.961Z
 ---
 
-:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
-:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_06.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_07.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
+:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_01.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
+:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_02.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_03.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_04.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_05.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_06.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_paula-van-dal/lp_paula-van-dal_07.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }

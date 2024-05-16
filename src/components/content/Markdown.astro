@@ -1,0 +1,41 @@
+---
+import { toHast } from 'mdast-util-to-hast'
+import { toHtml } from 'hast-util-to-html'
+import Image from './Image.astro'
+
+type Props = {
+  node: any
+}
+
+const { node } = Astro.props
+
+const isOtherType = (node: any) =>
+  !(
+    ['root', 'textDirective', 'paragraph'].includes(node.type) &&
+    ['image'].includes(node.name)
+  )
+---
+
+{
+  node.type == 'root' &&
+    node.children.map((node: any) => <Astro.self node={node} />)
+}
+{
+  node.type == 'paragraph' && (
+    <p>
+      {node.children.map((node: any) => (
+        <Astro.self node={node} />
+      ))}
+    </p>
+  )
+}
+{
+  node.type == 'textDirective' && node.name === 'image' && (
+    <Image {...node.attributes} />
+  )
+}
+{
+  isOtherType(node) && (
+    <Fragment set:html={toHtml(toHast(node, { allowDangerousHtml: true }))} />
+  )
+}

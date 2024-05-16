@@ -1,0 +1,87 @@
+---
+import Icon from '@components/Icon.astro'
+import type { ComponentProps } from 'astro/types'
+
+type Sizes = 'xs' | 'sm' | 'base'
+
+interface Props {
+  href?: string
+  variant: string
+  icon?: ComponentProps<typeof Icon>['name']
+  reverse?: boolean
+  block?: boolean
+  centered?: boolean
+  size?: Sizes
+  className?: string
+}
+
+const {
+  href,
+  variant,
+  icon,
+  reverse,
+  size = 'base',
+  block = false,
+  centered = false,
+  className = ''
+} = Astro.props
+
+const isExternalLink =
+  href?.startsWith('http') || !href?.startsWith('/') || !href?.startsWith('#')
+const isSizeXs = size === 'xs'
+---
+
+<a
+  href={href}
+  class:list={[
+    'btn',
+    `btn-${variant}`,
+    {
+      'btn-reverse': reverse,
+      'btn-block': block,
+      'btn-center': centered,
+      'btn-xs': isSizeXs,
+      'btn-sm': size === 'sm',
+      'btn-base': size === 'base'
+    },
+    className
+  ]}
+  target={isExternalLink ? '_blank' : undefined}
+  rel={isExternalLink ? 'noopener noreferrer' : undefined}
+>
+  <span><slot /></span>
+  {icon && <Icon name={icon} width={20} height={20} />}
+</a>
+
+<style>
+  .btn {
+    @apply box-border flex w-fit flex-row items-center gap-x-2 rounded-lg px-6 py-4 text-base font-semibold transition-all duration-200 ease-out;
+  }
+  .btn-base {
+    @apply h-14 px-6 py-4;
+  }
+  .btn-sm {
+    @apply h-12 px-3 py-3;
+  }
+  .btn-xs {
+    @apply h-10 px-6 py-2;
+  }
+  .btn-primary {
+    @apply bg-gray-900 text-gray-50 ring-4 ring-transparent hover:bg-gray-800 focus:bg-gray-500 disabled:opacity-60;
+  }
+  .btn-primary-outline {
+    @apply border border-gray-900 text-gray-900 hover:bg-gray-900/15 focus:border-transparent focus:bg-transparent;
+  }
+  .btn-secondary {
+    @apply bg-white text-gray-900 hover:bg-gray-200 focus:bg-gray-500 disabled:opacity-60;
+  }
+  .btn-center {
+    @apply justify-center;
+  }
+  .btn-block {
+    @apply w-full;
+  }
+  .btn-reverse {
+    @apply flex-row-reverse;
+  }
+</style>

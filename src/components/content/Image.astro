@@ -1,0 +1,39 @@
+---
+import BaseImage from '@components/Image.astro'
+
+type Props = {
+  src: string
+  width?: number
+  height?: number
+  sizes?: string
+  provider?: string
+  roundedB?: boolean
+  roundedT?: boolean
+  lazy?: boolean
+  alt: any
+}
+
+const {
+  src,
+  alt = ' ',
+  width = 375,
+  height = 210,
+  sizes = '375px sm:496px lg:960px',
+  roundedB = false,
+  roundedT = false,
+  lazy = true
+} = Astro.props
+---
+
+<BaseImage
+  {...{ src, sizes, alt }}
+  class:list={[
+    `aspect-[${width}/${height}] my-0 h-auto w-full`,
+    {
+      'rounded-t-lg': roundedT,
+      'rounded-b-lg': roundedB
+    }
+  ]}
+  loading={lazy ? 'lazy' : 'eager'}
+  decoding={lazy ? 'async' : 'sync'}
+/>

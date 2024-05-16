@@ -6,6 +6,7 @@ description: Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/100-960x538.jpg
 private: false
 draft: false
+showcase: true
 ctaText: Portfólio completo
 featuresTitle: Bastidores da inovação da marca
 features:

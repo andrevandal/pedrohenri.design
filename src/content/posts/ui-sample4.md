@@ -13,18 +13,16 @@ cover:
   source: ' '
 draft: false
 private: false
-categoriesName:
-  - UI Design
-categoriesSlug:
-  - design-de-interfaces
+categories:
+  - ui-design
 updatedAt: 2023-12-13T19:18:39.757Z
 createdAt: 2023-12-13T19:18:39.770Z
 ---
 
-:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_01.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-t }
-:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_02.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_03.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_04.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_05.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_06.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" }
-:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_07.png" provider="imagekit" width="375" height="210" sizes="375px, sm:496px, lg:960px" alt="" rounded-b }
+:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_01.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
+:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_02.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_03.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_04.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_05.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_06.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="/posts/ui-design_lucas-ribeiro/lp_lucas-ribeiro_07.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }

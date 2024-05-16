@@ -1,0 +1,31 @@
+---
+import { Icon as BaseIcon } from 'astro-icon/components'
+import type { AvailableIcons } from '@/types'
+interface Props {
+  name: AvailableIcons
+  width?: number
+  height?: number
+  class?: string
+}
+
+const { name, width, height, class: className } = Astro.props
+
+const style = `min-width: ${width ?? '24'}px; min-height: ${height ?? '24'}px;`
+---
+
+<BaseIcon
+  name={name}
+  style={style}
+  class:list={['icon', className]}
+  width={width ?? 24}
+  height={height ?? 24}
+/>
+
+<!-- <svg
+  style={style}
+  class:list={['icon', className]}
+  width={width ?? '24'}
+  height={height ?? '24'}
+>
+  <use xlink:href={`/images/icons.svg#${name}`}></use>
+</svg> -->

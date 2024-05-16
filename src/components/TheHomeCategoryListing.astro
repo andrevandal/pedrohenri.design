@@ -1,0 +1,93 @@
+---
+import Image from '@components/Image.astro'
+import Icon from './Icon.astro'
+import type { AvailableIcons } from '@/types'
+
+type Props = {
+  category: {
+    name: string
+    slug: string
+    ctaText?: string
+    ctaLink?: string
+    featuresTitle?: string
+    features: { iconName: AvailableIcons; title: string; description: string }[]
+    posts: {
+      title: string
+      slug: string
+      cover: {
+        image: string
+        alternativeText: string
+      }
+    }[]
+  }
+}
+
+const { category } = Astro.props
+---
+
+<section id={category?.slug} class='flex flex-col flex-wrap gap-6 lg:flex-row'>
+  <h2
+    class='order-1 block text-[2rem] font-bold leading-[2.421rem] text-gray-900 lg:mr-auto lg:text-[2.5rem] lg:leading-[3.026rem]'
+  >
+    {category.name}
+  </h2>
+  <div class='order-2 flex flex-col gap-4 lg:order-3 lg:grid lg:grid-cols-2'>
+    {
+      category.posts.map((post) => {
+        return (
+          <a class='block' href={`/posts/${post.slug}/`}>
+            <Image
+              src={post.cover.image}
+              alt={post.cover.alternativeText}
+              sizes='600px'
+              class='aspect-square rounded-lg'
+              width='600'
+              height='600'
+              loading='lazy'
+              decoding='async'
+            />
+          </a>
+        )
+      })
+    }
+  </div>
+  {
+    !!category?.ctaText && (
+      <div class='order-3 flex items-center sm:flex sm:justify-center lg:order-2'>
+        <a
+          href={`/categorias/${category?.slug}/`}
+          class='flex h-12 w-full items-center justify-center rounded-lg border border-gray-900 px-6 py-3 text-center text-gray-900 transition-colors hover:bg-gray-50 focus:border-transparent focus:bg-transparent sm:w-fit'
+        >
+          {category?.ctaText}
+        </a>
+      </div>
+    )
+  }
+  {
+    !!category.features.length && !!category.featuresTitle && (
+      <div class='order-4 mt-[3.25rem] lg:mt-12'>
+        <h3 class='text-[2rem] font-bold leading-10 text-gray-900 sm:leading-[2.375rem] lg:text-[2rem]'>
+          {category.featuresTitle}
+        </h3>
+        <div class='mt-8 flex flex-col gap-6 sm:mt-6 sm:gap-4 lg:grid lg:grid-cols-2 lg:gap-6'>
+          {category.features.map((feature) => (
+            <div class='flex flex-col items-start justify-center gap-2'>
+              <Icon
+                name={feature.iconName}
+                class:list={[
+                  'flex h-12 w-12 items-center justify-center rounded-lg bg-gray-50 text-2xl leading-6 text-gray-900'
+                ]}
+              />
+              <h4 class='text-2xl font-bold leading-[1.816rem] text-gray-900'>
+                {feature.title}
+              </h4>
+              <p class='text-balance text-base leading-[1.375rem] text-gray-500'>
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+</section>
