@@ -6,7 +6,7 @@ import Image from './Image.astro'
   class='flex flex-col rounded-lg bg-gray-100 py-4 sm:pb-8 lg:flex-row lg:items-center lg:justify-between lg:px-8 lg:py-8'
 >
   <div
-    class='order-2 flex flex-col gap-2 px-4 sm:px-10 lg:order-1 lg:max-w-[29.25rem] lg:px-0'
+    class='order-2 flex flex-1 flex-col gap-2 px-4 sm:px-10 lg:order-1 lg:max-w-[29.25rem] lg:px-0'
   >
     <h1
       class='max-w-[38ch] text-[2rem] font-bold leading-[2.375rem] tracking-[-0.1rem] text-gray-900 lg:text-[3rem] lg:leading-[3.375rem] lg:tracking-[-0.15rem]'
@@ -25,7 +25,7 @@ import Image from './Image.astro'
       Conheça meu trabalho
     </a>
   </div>
-  <div class='order-1 block aspect-[9/10] h-auto w-full lg:order-2'>
+  <div class='order-1 block aspect-[9/10] h-auto w-full flex-1 px-4 lg:order-2'>
     <Image
       src='/images/primeira-dobra.png'
       sizes='268px xs:288px sm:496px lg:525px'
@@ -35,7 +35,7 @@ import Image from './Image.astro'
     />
   </div>
 </section>
-<section class='mb-5 mt-6 flex flex-col gap-y-6 lg:flex-row lg:gap-x-6'>
+<section class='flex flex-col gap-y-6 lg:flex-row lg:gap-x-6'>
   <div class='order-1 lg:order-2 lg:flex-1'>
     <Image
       src='/images/sessao_crio-para-marcas.png'

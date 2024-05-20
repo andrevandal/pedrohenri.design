@@ -16,3 +16,10 @@ export const availableIcons = [
 ] as const
 
 export type AvailableIcons = (typeof availableIcons)[number]
+
+export type Feature = {
+  iconName: AvailableIcons
+  title: string
+  description: string
+}
+export type Features = Feature[]

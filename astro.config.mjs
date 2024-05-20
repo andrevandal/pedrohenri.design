@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, passthroughImageService } from 'astro/config'
 import { loadEnv } from 'vite'
 import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
@@ -21,6 +21,9 @@ const siteUrl = getSite()
 export default defineConfig({
   output: 'server',
   adapter: cloudflare(),
+  image: {
+    service: passthroughImageService()
+  },
   integrations: [
     sitemap(),
     tailwind({

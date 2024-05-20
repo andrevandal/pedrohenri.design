@@ -50,6 +50,9 @@ export default {
       },
       fontFamily: {
         sans: ['Stara', 'Stara Fallback', ...defaultTheme.fontFamily.sans]
+      },
+      spacing: {
+        22: '5.5rem'
       }
     }
   },

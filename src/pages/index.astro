@@ -63,17 +63,13 @@ const computedCategories = categories.map((category, index) => {
 ---
 
 <BaseLayout {...meta}>
-  <div class='container mx-auto flex flex-col'>
-    <TheHomeHero />
+  <TheHomeHero slot='header' />
+  <div
+    class='container mx-auto flex flex-col gap-y-16 py-16 lg:gap-y-22 lg:py-22'
+  >
     {
       computedCategories.map((category, index) => (
-        <TheHomeCategoryListing
-          category={category}
-          class:list={{
-            'mt-[7.5rem]': index !== Number(categories?.length) - 1,
-            'my-[7.5rem]': index === Number(categories?.length) - 1
-          }}
-        />
+        <TheHomeCategoryListing {...category} />
       ))
     }
   </div>

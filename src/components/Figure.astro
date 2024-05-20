@@ -1,0 +1,21 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+type Props = {
+  caption?: string
+} & HTMLAttributes<'div'>
+
+const { caption, class: className, ...props } = Astro.props
+---
+
+<figure class:list={['relative', className]} {...props}>
+  <slot />
+  {
+    caption && (
+      <>
+        <figcaption class='absolute left-0 right-0 mt-auto -translate-y-full rounded-b-lg bg-gradient-to-b from-black/0 to-black/70 px-6 py-3 text-left text-base font-bold leading-5 text-white'>
+          {caption}
+        </figcaption>
+      </>
+    )
+  }
+</figure>
