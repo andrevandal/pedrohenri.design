@@ -11,6 +11,7 @@ type Props = {
   ctaLink?: string
   featuresTitle?: string
   features: Features
+  shrink?: boolean
   posts: {
     title: string
     slug: string
@@ -47,10 +48,14 @@ const category = Astro.props
               class='block'
               class:list={[
                 {
-                  'lg:hidden': category.posts.length === 5 && index === 4,
+                  'lg:hidden':
+                    category.shrink &&
+                    category.posts.length === 5 &&
+                    index === 4,
                   'xl:hidden':
-                    (category.posts.length === 4 && index === 3) ||
-                    (category.posts.length === 5 && [3, 4].includes(index))
+                    category.shrink &&
+                    ((category.posts.length === 4 && index === 3) ||
+                      (category.posts.length === 5 && [3, 4].includes(index)))
                 }
               ]}
             >

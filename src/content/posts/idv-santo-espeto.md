@@ -15,7 +15,7 @@ cover:
 draft: false
 private: false
 categories:
-  - identidade-visual
+  - ui-design
 updatedAt: 2024-04-10T00:52:00.000Z
 createdAt: 2024-04-10T00:52:00.000Z
 ---
