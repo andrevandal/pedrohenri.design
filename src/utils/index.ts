@@ -1,4 +1,5 @@
 export * from './image'
+export * from './cn'
 
 export function assertFulfilled<T>(
   item: PromiseSettledResult<T>

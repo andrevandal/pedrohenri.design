@@ -48,27 +48,25 @@ const mainCategory = await getEntry('categories', post.data.categories[0].slug)
 ---
 
 <BaseLayout {...meta}>
-  <article class='container mx-auto flex flex-col gap-y-8 pt-4'>
-    <div>
-      <header class='flex flex-col'>
-        {
-          mainCategory && (
-            <a
-              href={`/categorias/${mainCategory.slug}/`}
-              class='text-sm uppercase leading-[1.059rem] text-gray-500'
-            >
-              {mainCategory.data.name}
-            </a>
-          )
-        }
+  <article class='container mx-auto flex flex-col pt-6 pb-8 lg:pt-10 lg:pb-12'>
+    <header class='flex flex-col pb-4'>
+      {
+        mainCategory && (
+          <a
+            href={`/categorias/${mainCategory.slug}/`}
+            class='text-sm uppercase leading-[1.059rem] text-gray-500'
+          >
+            {mainCategory.data.name}
+          </a>
+        )
+      }
 
-        <h1 class='text-[2rem] font-bold leading-[2.421rem] text-gray-900'>
-          {post.data.title}
-        </h1>
-      </header>
-      <div class='prose w-full max-w-full'>
-        <ContentMarkdown node={contentTree} />
-      </div>
+      <h1 class='text-[2rem] font-bold leading-[2.421rem] text-gray-900'>
+        {post.data.title}
+      </h1>
+    </header>
+    <div class='prose w-full max-w-full'>
+      <ContentMarkdown node={contentTree} />
     </div>
   </article>
 

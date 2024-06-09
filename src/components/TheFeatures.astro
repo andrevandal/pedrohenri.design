@@ -14,18 +14,18 @@ const { title, features } = Astro.props
   {
     !!features?.length && !!title && (
       <div class=''>
-        <h3 class=' text-2xl font-extrabold leading-[1.875rem] text-gray-900 lg:text-[2rem] lg:leading-[2.78rem]'>
+        <h3 class='text-2xl font-extrabold leading-[1.875rem] text-gray-900 lg:text-[2rem] lg:leading-[2.78rem]'>
           {title}
         </h3>
-        <div class='xl:grid-cols-3 mt-4 flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-6'>
+        <div class='xl:grid-cols-4 mt-4 flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-6'>
           {features.map((feature) => (
             <div class='flex flex-col items-start justify-center gap-4 rounded-lg border border-solid border-gray-100 p-6 text-gray-900'>
               <Icon
                 name={feature.iconName}
-                class='flex h-12 w-12 items-center justify-center rounded-lg bg-gray-50 p-3 '
+                class='flex h-12 w-12 items-center justify-center rounded-lg bg-gray-50 p-3'
               />
               <div class='flex flex-col gap-2'>
-                <h4 class='text-2xl font-bold leading-[2.085rem] '>
+                <h4 class='text-2xl font-bold leading-[2.085rem]'>
                   {feature.title}
                 </h4>
                 <p class='text-balance text-base font-medium leading-[1.25rem] text-gray-500'>

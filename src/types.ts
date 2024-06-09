@@ -12,7 +12,9 @@ export const availableIcons = [
   'mdi:linkedin',
   'mdi:instagram',
   'logos:linkedin-icon',
-  'logos:instagram-icon'
+  'logos:instagram-icon',
+  'mdi:arrow-down',
+  'heroicons-outline:chat-alt-2'
 ] as const
 
 export type AvailableIcons = (typeof availableIcons)[number]

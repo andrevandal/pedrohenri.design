@@ -92,17 +92,8 @@ collections:
             }
       - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
       - { label: 'Private', name: 'private', widget: 'boolean', default: false }
-      - label: 'Category Name'
-        name: 'categoriesName'
-        widget: 'relation'
-        collection: 'categories'
-        search_fields: ['name']
-        value_field: 'name'
-        display_fields: ['name']
-        multiple: true
-        max: 1
-      - label: 'Category Slug'
-        name: 'categoriesSlug'
+      - label: 'Categories'
+        name: 'categories'
         widget: 'relation'
         collection: 'categories'
         search_fields: ['name']

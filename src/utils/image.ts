@@ -15,7 +15,7 @@ type Screens = {
 }
 
 const screens: Screens = {
-  xs: '480px',
+  // xs: '480px',
   sm: '640px',
   lg: '1024px',
   xl: '1280px'

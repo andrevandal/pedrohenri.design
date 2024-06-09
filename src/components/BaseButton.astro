@@ -1,12 +1,13 @@
 ---
 import Icon from '@components/Icon.astro'
 import type { ComponentProps } from 'astro/types'
+import { cn } from '@/utils'
 
 type Sizes = 'xs' | 'sm' | 'base'
 
 interface Props {
   href?: string
-  variant: string
+  variant: 'primary' | 'primary-outline' | 'secondary'
   icon?: ComponentProps<typeof Icon>['name']
   reverse?: boolean
   block?: boolean
@@ -33,10 +34,11 @@ const isSizeXs = size === 'xs'
 
 <a
   href={href}
-  class:list={[
+  class:list={cn(
     'btn',
-    `btn-${variant}`,
     {
+      'btn-primary': variant === 'primary',
+      'btn-secondary': variant === 'secondary',
       'btn-reverse': reverse,
       'btn-block': block,
       'btn-center': centered,
@@ -45,7 +47,7 @@ const isSizeXs = size === 'xs'
       'btn-base': size === 'base'
     },
     className
-  ]}
+  )}
   target={isExternalLink ? '_blank' : undefined}
   rel={isExternalLink ? 'noopener noreferrer' : undefined}
 >
@@ -55,7 +57,7 @@ const isSizeXs = size === 'xs'
 
 <style>
   .btn {
-    @apply box-border flex w-fit flex-row items-center gap-x-2 rounded-lg px-6 py-4 text-base font-semibold transition-all duration-200 ease-out;
+    @apply box-border flex w-fit flex-row items-center justify-center gap-x-2 rounded-lg px-6 py-4 text-base font-semibold transition-all duration-200 ease-out;
   }
   .btn-base {
     @apply h-14 px-6 py-4;

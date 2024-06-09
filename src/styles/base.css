@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .typography-title {
+    @apply text-32 leading-36 -tracking-[.1rem];
+    @apply sm:text-40 sm:leading-44 sm:-tracking-[.125rem];
+    @apply lg:text-48 lg:leading-56 lg:-tracking-[.15rem];
+    @apply xl:text-56 xl:leading-64 xl:-tracking-[0.175rem];
+  }
+
+  .container {
+    @apply mx-auto flex w-full max-w-[343px] flex-col px-4;
+    @apply sm:max-w-[496px] sm:px-8 lg:max-w-[960px];
+    @apply xl:max-w-[1216px];
+  }
+}

@@ -3,10 +3,21 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
 import tailwindTypography from '@tailwindcss/typography'
 
+const generateEvenNumbersInRange = (start, end) => {
+  return Array.from(
+    { length: (end - start) / 2 + 1 },
+    (_, index) => start + index * 2
+  )
+}
+
+const fontSizes = Object.fromEntries(
+  generateEvenNumbersInRange(12, 96).map((size) => [size, `${size / 16}rem`])
+)
+
 export const screens = {
   sm: '640px',
-  lg: '1024px'
-  // xl: '1280px'
+  lg: '1024px',
+  xl: '1280px'
 }
 
 export default {
@@ -14,18 +25,7 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     screens,
-    container: {
-      center: true,
-      screens: {
-        DEFAULT: '375px',
-        ...screens
-      },
-      padding: {
-        DEFAULT: '1rem',
-        sm: '4.5rem',
-        lg: '2rem'
-      }
-    },
+    container: false,
     extend: {
       transitionProperty: {
         'max-height': 'max-height'
@@ -48,6 +48,8 @@ export default {
         success: '#009959',
         error: '#D44431'
       },
+      fontSize: fontSizes,
+      lineHeight: fontSizes,
       fontFamily: {
         sans: ['Stara', 'Stara Fallback', ...defaultTheme.fontFamily.sans]
       },

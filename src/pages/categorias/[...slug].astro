@@ -41,7 +41,6 @@ const category = {
   ...pick(rawCategory.data, [
     'name',
     'description',
-    'ctaText',
     'featuresTitle',
     'features',
     'showcase',
@@ -62,7 +61,7 @@ const meta = {
 ---
 
 <BaseLayout {...meta}>
-  <div class='container mx-auto flex flex-col'>
+  <div class='container mx-auto flex flex-col pb-8 pt-6 lg:pb-12 lg:pt-10'>
     <TheHomeCategoryListing
       class:list={'mb-[7.5rem] mt-4 lg:mt-[3.25rem]'}
       {...category}
