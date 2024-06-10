@@ -28,7 +28,7 @@ const {
 } = Astro.props
 
 const isExternalLink =
-  href?.startsWith('http') || !href?.startsWith('/') || !href?.startsWith('#')
+  href?.startsWith('http') && !href?.startsWith('/') && !href?.startsWith('#')
 const isSizeXs = size === 'xs'
 ---
 
