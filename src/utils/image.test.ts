@@ -62,10 +62,10 @@ describe('generateSrcSet', () => {
 
 describe('generateSizesString', () => {
   it('should generate the sizes string', () => {
-    const sizes = 'xs:540px sm:640px lg:1024px xl:1280px'
+    const sizes = 'sm:640px lg:1024px xl:1280px'
     const sizesString = generateSizesString(parseSizes(sizes))
     expect(sizesString).toBe(
-      '(min-width: 1280px) 1280px, (min-width: 1024px) 1024px, (min-width: 640px) 640px, (min-width: 480px) 540px, 1280px'
+      '(min-width: 1280px) 1280px, (min-width: 1024px) 1024px, (min-width: 640px) 640px, 1280px'
     )
   })
 })
@@ -73,6 +73,13 @@ describe('generateSizesString', () => {
 describe('generateImageProps', () => {
   it('should generate the image props', () => {
     const src = 'images/footer.png'
+    const sizes = 'xs:540px sm:640px lg:1024px xl:1280px'
+    const imageProps = generateImageProps(src, sizes)
+    expect(imageProps).toMatchSnapshot()
+  })
+
+  it('should change the format if src is gif', () => {
+    const src = 'images/footer.gif'
     const sizes = 'xs:540px sm:640px lg:1024px xl:1280px'
     const imageProps = generateImageProps(src, sizes)
     expect(imageProps).toMatchSnapshot()

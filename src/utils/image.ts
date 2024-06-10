@@ -15,7 +15,7 @@ type Screens = {
 }
 
 const screens: Screens = {
-  // xs: '480px',
+  xs: '480px',
   sm: '640px',
   lg: '1024px',
   xl: '1280px'
@@ -66,7 +66,8 @@ export function generateSrcSet(src: string, sizes: Sizes): string {
 
   const widths = Object.values(sizes).flatMap((size) => {
     return calculateWidth(size).map((width) => {
-      const imageUrl = getImageUrl(src, `f_auto,q_90,w_${width}`)
+      const format = src.endsWith('.gif') ? 'gif' : 'auto'
+      const imageUrl = getImageUrl(src, `f_${format},q_90,w_${width}`)
       return `${imageUrl} ${width}w`
     })
   })
@@ -112,8 +113,10 @@ export function generateImageProps(src: string, sizes: string) {
   const srcSet = generateSrcSet(src, parsedSizes)
   const sizesString = generateSizesString(parsedSizes)
 
+  const format = src.endsWith('.gif') ? 'gif' : 'auto'
+
   return {
-    src: getImageUrl(src, `f_auto,q_90,w_${maxWidth}`),
+    src: getImageUrl(src, `f_${format},q_90,w_${maxWidth}`),
     srcSet,
     sizes: sizesString
   }
