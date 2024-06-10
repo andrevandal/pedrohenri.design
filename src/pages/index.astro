@@ -1,0 +1,76 @@
+---
+import type { ComponentProps } from 'astro/types'
+import { pick } from 'radash'
+import BaseLayout from '@layouts/Base.astro'
+import TheHomeCategoryListing from '@components/TheHomeCategoryListing.astro'
+import TheHomeHero from '@components/TheHomeHero.astro'
+
+const meta = {
+  title: 'Pedro Henri Design - Inovação em cada pixel',
+  description:
+    'O poder do design que se destaca em um mundo de ruídos. Crio identidades visuais, sites e experiências de UI/UX para marcas que visam o crescimento e inovação.',
+  image: 'https://ik.imagekit.io/pedrohenri/images/imagem-social.png',
+  url: Astro.url
+} satisfies ComponentProps<typeof BaseLayout>
+
+import { getCollection } from 'astro:content'
+import { assertFulfilled } from '@utils'
+
+const rawCategories = await getCollection('categories', (category) => {
+  return (
+    !!category.data.showcase && !category.data.draft && !category.data.private
+  )
+})
+const categories = rawCategories
+  .map(({ slug, data }) => ({
+    slug,
+    ...pick(data, [
+      'name',
+      'description',
+      'ctaText',
+      'featuresTitle',
+      'features',
+      'showcase'
+    ])
+  }))
+  .sort((a, b) => a.showcase - b.showcase)
+
+const relatedPosts = await Promise.allSettled(
+  rawCategories.map(async ({ slug }) => {
+    return getCollection('posts', (post) => {
+      return (
+        !post.data.draft &&
+        !post.data.private &&
+        post.data.categories.find((category) => category.slug === slug)
+      )
+    })
+  })
+)
+
+const fullfilledRelatedPosts = relatedPosts.filter(assertFulfilled)
+
+const computedCategories = categories.map((category, index) => {
+  return {
+    ...category,
+    posts: fullfilledRelatedPosts[index].value
+      .map(({ slug, data }) => ({
+        slug,
+        ...pick(data, ['title', 'cover', 'description'])
+      }))
+      .slice(0, 7)
+  }
+})
+---
+
+<BaseLayout {...meta}>
+  <TheHomeHero slot='header' />
+  <div
+    class='container mx-auto flex flex-col gap-y-16 py-16 lg:gap-y-22 lg:py-22'
+  >
+    {
+      computedCategories.map((category, index) => (
+        <TheHomeCategoryListing {...category} shrink />
+      ))
+    }
+  </div>
+</BaseLayout>

@@ -1,0 +1,70 @@
+---
+import TheHomeCategoryListing from '@components/TheHomeCategoryListing.astro'
+import BaseLayout from '@layouts/Base.astro'
+import type { ComponentProps } from 'astro/types'
+import { getCollection, getEntry } from 'astro:content'
+import { pick } from 'radash'
+
+const { slug } = Astro.params
+
+if (slug === undefined) {
+  throw new Error('Slug is required')
+}
+
+export const prerender = true
+
+export async function getStaticPaths() {
+  const allCategories = await getCollection('categories', (category) => {
+    return !category.data.draft && !category.data.private
+  })
+  return allCategories.map((category) => ({
+    params: { slug: category.slug }
+  }))
+}
+
+const rawCategory = await getEntry('categories', slug)
+
+if (rawCategory === undefined || rawCategory.data.draft) {
+  return Astro.redirect('/404')
+}
+
+const relatedPosts = await getCollection('posts', (post) => {
+  return (
+    !post.data.draft &&
+    !post.data.private &&
+    post.data.categories.find((category) => category.slug === slug)
+  )
+})
+
+const category = {
+  slug: rawCategory.slug,
+  ...pick(rawCategory.data, [
+    'name',
+    'description',
+    'featuresTitle',
+    'features',
+    'showcase',
+    'socialImage'
+  ]),
+  posts: relatedPosts.map(({ slug, data }) => ({
+    slug,
+    ...pick(data, ['title', 'cover', 'description'])
+  }))
+}
+
+const meta = {
+  title: `${category.name} - Pedro Henri Design`,
+  description: category.description,
+  image: category.socialImage,
+  url: Astro.url
+} satisfies ComponentProps<typeof BaseLayout>
+---
+
+<BaseLayout {...meta}>
+  <div class='container mx-auto flex flex-col pb-8 pt-6 lg:pb-12 lg:pt-10'>
+    <TheHomeCategoryListing
+      class:list={'mb-[7.5rem] mt-4 lg:mt-[3.25rem]'}
+      {...category}
+    />
+  </div>
+</BaseLayout>

@@ -13,95 +13,107 @@ media_folder: public/images/uploads # Media files will be stored in the repo und
 public_folder: /images/uploads # The src attribute for uploaded media will begin with /images/uploads
 
 slug:
-  encoding: "ascii"
+  encoding: 'ascii'
   clean_accents: true
 
 collections:
-  - name: "categories"
-    label: "Categories"
-    label_singular: "Category"
-    description: "Post categories"
-    folder: "content/categories"
+  - name: 'categories'
+    label: 'Categories'
+    label_singular: 'Category'
+    description: 'Post categories'
+    folder: 'content/categories'
     create: true
     identifier_field: name
     publish_mode: editorial_workflow
-    slug: "{{fields.slug}}"
+    slug: '{{fields.slug}}'
     editor:
       preview: false
     fields:
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Social Image", name: "socialImage", widget: "string" }
-      - {label: "Private", name: "private", widget: "boolean", default: false}
-      - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "CTA Text", name: "ctaText", widget: "string"}
-      - {label: "Features Title", name: "featuresTitle", widget: "string"}
-      - label: "Features"
-        name: "features"
-        widget: "list"
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Social Image', name: 'socialImage', widget: 'string' }
+      - { label: 'Private', name: 'private', widget: 'boolean', default: false }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
+      - { label: 'CTA Text', name: 'ctaText', widget: 'string' }
+      - { label: 'Features Title', name: 'featuresTitle', widget: 'string' }
+      - label: 'Features'
+        name: 'features'
+        widget: 'list'
         summary: '{{fields.title}}'
-        fields: 
-          - {label: Icon, name: iconName, widget: string}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: text}
+        fields:
+          - { label: Icon, name: iconName, widget: string }
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: text }
     view_filters:
-      - {label: All, field: draft, pattern: false}
-      - {label: Drafts, field: draft, pattern: true}
-      - {label: Private, field: private, pattern: true}
-      - {label: Public, field: private, pattern: false}
+      - { label: All, field: draft, pattern: false }
+      - { label: Drafts, field: draft, pattern: true }
+      - { label: Private, field: private, pattern: true }
+      - { label: Public, field: private, pattern: false }
     view_groups:
-      - {label: Draft, field: draft }
-      - {label: Private, field: private }
-  - name: "posts"
-    label: "Posts"
-    folder: "content/posts"
+      - { label: Draft, field: draft }
+      - { label: Private, field: private }
+  - name: 'posts'
+    label: 'Posts'
+    folder: 'content/posts'
     create: true
-    slug: "{{fields.slug}}"
+    slug: '{{fields.slug}}'
     editor:
       preview: false
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Slug", name: "slug", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Social Image", name: "socialImage", widget: "string" }
-      - label: "Cover"
-        name: "cover"
-        widget: "object"
-        summary: "{{fields.alternativeText}}: {{fields.image}}"
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Social Image', name: 'socialImage', widget: 'string' }
+      - label: 'Cover'
+        name: 'cover'
+        widget: 'object'
+        summary: '{{fields.alternativeText}}: {{fields.image}}'
         fields:
-          - {label: "image", name: "image", widget: "string"}
-          - {label: "Alternative Text", name: "alternativeText", widget: "string", required: false}
-          - {label: "Source", name: "source", widget: "string", required: false}
-          - {label: "Provider", name: "provider", widget: "string", default: "imagekit", required: false}
-      - {label: "Draft", name: "draft", widget: "boolean", default: true}
-      - {label: "Private", name: "private", widget: "boolean", default: false}
-      - label: "Category Name"
-        name: "categoriesName"
-        widget: "relation"
-        collection: "categories"
-        search_fields: ["name"]
-        value_field: "name"
-        display_fields: ["name"]
+          - { label: 'image', name: 'image', widget: 'string' }
+          - {
+              label: 'Alternative Text',
+              name: 'alternativeText',
+              widget: 'string',
+              required: false
+            }
+          - {
+              label: 'Source',
+              name: 'source',
+              widget: 'string',
+              required: false
+            }
+          - {
+              label: 'Provider',
+              name: 'provider',
+              widget: 'string',
+              default: 'imagekit',
+              required: false
+            }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: true }
+      - { label: 'Private', name: 'private', widget: 'boolean', default: false }
+      - label: 'Categories'
+        name: 'categories'
+        widget: 'relation'
+        collection: 'categories'
+        search_fields: ['name']
+        value_field: 'slug'
+        display_fields: ['name']
         multiple: true
         max: 1
-      - label: "Category Slug"
-        name: "categoriesSlug"
-        widget: "relation"
-        collection: "categories"
-        search_fields: ["name"]
-        value_field: "slug"
-        display_fields: ["name"]
-        multiple: true
-        max: 1
-      - {label: "updated at", name: "updatedAt", widget: "datetime", required: false}
-      - {label: "created at", name: "createdAt", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {
+          label: 'updated at',
+          name: 'updatedAt',
+          widget: 'datetime',
+          required: false
+        }
+      - { label: 'created at', name: 'createdAt', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
     view_filters:
-      - {label: All, field: draft, pattern: false}
-      - {label: Drafts, field: draft, pattern: true}
-      - {label: Private, field: private, pattern: true}
-      - {label: Public, field: private, pattern: false}
+      - { label: All, field: draft, pattern: false }
+      - { label: Drafts, field: draft, pattern: true }
+      - { label: Private, field: private, pattern: true }
+      - { label: Public, field: private, pattern: false }
     view_groups:
-      - {label: Draft, field: draft }
-      - {label: Private, field: private }
+      - { label: Draft, field: draft }
+      - { label: Private, field: private }
