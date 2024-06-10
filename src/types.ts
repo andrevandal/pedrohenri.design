@@ -13,7 +13,7 @@ export const availableIcons = [
   'mdi:instagram',
   'logos:linkedin-icon',
   'logos:instagram-icon',
-  'mdi:arrow-down',
+  'heroicons:arrow-down',
   'heroicons-outline:chat-alt-2'
 ] as const
 

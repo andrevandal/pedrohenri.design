@@ -37,9 +37,10 @@ export default defineConfig({
     }),
     icon({
       include: {
-        mdi: ['linkedin', 'instagram', 'arrow-down'],
+        mdi: ['linkedin', 'instagram'],
         logos: ['linkedin-icon', 'instagram-icon'],
-        'heroicons-outline': ['chat-alt-2']
+        'heroicons-outline': ['chat-alt-2'],
+        heroicons: ['arrow-down']
       },
       iconDir: 'src/assets/icons',
       svgoOptions: {

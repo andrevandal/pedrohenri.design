@@ -18,10 +18,10 @@ updatedAt: 2024-04-04T02:49:00.000Z
 createdAt: 2024-04-04T02:49:00.000Z
 ---
 
-:image{src="posts/ui-design_belly-pao/lp_belly-pao_01.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
-:image{src="posts/ui-design_belly-pao/lp_belly-pao_02.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/ui-design_belly-pao/lp_belly-pao_03.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/ui-design_belly-pao/lp_belly-pao_04.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/ui-design_belly-pao/lp_belly-pao_05.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/ui-design_belly-pao/lp_belly-pao_06.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/ui-design_belly-pao/lp_belly-pao_07.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
+:image{src="posts/ui-design_belly-pao/lp_belly-pao_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
+:image{src="posts/ui-design_belly-pao/lp_belly-pao_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/ui-design_belly-pao/lp_belly-pao_03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/ui-design_belly-pao/lp_belly-pao_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/ui-design_belly-pao/lp_belly-pao_05.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/ui-design_belly-pao/lp_belly-pao_06.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/ui-design_belly-pao/lp_belly-pao_07.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }

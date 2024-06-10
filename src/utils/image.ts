@@ -65,9 +65,10 @@ export function generateSrcSet(src: string, sizes: Sizes): string {
   }
 
   const widths = Object.values(sizes).flatMap((size) => {
-    return calculateWidth(size).map(
-      (width) => `${getImageUrl(src, `f_auto,q_90,w_${width}`)} ${width}w`
-    )
+    return calculateWidth(size).map((width) => {
+      const imageUrl = getImageUrl(src, `f_auto,q_90,w_${width}`)
+      return `${imageUrl} ${width}w`
+    })
   })
   return widths.join(', ')
 }

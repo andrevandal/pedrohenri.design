@@ -27,10 +27,10 @@ const category = Astro.props
 
 <section
   id={category?.slug}
-  class='flex flex-col flex-wrap gap-10 lg:flex-row lg:items-center lg:gap-12'
+  class='flex flex-col gap-10 lg:flex-row lg:flex-wrap lg:items-center lg:gap-12'
 >
   <div
-    class='flex flex-col flex-wrap gap-4 lg:flex-row lg:items-center lg:gap-6'
+    class='flex flex-col gap-4 lg:flex-row lg:flex-wrap lg:items-center lg:gap-6'
   >
     <h2
       class='order-1 block text-[2rem] font-bold leading-[2.421rem] text-gray-900 lg:mr-auto lg:text-[2.5rem] lg:leading-[3.026rem]'
@@ -38,27 +38,12 @@ const category = Astro.props
       {category.name}
     </h2>
     <div
-      class='xl:grid-cols-3 order-2 flex flex-col gap-4 lg:order-3 lg:grid lg:grid-cols-2'
+      class='order-2 flex flex-col gap-4 lg:order-3 lg:grid lg:w-full lg:grid-cols-2 xl:grid-cols-3'
     >
       {
         category.posts.map((post, index) => {
           return (
-            <a
-              href={`/posts/${post.slug}/`}
-              class='block'
-              class:list={[
-                {
-                  'lg:hidden':
-                    category.shrink &&
-                    category.posts.length === 5 &&
-                    index === 4,
-                  'xl:hidden':
-                    category.shrink &&
-                    ((category.posts.length === 4 && index === 3) ||
-                      (category.posts.length === 5 && [3, 4].includes(index)))
-                }
-              ]}
-            >
+            <a href={`/posts/${post.slug}/`} class='block'>
               <Figure
                 caption={post.title}
                 class={'group relative overflow-hidden rounded-lg'}

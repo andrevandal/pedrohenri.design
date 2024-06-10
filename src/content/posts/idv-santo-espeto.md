@@ -24,7 +24,7 @@ createdAt: 2024-04-10T00:52:00.000Z
 
 Perfeito para os amantes de um bom espeto e chopp gelado, Santo Espeto é um local para quem busca uma experiência gastronômica descontraída e cheia de sabor. Pensado especialmente para o público que preza por um ambiente aconchegante e extrovertido, a Santo Espeto promete ser o próximo hotspot para os amigos se reunirem e criarem memórias inesquecíveis.
 
-:image{ src="posts/idv_santo-espeto/idv_santo-espeto_01.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
+:image{ src="posts/idv_santo-espeto/idv_santo-espeto_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 
 ## O símbolo
 
@@ -32,7 +32,7 @@ O símbolo que acompanha o logotipo são ilustrações de um espetinho juntament
 
 No topo da caneca, uma espuma generosa e uma auréola brincam com o nome, transmitindo a qualidade divina da marca.
 
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_02.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/1idv_santo-espeto_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 
 ## O logotipo
 
@@ -42,9 +42,9 @@ A leveza das formas arredondadas da tipografia comunica a abordagem alegre e ami
 
 Através do logotipo, estabelecemos um ponto de partida visual que é tanto distintivo quanto acolhedor, convidando todos a desfrutar da experiência Santo Espeto.
 
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_03.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/1idv_santo-espeto_03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_04.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
+:image{src="posts/idv_santo-espeto/1idv_santo-espeto_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 
 ## O amarelo
 
@@ -65,9 +65,9 @@ Um toque de estratégica, o azul traz à nossa identidade o elemento da diferenc
 
 O uso deste tom não só nos diferencia, mas dialoga com um estilo neon e moderno, integrando-se harmoniosamente à energia da noite e atraindo os olhares para o alternativo e o excepcional.
 
-:image{src="posts/idv_santo-espeto/color-variation_vertical-logo.gif" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_05.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_06.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_07.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_08.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_santo-espeto/1idv_santo-espeto_09.png" provider="imagekit" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
+:image{src="posts/idv_santo-espeto/color-variation_vertical-logo.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
+:image{src="posts/idv_santo-espeto/1idv_santo-espeto_05.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/1idv_santo-espeto_06.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/1idv_santo-espeto_07.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/1idv_santo-espeto_08.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_santo-espeto/1idv_santo-espeto_09.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
