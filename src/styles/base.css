@@ -11,7 +11,7 @@
   }
 
   .container {
-    @apply mx-auto flex w-full max-w-[343px] flex-col px-4;
+    @apply mx-auto flex w-full max-w-[375px] flex-col px-4;
     @apply sm:max-w-[496px] sm:px-8 lg:max-w-[960px];
     @apply xl:max-w-[1216px];
   }
