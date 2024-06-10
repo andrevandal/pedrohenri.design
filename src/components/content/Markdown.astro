@@ -11,7 +11,7 @@ const { node } = Astro.props
 
 const isOtherType = (node: any) =>
   !(
-    ['root', 'textDirective', 'paragraph'].includes(node.type) &&
+    ['root', 'textDirective', 'paragraph'].includes(node.type) ||
     ['image'].includes(node.name)
   )
 ---
