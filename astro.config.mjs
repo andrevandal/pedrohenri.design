@@ -59,6 +59,6 @@ export default defineConfig({
       }
     })
   ],
-  trailingSlash: 'always',
+  trailingSlash: 'ignore',
   site: siteUrl
 })
