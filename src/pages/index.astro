@@ -68,7 +68,7 @@ const computedCategories = categories.map((category, index) => {
     class='container mx-auto flex flex-col gap-y-16 py-16 lg:gap-y-22 lg:py-22'
   >
     {
-      computedCategories.map((category, index) => (
+      computedCategories.map((category) => (
         <TheHomeCategoryListing {...category} shrink />
       ))
     }

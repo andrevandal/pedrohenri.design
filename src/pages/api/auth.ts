@@ -2,6 +2,8 @@ import type { APIRoute } from 'astro'
 
 const GITHUB_CLIENT_ID = import.meta.env.GITHUB_CLIENT_ID
 
+export const prerender = false
+
 export const GET: APIRoute = (context) => {
   try {
     const url = new URL(context.url)

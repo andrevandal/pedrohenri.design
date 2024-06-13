@@ -57,8 +57,6 @@ export function parseSizes(sizes: string): Sizes {
 
 export function generateSrcSet(src: string, sizes: Sizes): string {
   const DENSITIES = [1, 1.5, 2, 2.5, 3]
-  const srcSetParts: string[] = []
-
   const calculateWidth = (size: string) => {
     const width = parseInt(size.replace('px', ''))
     return DENSITIES.map((density) => width * density)

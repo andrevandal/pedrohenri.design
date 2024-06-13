@@ -41,7 +41,7 @@ const category = Astro.props
       class='order-2 flex flex-col gap-4 lg:order-3 lg:grid lg:w-full lg:grid-cols-2 xl:grid-cols-3'
     >
       {
-        category.posts.map((post, index) => {
+        category.posts.map((post) => {
           return (
             <a href={`/posts/${post.slug}/`} class='block'>
               <Figure
