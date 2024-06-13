@@ -1,6 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable camelcase */
-function renderBody(status, content) {
+import type { APIRoute } from 'astro'
+
+const GITHUB_CLIENT_ID = import.meta.env.GITHUB_CLIENT_ID
+const GITHUB_CLIENT_SECRET = import.meta.env.GITHUB_CLIENT_SECRET
+
+function renderBody(status: string, content: Record<string, string>) {
   const html = `
   <script>
     const receiveMessage = (message) => {
@@ -18,21 +21,9 @@ function renderBody(status, content) {
   return blob
 }
 
-export async function onRequest(context) {
-  const {
-    request, // same as existing Worker API
-    env, // same as existing Worker API
-    params, // if filename includes [id] or [[path]]
-    waitUntil, // same as ctx.waitUntil in existing Worker API
-    next, // used for middleware or to fetch assets
-    data // arbitrary space for passing data between middlewares
-  } = context
-
-  const client_id = env.GITHUB_CLIENT_ID
-  const client_secret = env.GITHUB_CLIENT_SECRET
-
+export const GET: APIRoute = async (context) => {
   try {
-    const url = new URL(request.url)
+    const url = new URL(context.url)
     const code = url.searchParams.get('code')
     const response = await fetch(
       'https://github.com/login/oauth/access_token',
@@ -40,13 +31,17 @@ export async function onRequest(context) {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
-          'user-agent': 'cloudflare-functions-github-oauth-login-demo',
+          'user-agent': 'cloudflare-functions-github-oauth-login',
           accept: 'application/json'
         },
-        body: JSON.stringify({ client_id, client_secret, code })
+        body: JSON.stringify({
+          client_id: GITHUB_CLIENT_ID,
+          client_secret: GITHUB_CLIENT_SECRET,
+          code
+        })
       }
     )
-    const result = await response.json()
+    const result = (await response.json()) as Record<string, string>
     if (result.error) {
       return new Response(renderBody('error', result), {
         headers: {
@@ -68,7 +63,8 @@ export async function onRequest(context) {
       status: 200
     })
   } catch (error) {
-    return new Response(error.message, {
+    const e = error instanceof Error ? error : new Error(String(error))
+    return new Response(e.message, {
       headers: {
         'content-type': 'text/html;charset=UTF-8'
       },

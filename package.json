@@ -12,7 +12,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "check": "astro check",
-    "generate": "astro build && cp -r functions dist/functions",
+    "generate": "astro build",
     "preview": "astro preview",
     "test": "vitest",
     "coverage": "vitest run --coverage"

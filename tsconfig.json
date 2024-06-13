@@ -3,42 +3,18 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": [
-        "src/components/*"
-      ],
-      "@assets/*": [
-        "src/assets/*"
-      ],
-      "@styles/*": [
-        "src/styles/*"
-      ],
-      "@layouts/*": [
-        "src/layouts/*"
-      ],
-      "@pages/*": [
-        "src/pages/*"
-      ],
-      "@utils": [
-        "src/utils"
-      ],
-      "@utils/*": [
-        "src/utils/*"
-      ],
-      "@/*": [
-        "src/*"
-      ]
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"],
+      "@styles/*": ["src/styles/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"],
+      "@utils": ["src/utils"],
+      "@utils/*": ["src/utils/*"],
+      "@/*": ["src/*"]
     },
     "strictNullChecks": true,
-    "types": [
-      "vitest/jsdom"
-    ]
+    "types": ["vitest/jsdom"]
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "functions",
-    "_old",
-    "dist"
-  ]
+  "include": ["src"],
+  "exclude": ["dist"]
 }
