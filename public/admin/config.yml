@@ -20,7 +20,7 @@ collections:
     label: 'Categories'
     label_singular: 'Category'
     description: 'Post categories'
-    folder: 'content/categories'
+    folder: 'src/content/categories'
     create: true
     identifier_field: name
     publish_mode: editorial_workflow
@@ -54,7 +54,7 @@ collections:
       - { label: Private, field: private }
   - name: 'posts'
     label: 'Posts'
-    folder: 'content/posts'
+    folder: 'src/content/posts'
     create: true
     slug: '{{fields.slug}}'
     editor:
