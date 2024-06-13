@@ -1,10 +1,9 @@
 import type { APIRoute } from 'astro'
 
-const GITHUB_CLIENT_ID = import.meta.env.GITHUB_CLIENT_ID
-
 export const prerender = false
 
 export const GET: APIRoute = (context) => {
+  const { GITHUB_CLIENT_ID } = context.locals.runtime.env
   try {
     const url = new URL(context.url)
     const redirectUrl = new URL('https://github.com/login/oauth/authorize')

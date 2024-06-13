@@ -17,3 +17,9 @@ interface ImportMeta {
 interface Window {
   dataLayer?: unknown[]
 }
+
+type Runtime = import('@astrojs/cloudflare').Runtime<ImportMetaEnv>
+
+declare namespace App {
+  interface Locals extends Runtime {}
+}

@@ -2,7 +2,7 @@ backend:
   name: github
   branch: prod # Branch to update (optional; defaults to master)
   base_url: https://pedrohenri.design/
-  auth_endpoint: /api/auth/
+  auth_endpoint: /api/auth
   repo: andrevandal/pedrohenri.design
 
 site_url: https://pedrohenri.design/

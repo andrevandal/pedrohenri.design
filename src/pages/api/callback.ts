@@ -1,8 +1,4 @@
 import type { APIRoute } from 'astro'
-
-const GITHUB_CLIENT_ID = import.meta.env.GITHUB_CLIENT_ID
-const GITHUB_CLIENT_SECRET = import.meta.env.GITHUB_CLIENT_SECRET
-
 export const prerender = false
 
 function renderBody(status: string, content: Record<string, string>) {
@@ -24,6 +20,7 @@ function renderBody(status: string, content: Record<string, string>) {
 }
 
 export const GET: APIRoute = async (context) => {
+  const { GITHUB_CLIENT_ID, GITHUB_CLIENT_SECRET } = context.locals.runtime.env
   try {
     const url = new URL(context.url)
     const code = url.searchParams.get('code')
