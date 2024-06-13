@@ -19,8 +19,12 @@ const siteUrl = getSite()
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'hybrid',
-  adapter: cloudflare(),
+  output: 'server',
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true
+    }
+  }),
   image: {
     service: passthroughImageService()
   },

@@ -11,6 +11,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "preview:wrangler": "astro check && astro build && wrangler pages dev ./dist",
     "check": "astro check",
     "generate": "astro build",
     "preview": "astro preview",
