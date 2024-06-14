@@ -15,7 +15,7 @@ draft: false
 private: false
 categories:
   - identidade-visual
-updatedAt: 2023-12-19T22:44:45.250Z
+updatedAt: 2024-06-14T12:30:00.000Z
 createdAt: 2023-12-13T19:18:39.770Z
 ---
 A marca Advanced Circuit representa uma abordagem dinâmica e exclusiva à atividade física.
