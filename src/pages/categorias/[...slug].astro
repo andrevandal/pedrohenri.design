@@ -34,7 +34,16 @@ const relatedPosts = await getCollection('posts', (post) => {
     !post.data.private &&
     post.data.categories.find((category) => category.slug === slug)
   )
-})
+}).then((posts) =>
+  posts.sort(
+    (
+      { data: { updatedAt: firstUpdatedAt, createdAt: firstCreatedAt } },
+      { data: { updatedAt: secondUpdatedAt, createdAt: secondCreatedAt } }
+    ) =>
+      new Date(secondUpdatedAt ?? firstCreatedAt ?? 0).getTime() -
+      new Date(firstUpdatedAt ?? secondCreatedAt ?? 0).getTime()
+  )
+)
 
 const category = {
   slug: rawCategory.slug,
