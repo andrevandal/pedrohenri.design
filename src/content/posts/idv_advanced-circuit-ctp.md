@@ -22,7 +22,6 @@ A marca Advanced Circuit representa uma abordagem dinâmica e exclusiva à ativi
 
 Sua identidade visual capta a essência de ser mais do que uma academia comum – é um campo onde individualidade e adaptação são os princípios de cada atividade.
 
-\
 :image{src="posts/idv_advanced-circuit/idv_advanced-circuit_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 :image{src="posts/idv_advanced-circuit/idv_advanced-circuit_03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_advanced-circuit/idv_advanced-circuit_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
