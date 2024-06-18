@@ -13,13 +13,13 @@ socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_paula-v
 cover:
   provider: imagekit
   image: posts/idv_paula-van-dal/cover.png
-  alternativeText: ''
-  source: ' '
+  alternativeText: ""
+  source: " "
 draft: false
 private: false
 categories:
   - identidade-visual
-updatedAt: 2024-01-02T19:02
+updatedAt: 2024-06-18T11:46:00.000Z
 createdAt: 2024-01-02T19:02
 ---
 
