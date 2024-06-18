@@ -10,18 +10,15 @@ socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_santo-e
 cover:
   provider: imagekit
   image: posts/idv_santo-espeto/cover1.png
-  alternativeText: ''
-  source: ' '
+  alternativeText: ""
+  source: " "
 draft: false
 private: false
 categories:
   - identidade-visual
-updatedAt: 2024-04-10T00:52:00.000Z
+updatedAt: 2024-06-18T11:57:00.000Z
 createdAt: 2024-04-10T00:52:00.000Z
 ---
-
-## A marca
-
 Perfeito para os amantes de um bom espeto e chopp gelado, Santo Espeto é um local para quem busca uma experiência gastronômica descontraída e cheia de sabor. Pensado especialmente para o público que preza por um ambiente aconchegante e extrovertido, a Santo Espeto promete ser o próximo hotspot para os amigos se reunirem e criarem memórias inesquecíveis.
 
 :image{ src="posts/idv_santo-espeto/idv_santo-espeto_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
