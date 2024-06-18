@@ -9,18 +9,15 @@ socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_liryo-k
 cover:
   provider: imagekit
   image: posts/idv_liryo-kids/cover1.png
-  alternativeText: ''
-  source: ' '
+  alternativeText: ""
+  source: " "
 draft: false
 private: false
 categories:
   - identidade-visual
-updatedAt: 2024-05-13T17:49:00.000Z
-createdAt: 2024-05-13T17:49:00.000Z
+updatedAt: 2024-06-13T14:49:00.000Z
+createdAt: 2024-06-13T14:49:00.000Z
 ---
-
-## A marca
-
 A Liryo Kids é uma marca de acessórios infantis que une a delicadeza da infância com a alegria do cotidiano. Com produtos exclusivos e uma identidade visual vibrante, busca proporcionar beleza, estilo e praticidade às famílias, inspirando confiança e sorrisos em cada momento.
 
 :image{ src="posts/idv_liryo-kids/colorfull-motion_logo1.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
