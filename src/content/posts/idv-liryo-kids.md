@@ -15,7 +15,7 @@ draft: false
 private: false
 categories:
   - identidade-visual
-updatedAt: 2024-06-13T14:49:00.000Z
+updatedAt: 2024-06-18T12:02:00.000Z
 createdAt: 2024-06-13T14:49:00.000Z
 ---
 A Liryo Kids é uma marca de acessórios infantis que une a delicadeza da infância com a alegria do cotidiano. Com produtos exclusivos e uma identidade visual vibrante, busca proporcionar beleza, estilo e praticidade às famílias, inspirando confiança e sorrisos em cada momento.
@@ -41,21 +41,12 @@ As demais letras, em uma fonte sem serifa com bordas arredondadas, expressam mod
 Juntas, essas características visuais formam um logotipo distintivo e memorável, que captura a personalidade e os valores da Liryo Kids.
 
 :image{src="posts/idv_liryo-kids/2idv_liryo-kids_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-
 :image{src="posts/idv_liryo-kids/color-motion.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
-
 :image{src="posts/idv_liryo-kids/1idv_liryo-kids_03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-
 :image{src="posts/idv_liryo-kids/1idv_liryo-kids_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-
 :image{src="posts/idv_liryo-kids/fhd_caneca.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-
 :image{src="posts/idv_liryo-kids/fhd_instagram.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-
 :image{src="posts/idv_liryo-kids/fhd_embalagem.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-
 :image{src="posts/idv_liryo-kids/fhd_etiqueta.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-
 :image{src="posts/idv_liryo-kids/fhd_sacola.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-
 :image{src="posts/idv_liryo-kids/fhd_quadros.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
