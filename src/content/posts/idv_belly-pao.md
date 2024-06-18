@@ -14,7 +14,7 @@ draft: false
 private: false
 categories:
   - identidade-visual
-updatedAt: 2024-05-18T08:47:00.000Z
+updatedAt: 2024-06-18T11:55:00.000Z
 createdAt: 2024-01-03T22:09:04.425Z
 ---
 A Belly Pão é uma padaria familiar localizada no bairro Cidade Jardim Cumbica, especializando-se na arte de criar pães, bolos e salgados de alta qualidade para cafés da manhã e lanches.
