@@ -7,8 +7,8 @@ type Props = {
   height?: number
   sizes?: string
   provider?: string
-  roundedB?: boolean
-  roundedT?: boolean
+  'rounded-b'?: string
+  'rounded-t'?: string
   lazy?: boolean
   alt: any
 }
@@ -19,10 +19,15 @@ const {
   width = 375,
   height = 210,
   sizes = '375px sm:496px lg:960px',
-  roundedB = false,
-  roundedT = false,
   lazy = true
 } = Astro.props
+
+const roundedT =
+  typeof Astro.props['rounded-t'] === 'string' ||
+  Astro.props['rounded-t'] === 'true'
+const roundedB =
+  typeof Astro.props['rounded-b'] === 'string' ||
+  Astro.props['rounded-b'] === 'true'
 ---
 
 <BaseImage
