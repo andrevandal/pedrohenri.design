@@ -8,9 +8,9 @@ description: O trabalho de Paula Van Dal é focado em ajudar líderes e gestores
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/ui-design_paula-van-dal/social-image.png
 cover:
   provider: imagekit
-  image: /posts/ui-design_paula-van-dal/cover.png
-  alternativeText: ''
-  source: ' '
+  image: /posts/ui-design_paula-van-dal/cover5.png
+  alternativeText: ""
+  source: " "
 draft: false
 private: false
 categories:
