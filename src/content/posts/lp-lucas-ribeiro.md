@@ -8,9 +8,9 @@ description: Lucas Ribeiro é um programador web especializado em SEO e
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/ui-design_lucas-ribeiro/social-image.png
 cover:
   provider: imagekit
-  image: /posts/ui-design_lucas-ribeiro/cover.png
-  alternativeText: ''
-  source: ' '
+  image: /posts/ui-design_lucas-ribeiro/cover5.png
+  alternativeText: ""
+  source: " "
 draft: false
 private: false
 categories:
