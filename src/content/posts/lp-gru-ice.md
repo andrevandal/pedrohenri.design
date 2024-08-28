@@ -1,14 +1,14 @@
 ---
-title: Gru Ice - Landing Page
-slug: lp-gru-ice
+title: Gru Ice - Site Institucional
+slug: institucional-gru-ice
 description: Gru Ice é uma fábrica de gelo que distribui seus produtos no
   atacado e varejo, em Guarulhos e região.
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/ui-design_gru-ice/social-image.png
 cover:
   provider: imagekit
-  image: /posts/ui-design_gru-ice/cover.png
-  alternativeText: ''
-  source: ' '
+  image: /posts/ui-design_gru-ice/cover5.png
+  alternativeText: ""
+  source: " "
 draft: false
 private: false
 categories:
