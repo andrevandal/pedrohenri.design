@@ -1,15 +1,15 @@
 ---
 title: Belly Pão - Site Institucional
-slug: ui-design-belly-pao
+slug: belly-pao-institucional
 description: A Belly Pão é uma padaria familiar localizada no bairro Cidade
   Jardim Cumbica, especializando-se na arte de criar pães, bolos e salgados de
   alta qualidade para cafés da manhã e lanches.
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_belly-pao/social-image.png
 cover:
   provider: imagekit
-  image: posts/ui-design_belly-pao/cover.png
-  alternativeText: ''
-  source: ' '
+  image: posts/ui-design_belly-pao/cover5.png
+  alternativeText: ""
+  source: " "
 draft: false
 private: false
 categories:
