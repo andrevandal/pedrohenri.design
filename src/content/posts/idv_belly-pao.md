@@ -7,7 +7,7 @@ description: A Belly Pão é uma padaria familiar localizada no bairro Cidade
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_belly-pao/social-image.png
 cover:
   provider: imagekit
-  image: posts/idv_belly-pao/cover.png
+  image: posts/idv_belly-pao/cover5.png
   alternativeText: ""
   source: " "
 draft: false
