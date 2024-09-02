@@ -8,7 +8,7 @@ description: Ana Longhini é uma profissional especialista em marketing digital,
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_ana-longhini/1social-image.png
 cover:
   provider: imagekit
-  image: posts/idv_ana-longhini/1cover.png
+  image: posts/idv_ana-longhini/cover5.png
   alternativeText: ""
   source: " "
 draft: false
