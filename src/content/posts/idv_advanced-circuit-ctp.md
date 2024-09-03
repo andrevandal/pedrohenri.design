@@ -8,7 +8,7 @@ description: A marca Advanced Circuit representa uma abordagem dinâmica e
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_advanced-circuit/social-image.png
 cover:
   provider: MinIO
-  image: posts/idv_advanced-circuit/cover.png
+  image: posts/idv_advanced-circuit/cover5.png
   alternativeText: ""
   source: " "
 draft: false
