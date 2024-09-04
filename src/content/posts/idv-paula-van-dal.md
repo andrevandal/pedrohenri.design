@@ -12,7 +12,7 @@ description: >-
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_paula-van-dal/social-image.png
 cover:
   provider: imagekit
-  image: posts/idv_paula-van-dal/cover5.png
+  image: posts/idv_paula-van-dal/cover.png
   alternativeText: ""
   source: " "
 draft: false
