@@ -12,7 +12,7 @@ cover:
 draft: false
 private: true
 categories:
-  - ui-design
+  - web-design
 updatedAt: 2023-02-13T19:18:39.757Z
 createdAt: 2023-02-13T19:18:39.770Z
 ---

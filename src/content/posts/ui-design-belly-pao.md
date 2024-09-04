@@ -8,12 +8,12 @@ socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_belly-p
 cover:
   provider: imagekit
   image: posts/ui-design_belly-pao/cover5.png
-  alternativeText: ""
-  source: " "
+  alternativeText: ''
+  source: ' '
 draft: false
 private: false
 categories:
-  - ui-design
+  - web-design
 updatedAt: 2024-04-04T02:49:00.000Z
 createdAt: 2024-04-04T02:49:00.000Z
 ---

@@ -9,12 +9,12 @@ socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/ui-design_l
 cover:
   provider: imagekit
   image: /posts/ui-design_lucas-ribeiro/cover5.png
-  alternativeText: ""
-  source: " "
+  alternativeText: ''
+  source: ' '
 draft: false
 private: false
 categories:
-  - ui-design
+  - web-design
 updatedAt: 2023-12-13T19:18:39.757Z
 createdAt: 2023-12-13T19:18:39.770Z
 ---

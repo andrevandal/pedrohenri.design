@@ -9,12 +9,12 @@ socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/ui-design_p
 cover:
   provider: imagekit
   image: /posts/ui-design_paula-van-dal/cover5.png
-  alternativeText: ""
-  source: " "
+  alternativeText: ''
+  source: ' '
 draft: false
 private: false
 categories:
-  - ui-design
+  - web-design
 updatedAt: 2024-01-03T02:11:43.127Z
 createdAt: 2024-01-03T02:11:41.961Z
 ---
