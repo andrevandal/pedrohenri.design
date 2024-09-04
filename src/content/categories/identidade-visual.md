@@ -4,7 +4,7 @@ slug: identidade-visual
 description: Criação de Identidade Visual profissional para marcas. Transformo
   ideias em identidades únicas com um processo estratégico que une pesquisa,
   análise de mercado, criatividade e design funcional.
-socialImage: /images/imagem-social.png
+socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/images/imagem-social.png
 private: false
 draft: false
 showcase: true
