@@ -1,32 +1,32 @@
 ---
 name: Identidade Visual
 slug: identidade-visual
-description: Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in
-  eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.
+description: Criação de Identidade Visual profissional para marcas. Transformo
+  ideias em identidades únicas com um processo estratégico que une pesquisa,
+  análise de mercado, criatividade e design funcional.
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/100-960x538.jpg
 private: false
 draft: false
 showcase: true
 ctaText: Portfólio completo
-featuresTitle: Bastidores da inovação da marca
+featuresTitle: Processo pensado para fortalecer sua marca
 features:
   - iconName: descoberta
-    title: Descoberta
-    description:
-      Coletamos as informações essenciais para o desenvolvimento através
-      de um briefing detalhado.
+    title: 1. Imersão
+    description: A essência da sua marca é coletada por meio de um briefing
+      detalhado, capturando os valores e objetivos que guiarão todo o projeto.
   - iconName: concepcao
-    title: Concepção
-    description:
-      A direção do projeto é guiada por muita análise, estudos de mercado
-      e referências visuais nesta fase.
+    title: 2. Concepção
+    description: É analisado o mercado e referências visuais, alinhando a estratégia
+      ao que sua marca precisa comunicar, sempre com foco em inovação e
+      relevância.
   - iconName: apresentacao
-    title: Apresentação
-    description:
-      Revelamos o projeto completo, detalhando a evolução e o conceito
-      inerente à solução idealizada.
+    title: 3. Apresentação
+    description: Você recebe o projeto final com explicações claras sobre cada
+      escolha criativa, entendendo como chegamos à identidade perfeita para sua
+      marca.
   - iconName: entrega
-    title: Entrega
-    description: Disponibilizamos os documentos para a utilização nas mídias de
-      veiculação, junto a guias práticas.
+    title: 4. Entrega
+    description: É enviado a você todos os arquivos necessários e guias práticas
+      para a aplicação da nova identidade em qualquer mídia.
 ---
