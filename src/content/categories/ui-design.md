@@ -1,29 +1,31 @@
 ---
 name: Web Design
 slug: web-design
-description: Mussum Ipsum, cacilds vidis litro abertis.  Mauris nec dolor in
-  eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.
-socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/100-960x538.jpg
+description: Desenvolvimento de sites e landing pages com foco em alta conversão
+  e performance. Nosso design garante uma experiência do usuário intuitiva,
+  carregamento rápido, e otimização SEO para aumentar sua visibilidade online e
+  trazer vantagem competitiva.
+socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/images/imagem-social.png
 private: false
 draft: false
 showcase: true
 ctaText: Portfólio completo
-featuresTitle: Concepção orientada a resultado
+featuresTitle: Processo pensado para gerar resultado
 features:
   - iconName: mapeamento
-    title: Mapeamento
-    description: Reunimos os dados indispensáveis para o desenvolvimento da
-      interface através de um briefing detalhado.
+    title: 1. Mapeamento
+    description: Os dados indispensáveis para o desenvolvimento da interface é
+      reunido através de um briefing detalhado.
   - iconName: prototipo
-    title: Protótipo
-    description: Pensando na melhor experiência do usuário e na entrega de
-      resultados tangíveis, desenvolvemos um protótipo interativo.
+    title: 2. Protótipo
+    description: É feito um protótipo interativo focado na experiência do usuário,
+      permitindo uma prévia clara antes do desenvolvimento.
   - iconName: codificacao
-    title: Codificação
-    description: Após a aprovação, damos vida ao protótipo, transformando-o em uma
-      página web plenamente funcional.
+    title: 3. Desenvolvimento
+    description: Após a aprovação, transformamos o design em um site funcional e
+      completo, focado em gerar resultado.
   - iconName: otimizacao-seo
-    title: Otimização SEO
-    description: Executamos a otimização para assegurar alto desempenho, garantindo
-      acessibilidade e resultados eficientes.
+    title: 4. Otimizações
+    description: Executamos a otimização para assegurar velocidade, acessibilidade e
+      SEO para maximizar sua visibilidade.
 ---
