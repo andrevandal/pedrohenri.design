@@ -30,7 +30,7 @@ A flor de lírio é conhecida por representar sentimentos de pureza, inocência 
 
 Assim, o símbolo representa não apenas a identidade visual da marca, mas também os valores e a essência enraizados na sua concepção.
 
-:image{src="posts/idv_liryo-kids/2idv_liryo-kids_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/idv_liryo-kids_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 
 ## O logotipo
 
@@ -40,7 +40,7 @@ As demais letras, em uma fonte sem serifa com bordas arredondadas, expressam mod
 
 Juntas, essas características visuais formam um logotipo distintivo e memorável, que captura a personalidade e os valores da Liryo Kids.
 
-:image{src="posts/idv_liryo-kids/2idv_liryo-kids_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/idv_liryo-kids_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_liryo-kids/color-motion.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
 :image{src="posts/idv_liryo-kids/1idv_liryo-kids_03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_liryo-kids/1idv_liryo-kids_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
