@@ -42,8 +42,8 @@ Juntas, essas características visuais formam um logotipo distintivo e memoráve
 
 :image{src="posts/idv_liryo-kids/idv_liryo-kids_02-1.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_liryo-kids/color-motion.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
-:image{src="posts/idv_liryo-kids/1idv_liryo-kids_03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_liryo-kids/1idv_liryo-kids_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/idv_liryo-kids_03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_liryo-kids/idv_liryo-kids_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_liryo-kids/fhd_caneca.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_liryo-kids/fhd_instagram.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_liryo-kids/fhd_embalagem.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
