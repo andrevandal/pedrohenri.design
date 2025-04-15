@@ -43,6 +43,6 @@ Cada detalhe deste projeto foi pensado para refletir o que o Estúdio é e sempr
 :image{src="posts/idv_yona-matias/08_escritorio.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_yona-matias/09_caixa.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_yona-matias/10_garrafa.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_yona-matias/11_catalogo" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_yona-matias/11_catalogo.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_yona-matias/12_bordado.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_yona-matias/13_outdoor.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
