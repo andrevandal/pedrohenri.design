@@ -8,7 +8,7 @@ description: O Estúdio Yoná Matias é um espaço dedicado a eternizar memória
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_yona-matias/social-image.png
 cover:
   provider: imagekit
-  image: posts/idv_yona-matias/cover.png
+  image: posts/idv_yona-matias/cover1.png
   alternativeText: ""
   source: " "
 draft: false
@@ -36,7 +36,6 @@ Cada detalhe deste projeto foi pensado para refletir o que o Estúdio é e sempr
 
 :image{src="posts/idv_yona-matias/02_simbolo.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_yona-matias/03_logotipo.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_yona-matias/04_tipografia.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
 :image{src="posts/idv_yona-matias/05_cores.png" width="375" height="105" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_yona-matias/06_cartao-de-visitas.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_yona-matias/07_poster.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
