@@ -18,7 +18,7 @@ categories:
 updatedAt: 2025-04-14T17:12:00.000Z
 createdAt: 2025-04-14T17:12:00.000Z
 ---
-:image{ src="posts/idv_yona-matias/01_motion-cover.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
+:image{ src="posts/idv_yona-matias/01_cover.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 
 O Estúdio Yoná Matias inicia um novo capítulo da sua história.
 
