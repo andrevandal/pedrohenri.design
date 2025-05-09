@@ -18,16 +18,10 @@ categories:
 updatedAt: 2024-11-29T19:43:00.000Z
 createdAt: 2024-06-13T14:49:00.000Z
 ---
-::::div{ className="prose-p:m-0" }
-:image{ src="posts/idv_liryo-kids/colorfull-motion_logo.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b class="m-0 p-0 block"}
-::::
-::::div{ className="w-full bg-[#355b94] py-16 text-white" }
-:::div{ className="max-w-[70ch] mx-auto prose prose-headings:text-white prose-p:text-white prose-a:text-white" }
+:image{ src="posts/idv_liryo-kids/colorfull-motion_logo.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b class="m-0 p-0 block" }
 
-## Sobre a marca
-
-A Liryo Kids é uma marca de acessórios infantis que une a delicadeza da infância com a alegria do cotidiano. Com produtos exclusivos e uma identidade visual vibrante, busca proporcionar beleza, estilo e praticidade às famílias, inspirando confiança e sorrisos em cada momento.
-
+::::div{ className="w-full bg-[#355b94] py-12 text-white" }
+:::div{ className="max-w-[70ch] mx-auto prose prose-headings:text-white prose-p:text-white prose-a:text-white prose-img:m-0 prose-img:p-0 prose-img:block" }
 ## O símbolo
 
 O símbolo foi desenvolvido baseado em uma flor de lírio, cuja sonoridade da marca nos remete. Não somente a sonoridade, o significado atribuído ao lírio se encaixa de forma perfeita com a marca.
@@ -37,7 +31,6 @@ A flor de lírio é conhecida por representar sentimentos de pureza, inocência 
 Assim, o símbolo representa não apenas a identidade visual da marca, mas também os valores e a essência enraizados na sua concepção.
 :::
 ::::
-
 :image{src="posts/idv_liryo-kids/idv_liryo-kids_01-1.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 
 ## O logotipo
