@@ -23,8 +23,8 @@ A Liryo Kids é uma marca de acessórios infantis que une a delicadeza da infân
 
 :image{ src="posts/idv_liryo-kids/colorfull-motion_logo.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 
-::::div{ style="background-color: #355b94; padding: 2rem 0;" className="w-full text-white" }
-:::div{ className="max-w-[50ch] mx-auto" }
+::::div{ className="w-full bg-[#355b94] py-8 text-white" }
+:::div{ className="max-w-[60ch] mx-auto" }
 ## O símbolo
 
 O símbolo foi desenvolvido baseado em uma flor de lírio, cuja sonoridade da marca nos remete. Não somente a sonoridade, o significado atribuído ao lírio se encaixa de forma perfeita com a marca.
