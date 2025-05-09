@@ -57,26 +57,26 @@
       letter-spacing: -0.175rem;
     }
   }
+}
 
-  .container {
-    margin-inline: auto;
-    display: flex;
-    width: 100%;
-    max-width: 464px;
-    flex-direction: column;
-    padding-inline: --spacing(4);
+@utility container {
+  margin-inline: auto;
+  display: flex;
+  width: 100%;
+  max-width: 464px;
+  flex-direction: column;
+  padding-inline: --spacing(4);
 
-    @variant sm {
-      max-width: 496px;
-      padding-inline: --spacing(8);
-    }
+  @variant sm {
+    max-width: 496px;
+    padding-inline: --spacing(8);
+  }
 
-    @variant lg {
-      max-width: 960px;
-    }
+  @variant lg {
+    max-width: 960px;
+  }
 
-    @variant xl {
-      max-width: 1216px;
-    }
+  @variant xl {
+    max-width: 1216px;
   }
 }
