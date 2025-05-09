@@ -30,8 +30,6 @@ O símbolo foi desenvolvido baseado em uma flor de lírio, cuja sonoridade da ma
 A flor de lírio é conhecida por representar sentimentos de pureza, inocência e amor puro, características que se alinham com a proposta da marca de oferecer acessórios que tragam beleza e estilo aos que detêm.
 
 Assim, o símbolo representa não apenas a identidade visual da marca, mas também os valores e a essência enraizados na sua concepção.
-:::
-::::
 
 :image{src="posts/idv_liryo-kids/idv_liryo-kids_01-1.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 
