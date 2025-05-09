@@ -22,13 +22,13 @@ export async function getStaticPaths() {
     return !post.data.draft && !post.data.private
   })
   return allPosts.map((post) => ({
-    params: { slug: post.slug }
+    params: { slug: post.id }
   }))
 }
 
 const post = await getEntry('posts', slug)
 
-if (post === undefined || post.data.draft) {
+if (post === undefined || post.data.draft || !post.body) {
   return Astro.redirect('/404')
 }
 
@@ -44,7 +44,7 @@ const contentTree = fromMarkdown(post.body, {
   mdastExtensions: [directiveFromMarkdown()]
 })
 
-const mainCategory = await getEntry('categories', post.data.categories[0].slug)
+const mainCategory = await getEntry('categories', post.data.categories[0].id)
 ---
 
 <BaseLayout {...meta}>
@@ -53,7 +53,7 @@ const mainCategory = await getEntry('categories', post.data.categories[0].slug)
       {
         mainCategory && (
           <a
-            href={`/categorias/${mainCategory.slug}/`}
+            href={`/categorias/${mainCategory.id}/`}
             class='text-sm uppercase leading-[1.059rem] text-gray-500'
           >
             {mainCategory.data.name}

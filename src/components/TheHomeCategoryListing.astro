@@ -6,7 +6,7 @@ import TheFeatures from './TheFeatures.astro'
 
 type Props = {
   name: string
-  slug: string
+  id: string
   ctaText?: string
   ctaLink?: string
   featuresTitle?: string
@@ -14,7 +14,7 @@ type Props = {
   shrink?: boolean
   posts: {
     title: string
-    slug: string
+    id: string
     cover: {
       image: string
       alternativeText: string
@@ -26,7 +26,7 @@ const category = Astro.props
 ---
 
 <section
-  id={category?.slug}
+  id={category?.id}
   class='flex flex-col gap-10 lg:flex-row lg:flex-wrap lg:items-center lg:gap-12'
 >
   <div
@@ -43,7 +43,7 @@ const category = Astro.props
       {
         category.posts.map((post) => {
           return (
-            <a href={`/posts/${post.slug}/`} class='block'>
+            <a href={`/posts/${post.id}/`} class='block'>
               <Figure
                 caption={post.title}
                 class={'group relative overflow-hidden rounded-lg'}
@@ -68,7 +68,7 @@ const category = Astro.props
       !!category?.ctaText && (
         <div class='order-3 flex items-center sm:flex sm:justify-center lg:order-2 lg:my-1'>
           <a
-            href={`/categorias/${category?.slug}/`}
+            href={`/categorias/${category?.id}/`}
             class='flex h-12 w-full items-center justify-center rounded-lg border border-gray-900 px-6 py-3 text-center text-gray-900 transition-colors hover:bg-gray-50 focus:border-transparent focus:bg-transparent sm:w-fit'
           >
             {category?.ctaText}

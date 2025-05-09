@@ -1,10 +1,10 @@
 import { defineConfig, passthroughImageService } from 'astro/config'
 import { loadEnv } from 'vite'
 import sitemap from '@astrojs/sitemap'
-import tailwind from '@astrojs/tailwind'
 import partytown from '@astrojs/partytown'
 import cloudflare from '@astrojs/cloudflare'
 import icon from 'astro-icon'
+import tailwindcss from '@tailwindcss/vite';
 const { CF_PAGES_URL, CF_PAGES, CF_PAGES_BRANCH, SITE_URL } = loadEnv(
   import.meta.env.MODE,
   process.cwd(),
@@ -20,16 +20,13 @@ const siteUrl = getSite()
 // https://astro.build/config
 export default defineConfig({
   output: 'server',
-  adapter: cloudflare(),
-  image: {
-    service: passthroughImageService()
-  },
+
+  adapter: cloudflare({ 
+    imageService: 'passthrough'
+  }),
+
   integrations: [
     sitemap(),
-    tailwind({
-      applyBaseStyles: false,
-      nesting: true
-    }),
     partytown({
       config: {
         forward: ['dataLayer.push']
@@ -55,6 +52,11 @@ export default defineConfig({
       }
     })
   ],
+
   trailingSlash: 'ignore',
-  site: siteUrl
+  site: siteUrl,
+
+  vite: {
+    plugins: [tailwindcss()]
+  }
 })

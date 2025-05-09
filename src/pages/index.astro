@@ -22,8 +22,8 @@ const rawCategories = await getCollection('categories', (category) => {
   )
 })
 const categories = rawCategories
-  .map(({ slug, data }) => ({
-    slug,
+  .map(({ id, data }) => ({
+    id,
     ...pick(data, [
       'name',
       'description',
@@ -36,12 +36,12 @@ const categories = rawCategories
   .sort((a, b) => a.showcase - b.showcase)
 
 const relatedPosts = await Promise.allSettled(
-  rawCategories.map(async ({ slug }) => {
+  rawCategories.map(async ({ id }) => {
     return getCollection('posts', (post) => {
       return (
         !post.data.draft &&
         !post.data.private &&
-        post.data.categories.find((category) => category.slug === slug)
+        post.data.categories.find((category) => category.id === id)
       )
     }).then((posts) =>
       posts.sort(
@@ -62,8 +62,8 @@ const computedCategories = categories.map((category, index) => {
   return {
     ...category,
     posts: fullfilledRelatedPosts[index].value
-      .map(({ slug, data }) => ({
-        slug,
+      .map(({ id, data }) => ({
+        id,
         ...pick(data, ['title', 'cover', 'description'])
       }))
       .slice(0, 7)

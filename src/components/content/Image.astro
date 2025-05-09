@@ -2,7 +2,7 @@
 import BaseImage from '@components/Image.astro'
 
 type Props = {
-  src: string
+  src?: string
   width?: number
   height?: number
   sizes?: string
@@ -10,7 +10,7 @@ type Props = {
   'rounded-b'?: string
   'rounded-t'?: string
   lazy?: boolean
-  alt: any
+  alt?: string
 }
 
 const {
@@ -30,7 +30,7 @@ const roundedB =
   Astro.props['rounded-b'] === 'true'
 ---
 
-<BaseImage
+{src && <BaseImage
   {...{ src, sizes, alt }}
   class:list={[
     `aspect-[${width}/${height}] my-0 h-auto w-full`,
@@ -41,4 +41,4 @@ const roundedB =
   ]}
   loading={lazy ? 'lazy' : 'eager'}
   decoding={lazy ? 'async' : 'sync'}
-/>
+/>}

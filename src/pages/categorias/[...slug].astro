@@ -18,7 +18,7 @@ export async function getStaticPaths() {
     return !category.data.draft && !category.data.private
   })
   return allCategories.map((category) => ({
-    params: { slug: category.slug }
+    params: { slug: category.id }
   }))
 }
 
@@ -32,7 +32,7 @@ const relatedPosts = await getCollection('posts', (post) => {
   return (
     !post.data.draft &&
     !post.data.private &&
-    post.data.categories.find((category) => category.slug === slug)
+    post.data.categories.find((category) => category.id === slug)
   )
 }).then((posts) =>
   posts.sort(
@@ -46,7 +46,7 @@ const relatedPosts = await getCollection('posts', (post) => {
 )
 
 const category = {
-  slug: rawCategory.slug,
+  id: rawCategory.id,
   ...pick(rawCategory.data, [
     'name',
     'description',
@@ -55,8 +55,8 @@ const category = {
     'showcase',
     'socialImage'
   ]),
-  posts: relatedPosts.map(({ slug, data }) => ({
-    slug,
+  posts: relatedPosts.map(({ id, data }) => ({
+    id,
     ...pick(data, ['title', 'cover', 'description'])
   }))
 }
