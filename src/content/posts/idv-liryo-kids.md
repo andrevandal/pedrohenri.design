@@ -18,13 +18,16 @@ categories:
 updatedAt: 2024-11-29T19:43:00.000Z
 createdAt: 2024-06-13T14:49:00.000Z
 ---
-
-A Liryo Kids é uma marca de acessórios infantis que une a delicadeza da infância com a alegria do cotidiano. Com produtos exclusivos e uma identidade visual vibrante, busca proporcionar beleza, estilo e praticidade às famílias, inspirando confiança e sorrisos em cada momento.
 ::::div{ className="prose-p:m-0" }
 :image{ src="posts/idv_liryo-kids/colorfull-motion_logo.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 ::::
 ::::div{ className="w-full bg-[#355b94] py-16 text-white" }
 :::div{ className="max-w-[70ch] mx-auto prose prose-headings:text-white prose-p:text-white prose-a:text-white" }
+
+## Sobre a marca
+
+A Liryo Kids é uma marca de acessórios infantis que une a delicadeza da infância com a alegria do cotidiano. Com produtos exclusivos e uma identidade visual vibrante, busca proporcionar beleza, estilo e praticidade às famílias, inspirando confiança e sorrisos em cada momento.
+
 ## O símbolo
 
 O símbolo foi desenvolvido baseado em uma flor de lírio, cuja sonoridade da marca nos remete. Não somente a sonoridade, o significado atribuído ao lírio se encaixa de forma perfeita com a marca.
