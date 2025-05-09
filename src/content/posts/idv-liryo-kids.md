@@ -43,8 +43,6 @@ Juntas, essas características visuais formam um logotipo distintivo e memoráve
 
 :image{src="posts/idv_liryo-kids/idv_liryo-kids_02-1.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_liryo-kids/color-motion.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
-::::div{ className="w-full bg-[#355b94] py-16 text-white" }
-:::div{ className="max-w-[70ch] mx-auto prose prose-headings:text-white prose-p:text-white prose-a:text-white" }
 :image{src="posts/idv_liryo-kids/idv_liryo-kids_03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_liryo-kids/idv_liryo-kids_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_liryo-kids/fhd_caneca.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
