@@ -1,10 +1,15 @@
 import type { APIRoute } from 'astro'
 
 export const prerender = false
+import { GITHUB_CLIENT_ID } from 'astro:env/server'
 
 export const GET: APIRoute = (context) => {
-  const { GITHUB_CLIENT_ID } = context.locals.runtime.env
   try {
+    if (!GITHUB_CLIENT_ID) {
+      return new Response('GITHUB_CLIENT_ID not found', {
+        status: 500
+      })
+    }
     const url = new URL(context.url)
     const redirectUrl = new URL('https://github.com/login/oauth/authorize')
     redirectUrl.searchParams.set('client_id', GITHUB_CLIENT_ID)

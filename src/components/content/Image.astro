@@ -30,15 +30,19 @@ const roundedB =
   Astro.props['rounded-b'] === 'true'
 ---
 
-{src && <BaseImage
-  {...{ src, sizes, alt }}
-  class:list={[
-    `aspect-[${width}/${height}] my-0 h-auto w-full`,
-    {
-      'rounded-t-lg': roundedT,
-      'rounded-b-lg': roundedB
-    }
-  ]}
-  loading={lazy ? 'lazy' : 'eager'}
-  decoding={lazy ? 'async' : 'sync'}
-/>}
+{
+  src && (
+    <BaseImage
+      {...{ src, sizes, alt }}
+      class:list={[
+        `aspect-[${width}/${height}] my-0 h-auto w-full`,
+        {
+          'rounded-t-lg': roundedT,
+          'rounded-b-lg': roundedB
+        }
+      ]}
+      loading={lazy ? 'lazy' : 'eager'}
+      decoding={lazy ? 'async' : 'sync'}
+    />
+  )
+}

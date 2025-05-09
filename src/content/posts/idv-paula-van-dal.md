@@ -13,8 +13,8 @@ socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_paula-v
 cover:
   provider: imagekit
   image: posts/idv_paula-van-dal/cover5.png
-  alternativeText: ""
-  source: " "
+  alternativeText: ''
+  source: ' '
 draft: false
 private: false
 categories:

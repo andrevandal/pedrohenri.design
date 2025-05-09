@@ -1,10 +1,12 @@
 import type { APIRoute } from 'astro'
 
+import { SITE_URL } from 'astro:env/server'
+
 const robotsTxt = `
 User-agent: *
 Allow: /
 
-Sitemap: ${new URL('sitemap-index.xml', import.meta.env.SITE_URL).href}
+Sitemap: ${new URL('sitemap-index.xml', SITE_URL).href}
 `.trim()
 
 export const GET: APIRoute = () => {

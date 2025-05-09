@@ -1,4 +1,5 @@
 ---
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { toHast } from 'mdast-util-to-hast'
 import { toHtml } from 'hast-util-to-html'
 import Image from './Image.astro'
@@ -10,13 +11,13 @@ type Props = {
 
 const { node } = Astro.props
 
-type CustomImage = RootContent & { 
+type CustomImage = RootContent & {
   type: 'textDirective'
   attributes: {
     src: string
   }
 }
-type CustomDiv = RootContent & { 
+type CustomDiv = RootContent & {
   type: 'containerDirective'
   attributes: {
     className?: string
@@ -26,26 +27,29 @@ type CustomDiv = RootContent & {
 const isRoot = (node: NodeType) => node.type === 'root'
 const isParagraph = (node: NodeType) => node.type === 'paragraph'
 const isTextDirective = (node: NodeType) => node.type === 'textDirective'
-const isContainerDirective = (node: NodeType) => node.type === 'containerDirective'
+const isContainerDirective = (node: NodeType) =>
+  node.type === 'containerDirective'
 
 const isCustomImage = (node: NodeType): node is CustomImage => {
-  return isTextDirective(node) && node.name === 'image' && !!node.attributes?.src
+  return (
+    isTextDirective(node) && node.name === 'image' && !!node.attributes?.src
+  )
 }
 
 const isCustomDiv = (node: NodeType): node is CustomDiv => {
   return isContainerDirective(node) && node.name === 'div'
 }
-  
 
 const isOtherType = (node: NodeType) =>
   !(
-    isRoot(node) || isParagraph(node) || isCustomImage(node) || isCustomDiv(node)
+    isRoot(node) ||
+    isParagraph(node) ||
+    isCustomImage(node) ||
+    isCustomDiv(node)
   )
 ---
 
-{
-  isRoot(node) && node.children.map((node: any) => <Astro.self node={node} />)
-}
+{isRoot(node) && node.children.map((node: any) => <Astro.self node={node} />)}
 {
   isParagraph(node) && (
     <p>
@@ -55,18 +59,14 @@ const isOtherType = (node: NodeType) =>
     </p>
   )
 }
-{
-  isCustomImage(node) && (
-    <Image {...node.attributes} />
-  )
-}
+{isCustomImage(node) && <Image {...node.attributes} />}
 {
   isCustomDiv(node) && (
     <div class:list={node.attributes?.className ?? ''}>
       {node.children.map((node: any) => (
         <Astro.self node={node} />
       ))}
-      </div>
+    </div>
   )
 }
 {

@@ -9,8 +9,8 @@ socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_yona-ma
 cover:
   provider: imagekit
   image: posts/idv_yona-matias/cover1.png
-  alternativeText: ""
-  source: " "
+  alternativeText: ''
+  source: ' '
 draft: false
 private: false
 categories:
@@ -18,6 +18,7 @@ categories:
 updatedAt: 2025-04-14T17:12:00.000Z
 createdAt: 2025-04-14T17:12:00.000Z
 ---
+
 :image{ src="posts/idv_yona-matias/01_cover.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 
 O Estúdio Yoná Matias inicia um novo capítulo da sua história.

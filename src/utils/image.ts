@@ -40,7 +40,7 @@ export function parseSizes(sizes: string): Sizes {
   if (!result['default']) {
     result['default'] = `${Object.entries(result).reduce<number>(
       (biggest, el) => {
-        const [_, size] = el
+        const [, size] = el
         const sizeNumber = parseInt(size.replace('px', ''))
 
         if (sizeNumber > biggest) {

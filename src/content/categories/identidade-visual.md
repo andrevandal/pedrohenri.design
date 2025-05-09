@@ -17,7 +17,8 @@ features:
       detalhado, capturando os valores e objetivos que guiarão todo o projeto.
   - iconName: concepcao
     title: 2. Concepção
-    description: É analisado o mercado e referências visuais, alinhando a estratégia
+    description:
+      É analisado o mercado e referências visuais, alinhando a estratégia
       ao que sua marca precisa comunicar, sempre com foco em inovação e
       relevância.
   - iconName: apresentacao

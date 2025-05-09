@@ -1,6 +1,6 @@
 import { z, defineCollection, reference } from 'astro:content'
 import { availableIcons } from '@/types'
-import { glob } from 'astro/loaders';
+import { glob } from 'astro/loaders'
 
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),

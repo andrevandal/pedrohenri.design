@@ -23,7 +23,7 @@ const callToAction = {
   <div class='fixed top-0 z-20 my-2 w-full'>
     <div class='container'>
       <nav
-        class='grid grid-cols-[1fr_40px] flex-wrap gap-x-2 rounded-lg border border-gray-100 bg-white/50 py-3 pl-4 pr-3 backdrop-blur lg:flex lg:flex-row lg:justify-between'
+        class='grid grid-cols-[1fr_40px] flex-wrap gap-x-2 rounded-lg border border-gray-100 bg-white/50 py-3 pr-3 pl-4 backdrop-blur lg:flex lg:flex-row lg:justify-between'
       >
         <a href='/#topo' class='block'>
           <img
@@ -69,7 +69,7 @@ const callToAction = {
       </nav>
     </div>
   </div>
-  <div class='container mt-[5.125rem] gap-y-4'>
+  <div class='container mt-20.5 gap-y-4'>
     <slot />
   </div>
 </header>
@@ -115,8 +115,10 @@ const callToAction = {
   )
 </script>
 <style>
+  @reference "../styles/base.css";
+
   #menu-button {
-    @apply inline-flex h-10 w-10 cursor-pointer select-none items-center justify-center justify-self-end rounded-lg border border-transparent p-2;
+    @apply inline-flex h-10 w-10 cursor-pointer items-center justify-center justify-self-end rounded-lg border border-transparent p-2 select-none;
     @apply lg:hidden;
   }
 
@@ -130,42 +132,39 @@ const callToAction = {
   }
 
   .icon:before {
-    @apply top-[8px];
+    @apply top-2;
   }
 
   .icon:after {
-    @apply top-[-8px];
+    @apply -top-2;
   }
 
   #menu {
-    @apply col-span-2 clear-both box-border max-h-0 overflow-hidden transition-max-height duration-200 ease-out will-change-auto;
+    @apply col-span-2 clear-both box-border max-h-0 overflow-hidden transition-[max-height] duration-200 ease-out will-change-auto;
     @apply lg:flex lg:max-h-fit lg:items-center lg:justify-center lg:gap-x-2 lg:pt-0;
   }
 
   #menu li:last-of-type {
-    @apply mt-2 lg:ml-4 lg:mt-0;
+    @apply mt-2 lg:mt-0 lg:ml-4;
   }
   #menu li:last-of-type a {
     @apply h-10;
   }
 
   #menu-opened:checked ~ #menu {
-    @apply pb-3 pt-4 lg:p-0;
-    max-height: fit-content;
+    @apply max-h-fit pt-4 pb-3 lg:p-0;
   }
 
   #menu-opened:checked ~ #menu-button .icon {
-    background: transparent;
+    @apply bg-transparent;
   }
 
   #menu-opened:checked ~ #menu-button .icon:before {
-    top: 0;
-    transform: rotate(-45deg);
+    @apply top-0 -rotate-45;
   }
 
   #menu-opened:checked ~ #menu-button .icon:after {
-    top: 0;
-    transform: rotate(45deg);
+    @apply top-0 rotate-45;
   }
 
   .nav-link {

@@ -1,10 +1,10 @@
-import { defineConfig, passthroughImageService } from 'astro/config'
+import { defineConfig, envField } from 'astro/config'
 import { loadEnv } from 'vite'
 import sitemap from '@astrojs/sitemap'
 import partytown from '@astrojs/partytown'
 import cloudflare from '@astrojs/cloudflare'
 import icon from 'astro-icon'
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from '@tailwindcss/vite'
 const { CF_PAGES_URL, CF_PAGES, CF_PAGES_BRANCH, SITE_URL } = loadEnv(
   import.meta.env.MODE,
   process.cwd(),
@@ -21,9 +21,29 @@ const siteUrl = getSite()
 export default defineConfig({
   output: 'server',
 
-  adapter: cloudflare({ 
+  adapter: cloudflare({
     imageService: 'passthrough'
   }),
+
+  env: {
+    schema: {
+      SITE_URL: envField.string({
+        context: 'server',
+        access: 'public',
+        optional: true
+      }),
+      GITHUB_CLIENT_ID: envField.string({
+        context: 'server',
+        access: 'secret',
+        optional: true
+      }),
+      GITHUB_CLIENT_SECRET: envField.string({
+        context: 'server',
+        access: 'secret',
+        optional: true
+      })
+    }
+  },
 
   integrations: [
     sitemap(),

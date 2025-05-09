@@ -18,7 +18,8 @@ features:
       reunido através de um briefing detalhado.
   - iconName: prototipo
     title: 2. Protótipo
-    description: É feito um protótipo interativo focado na experiência do usuário,
+    description:
+      É feito um protótipo interativo focado na experiência do usuário,
       permitindo uma prévia clara antes do desenvolvimento.
   - iconName: codificacao
     title: 3. Desenvolvimento
@@ -26,6 +27,7 @@ features:
       completo, focado em gerar resultado.
   - iconName: otimizacao-seo
     title: 4. Otimizações
-    description: Executamos a otimização para assegurar velocidade, acessibilidade e
+    description:
+      Executamos a otimização para assegurar velocidade, acessibilidade e
       SEO para maximizar sua visibilidade.
 ---

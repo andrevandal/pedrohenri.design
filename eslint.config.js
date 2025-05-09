@@ -5,5 +5,16 @@ import eslintPluginAstro from 'eslint-plugin-astro'
 export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
-  ...eslintPluginAstro.configs['flat/recommended']
+  ...eslintPluginAstro.configs['flat/recommended'],
+  {
+    files: ['astro.config.mjs'],
+    languageOptions: {
+      globals: {
+        process: true
+      }
+    }
+  },
+  {
+    ignores: ['.astro/**']
+  }
 )
