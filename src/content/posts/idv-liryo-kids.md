@@ -19,7 +19,7 @@ updatedAt: 2024-11-29T19:43:00.000Z
 createdAt: 2024-06-13T14:49:00.000Z
 ---
 :image{ src="posts/idv_liryo-kids/colorfull-motion_logo.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
-::::div{ className="w-full bg-[#355b94] py-16 text-white" }
+::::div{ className="w-full bg-[#355b94] py-16 px-4 sm:px-0" }
 :::div{ className="max-w-[75ch] mx-auto prose prose-headings:text-white prose-p:text-white" }
 ## Sobre a marca
 
