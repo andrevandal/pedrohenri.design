@@ -22,7 +22,7 @@ createdAt: 2025-04-14T17:12:00.000Z
 :image{ src="posts/idv_yona-matias/01_cover.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 ::::div{ className="w-full" }
 :::div{ className="max-w-[75ch] mx-auto" }
-## O Estúdio Yoná Matias inicia um novo capítulo da sua história.
+## O Estúdio Yoná Matias inicia um novo capítulo da sua história
 
 Uma identidade visual que nasce do olhar sensível e acolhedor de quem entende que cada fotografia carrega luz, essência e memórias eternas.
 
@@ -32,9 +32,9 @@ Naturalidade. Pureza. Harmonia. Acolhimento.
 
 Cada detalhe deste projeto foi pensado para refletir o que o Estúdio é e sempre será: um espaço de conexão verdadeira, de presença e de eternização da vida.
 
-É tudo sobre luz.
-É tudo sobre pessoas.
-É tudo sobre memórias que duram além do instante.
+É tudo sobre luz. 
+É tudo sobre pessoas. 
+É tudo sobre memórias que duram além do instante. 
 :::
 ::::
 :image{src="posts/idv_yona-matias/02_simbolo2.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
