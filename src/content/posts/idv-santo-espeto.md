@@ -49,7 +49,7 @@ Através do logotipo, estabelecemos um ponto de partida visual que é tanto dist
 
 :image{src="posts/idv_santo-espeto/1idv_santo-espeto_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 
-::::div{ className="w-full flex flex-col gap-4 md:flex-row md:gap-0" }
+::::div{ className="w-full flex flex-col gap-4 sm:flex-row" }
 
 :::div{ className="flex-1 bg-[#F0C030] text-white p-6 md:p-8" }
 **O amarelo**  
