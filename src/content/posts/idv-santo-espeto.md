@@ -51,7 +51,7 @@ Através do logotipo, estabelecemos um ponto de partida visual que é tanto dist
 
 ::::div{ className="w-full flex flex-wrap gap-4" }
 
-:::div{ className="flex-1 bg-[#F0C030] p-6 sm:p-8 min-w-full sm:min-w-[250px] sm:flex-1 rounded-md flex flex-col" }
+:::div{ className="flex-1 bg-[#F0C030] prose p-6 sm:p-8 min-w-full sm:min-w-[250px] sm:flex-1 rounded-md flex flex-col" }
 ### O amarelo  
 Vibrante e convidativo, o amarelo é a cor do estímulo e da energia, escolhido meticulosamente pela sua capacidade comprovada de despertar o apetite.  
 
