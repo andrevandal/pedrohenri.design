@@ -51,21 +51,21 @@ Através do logotipo, estabelecemos um ponto de partida visual que é tanto dist
 
 ::::div{ className="w-full flex flex-col gap-4 sm:flex-row" }
 
-:::div{ className="flex-1 bg-[#F0C030] text-white p-6 md:p-8" }
+:::div{ className="flex-1 bg-[#F0C030] p-6 sm:p-8" }
 **O amarelo**  
 Vibrante e convidativo, o amarelo é a cor do estímulo e da energia, escolhido meticulosamente pela sua capacidade comprovada de despertar o apetite.  
 
 Essa escolha transcende a funcionalidade: ressoa com a tonalidade dourada do chopp servido com perfeição, um convite visual à degustação que espera pelo cliente.
 :::
 
-:::div{ className="flex-1 bg-[#221C1C] text-white p-6 md:p-8" }
+:::div{ className="flex-1 bg-[#221C1C] prose prose-headings:text-white prose-p:text-white p-6 sm:p-8" }
 **O marrom escuro**  
 Este tom quase preto é a base perfeita para a nossa paleta. Ele não apenas realça o brilho do amarelo, garantindo uma leitura fácil e agradável, como também evoca a textura e o sabor dos espetos grelhados que são a assinatura da casa.  
 
 Esse marrom representa a robustez e a profundidade dos sabores que o cliente encontrará em cada petisco.
 :::
 
-:::div{ className="flex-1 bg-[#303FC8] text-white p-6 md:p-8" }
+:::div{ className="flex-1 bg-[#303FC8] prose prose-headings:text-white prose-p:text-white p-6 sm:p-8" }
 **O Azul**  
 Um toque de estratégia, o azul traz à nossa identidade o elemento da diferenciação. Em um mar de concorrentes que apelam para os tons quentes, nosso azul se destaca com confiança e frescor.  
 
