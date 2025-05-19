@@ -69,14 +69,4 @@ const mainCategory = await getEntry('categories', post.data.categories[0].id)
       <ContentMarkdown node={contentTree} />
     </div>
   </article>
-
-  <style>
-    .prose :where(h2),
-    .prose :where(h3),
-    .prose :where(h4) {
-      a {
-        @apply no-underline;
-      }
-    }
-  </style>
 </BaseLayout>
