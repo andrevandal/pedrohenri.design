@@ -23,7 +23,7 @@ createdAt: 2025-05-20T15:17:00.000Z
 ---
 :image{ src="posts/idv_teacher-ana-julia/01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 ::::div{ className="w-full" }
-:::div{ className="max-w-[75ch] mx-auto prose prose-headings:text-white prose-p:text-white" }
+:::div{ className="max-w-[75ch] mx-auto" }
 ## Sobre a marca
 
 Ensinar um idioma vai muito além das regras gramaticais. É sobre criar um espaço onde errar não gera medo — gera progresso. Onde cada voz é respeitada no seu tempo, no seu tom, no seu jeito de falar.
