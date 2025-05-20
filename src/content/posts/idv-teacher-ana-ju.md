@@ -51,7 +51,7 @@ A divisão entre “Ana” e “Ju” também tem função: enquanto o primeiro 
 :image{src="posts/idv_teacher-ana-julia/02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" className="w-full h-auto object-cover" }
 :::
 
-::::div{ className="w-full flex flex-wrap gap-8 items-center px-6 py-12" }
+::::div{ className="w-full flex flex-wrap gap-8 items-center px-6 " }
 
 :::div{ className="flex-1 min-w-full sm:min-w-[250px] sm:flex-1 flex flex-col justify-center h-full" }
 ## Versão compacta, mesma identidade
@@ -62,8 +62,6 @@ O ícone da marca foi pensado como uma solução versátil para espaços reduzid
 :::div{ className="flex-1 min-w-full sm:min-w-[250px] sm:flex-1 rounded-md flex flex-col" }
 :image{src="posts/idv_teacher-ana-julia/03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :::
-
-::::
 
 ::::
 
