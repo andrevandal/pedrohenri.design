@@ -45,7 +45,7 @@ O “J” foi desenhado do zero, com traços inspirados na escrita manual. Um de
 A divisão entre “Ana” e “Ju” também tem função: enquanto o primeiro nome sustenta a autoridade profissional, o apelido aproxima. Juntos, traduzem uma marca que ensina com método, mas também com empatia.
 :::
 ::::
-::::div{ className="w-full bg-[#e9eff2]" rounded-lg }
+::::div{ className="w-full bg-[#e9eff2]" rounded-2xl overflow-hidden }
 
 :::div{ className="w-full" }
 :image{src="posts/idv_teacher-ana-julia/02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" className="w-full h-auto object-cover" }
