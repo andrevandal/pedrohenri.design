@@ -47,7 +47,7 @@ A divisão entre “Ana” e “Ju” também tem função: enquanto o primeiro 
 ::::
 ::::div{ className="w-full bg-[#e9eff2]" }
 
-:::div{ className="w-full" border-lg }
+:::div{ className="w-full" rounded-lg }
 :image{src="posts/idv_teacher-ana-julia/02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" className="w-full h-auto object-cover" }
 :::
 
