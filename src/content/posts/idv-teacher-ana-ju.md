@@ -22,7 +22,7 @@ updatedAt: 2025-05-20T15:17:00.000Z
 createdAt: 2025-05-20T15:17:00.000Z
 ---
 :image{ src="posts/idv_teacher-ana-julia/01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
-::::div{ className="w-full bg-[#355b94] py-16 px-4" }
+::::div{ className="w-full" }
 :::div{ className="max-w-[75ch] mx-auto prose prose-headings:text-white prose-p:text-white" }
 ## Sobre a marca
 
@@ -47,9 +47,9 @@ A divisão entre “Ana” e “Ju” também tem função: enquanto o primeiro 
 ::::
 :image{src="posts/idv_teacher-ana-julia/02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 
-::::div{ className="w-full flex flex-wrap gap-4" }
+::::div{ className="w-full flex flex-wrap gap-4 items-center" }
 
-:::div{ className="flex-1 prose p-6 sm:p-8 min-w-full sm:min-w-[250px] sm:flex-1 rounded-md flex flex-col" }
+:::div{ className="flex-1 min-w-full sm:min-w-[250px] sm:flex-1 flex flex-col justify-center h-full" }
 ## Versão compacta, mesma identidade
 
 O ícone da marca foi pensado como uma solução versátil para espaços reduzidos — ideal para uso em formatos como avatares, favicons e botões. Ele condensa a identidade tipográfica em uma versão mais enxuta, mantendo traços essenciais para garantir legibilidade e reconhecimento visual mesmo em escalas menores. Uma adaptação estratégica que preserva o caráter da marca sem perder sua força ou personalidade.
@@ -61,13 +61,18 @@ O ícone da marca foi pensado como uma solução versátil para espaços reduzid
 
 ::::
 
-:image{src="posts/idv_teacher-ana-julia/idv_liryo-kids_02-1.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_liryo-kidsidv_teacher-ana-julia/color-motion.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
-:image{src="posts/idv_teacher-ana-julia/idv_liryo-kids_03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/idv_liryo-kids_04.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/fhd_caneca.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/fhd_instagram.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/fhd_embalagem.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/fhd_etiqueta.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/fhd_sacola.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/fhd_quadros.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
+::::div{ className="w-full" }
+:::div{ className="max-w-[75ch] mx-auto" }
+## Cores que falam com clareza
+
+A paleta foi definida para refletir a energia e a proximidade que fazem parte da proposta da Teacher Ana Ju. As cores escolhidas criam um ambiente leve e acolhedor, que convida o aluno a se expressar sem medo e se sentir parte do processo.
+
+Mais do que agradáveis, as cores ajudam a posicionar a marca de forma clara: longe da rigidez dos cursos tradicionais e próxima de quem busca uma experiência de aprendizado mais humana, dinâmica e estimulante.
+:::
+::::
+:image{src="posts/idv_teacher-ana-julia/04_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_liryo-kidsidv_teacher-ana-julia/04_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
+:image{src="posts/idv_teacher-ana-julia/05_01.png.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/05_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/06.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/07.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
