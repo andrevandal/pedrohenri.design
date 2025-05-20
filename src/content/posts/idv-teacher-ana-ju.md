@@ -45,13 +45,14 @@ O “J” foi desenhado do zero, com traços inspirados na escrita manual. Um de
 A divisão entre “Ana” e “Ju” também tem função: enquanto o primeiro nome sustenta a autoridade profissional, o apelido aproxima. Juntos, traduzem uma marca que ensina com método, mas também com empatia.
 :::
 ::::
-::::div{ className="w-full bg-[#e9eff2]" rounded-2xl overflow-hidden }
+
+::::div{ className="w-full bg-[#e9eff2] rounded-md overflow-hidden" }
 
 :::div{ className="w-full" }
 :image{src="posts/idv_teacher-ana-julia/02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" className="w-full h-auto object-cover" }
 :::
 
-::::div{ className="w-full flex flex-wrap gap-8 items-center px-6 " }
+::::div{ className="w-full flex flex-wrap gap-8 items-center px-6 py-12" }
 
 :::div{ className="flex-1 min-w-full sm:min-w-[250px] sm:flex-1 flex flex-col justify-center h-full" }
 ## Versão compacta, mesma identidade
@@ -60,8 +61,10 @@ O ícone da marca foi pensado como uma solução versátil para espaços reduzid
 :::
 
 :::div{ className="flex-1 min-w-full sm:min-w-[250px] sm:flex-1 flex flex-col" }
-:image{src="posts/idv_teacher-ana-julia/03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b}
+:image{src="posts/idv_teacher-ana-julia/03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" className="w-full h-auto object-cover" }
 :::
+
+::::
 
 ::::
 
