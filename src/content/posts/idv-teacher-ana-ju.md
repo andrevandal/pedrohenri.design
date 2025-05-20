@@ -59,7 +59,7 @@ A divisão entre “Ana” e “Ju” também tem função: enquanto o primeiro 
 O ícone da marca foi pensado como uma solução versátil para espaços reduzidos — ideal para uso em formatos como avatares, favicons e botões. Ele condensa a identidade tipográfica em uma versão mais enxuta, mantendo traços essenciais para garantir legibilidade e reconhecimento visual mesmo em escalas menores. Uma adaptação estratégica que preserva o caráter da marca sem perder sua força ou personalidade.
 :::
 
-:::div{ className="flex-1 min-w-full sm:min-w-[250px] sm:flex-1 rounded-md flex flex-col" }
+:::div{ className="flex-1 " }
 :image{src="posts/idv_teacher-ana-julia/03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :::
 
