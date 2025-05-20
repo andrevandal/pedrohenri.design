@@ -61,7 +61,7 @@ O ícone da marca foi pensado como uma solução versátil para espaços reduzid
 
 ::::
 
-:::div{ className="w-full border-t border-gray-300 my-8" }:::
+:::hr{ className="border-gray-300 my-8" }:::
 
 ::::div{ className="w-full" }
 :::div{ className="max-w-[75ch] mx-auto" }
