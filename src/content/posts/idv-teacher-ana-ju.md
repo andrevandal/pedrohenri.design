@@ -61,7 +61,7 @@ O ícone da marca foi pensado como uma solução versátil para espaços reduzid
 :::
 
 :::div{ className="flex-1 min-w-full sm:min-w-[250px] sm:flex-1 flex flex-col" }
-:image{src="posts/idv_teacher-ana-julia/03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" className="w-full h-auto object-cover" }
+:image{src="posts/idv_teacher-ana-julia/03.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" className="w-full h-auto object-cover" rounded-t rounded-b }
 :::
 
 ::::
