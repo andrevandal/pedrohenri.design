@@ -45,9 +45,9 @@ O “J” foi desenhado do zero, com traços inspirados na escrita manual. Um de
 A divisão entre “Ana” e “Ju” também tem função: enquanto o primeiro nome sustenta a autoridade profissional, o apelido aproxima. Juntos, traduzem uma marca que ensina com método, mas também com empatia.
 :::
 ::::
-:image{src="posts/idv_teacher-ana-julia/02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 
-::::div{ className="w-full flex flex-wrap gap-4 items-center" }
+::::div{ className="w-full flex flex-wrap gap-8 items-center" }
 
 :::div{ className="flex-1 min-w-full sm:min-w-[250px] sm:flex-1 flex flex-col justify-center h-full" }
 ## Versão compacta, mesma identidade
@@ -61,6 +61,8 @@ O ícone da marca foi pensado como uma solução versátil para espaços reduzid
 
 ::::
 
+::::div{ className="w-full border-t border-gray-300 my-8" }::::
+
 ::::div{ className="w-full" }
 :::div{ className="max-w-[75ch] mx-auto" }
 ## Cores que falam com clareza
@@ -71,8 +73,8 @@ Mais do que agradáveis, as cores ajudam a posicionar a marca de forma clara: lo
 :::
 ::::
 :image{src="posts/idv_teacher-ana-julia/04_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_liryo-kidsidv_teacher-ana-julia/04_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
-:image{src="posts/idv_teacher-ana-julia/05_01.png.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/04_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
+:image{src="posts/idv_teacher-ana-julia/05_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_teacher-ana-julia/05_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_teacher-ana-julia/06.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_teacher-ana-julia/07.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
