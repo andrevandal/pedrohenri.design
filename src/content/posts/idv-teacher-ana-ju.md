@@ -41,7 +41,7 @@ A nova marca traduz a proposta de uma professora que ensina como quem cuida — 
 
 ::::div{ className="w-full bg-[#e9eff2] rounded-md overflow-hidden" }
 
-:::div{ className="max-w-[75ch] mx-auto mb-12" }
+:::div{ className="max-w-[75ch] mx-auto mb-12 px-4" }
 ## O logotipo
 
 O logotipo é composto por uma tipografia em letras minúsculas e de formas arredondadas, que reforça uma comunicação acessível, direta e sem formalidades desnecessárias. A escolha visual reflete a proposta da marca: aproximar, simplificar e criar conexão real com quem está aprendendo.
