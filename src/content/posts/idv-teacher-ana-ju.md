@@ -23,7 +23,7 @@ createdAt: 2025-05-20T15:17:00.000Z
 ---
 :image{ src="posts/idv_teacher-ana-julia/01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 ::::div{ className="w-full" }
-:::div{ className="max-w-[75ch] mx-auto" }
+:::div{ className="max-w-[75ch] mx-auto mb-4" }
 ## Sobre a marca
 
 Ensinar um idioma vai muito além das regras gramaticais. É sobre criar um espaço onde errar não gera medo — gera progresso. Onde cada voz é respeitada no seu tempo, no seu tom, no seu jeito de falar.
@@ -41,7 +41,7 @@ A nova marca traduz a proposta de uma professora que ensina como quem cuida — 
 
 ::::div{ className="w-full bg-[#e9eff2] rounded-md overflow-hidden" }
 
-:::div{ className="max-w-[75ch] mx-auto py-6" }
+:::div{ className="max-w-[75ch] mx-auto mb-4" }
 ## O logotipo
 
 O logotipo é composto por uma tipografia em letras minúsculas e de formas arredondadas, que reforça uma comunicação acessível, direta e sem formalidades desnecessárias. A escolha visual reflete a proposta da marca: aproximar, simplificar e criar conexão real com quem está aprendendo.
@@ -71,7 +71,7 @@ O ícone da marca foi pensado como uma solução versátil para espaços reduzid
 
 
 ::::div{ className="w-full" }
-:::div{ className="max-w-[75ch] mx-auto py-6" }
+:::div{ className="max-w-[75ch] mx-auto mb-4" }
 ## Cores que falam com clareza
 
 A paleta foi definida para refletir a energia e a proximidade que fazem parte da proposta da Teacher Ana Ju. As cores escolhidas criam um ambiente leve e acolhedor, que convida o aluno a se expressar sem medo e se sentir parte do processo.
