@@ -36,6 +36,12 @@ Do traço à cor, da tipografia ao tom: tudo foi pensado para refletir a energia
 
 A nova marca traduz a proposta de uma professora que ensina como quem cuida — com alegria, com presença e com verdade.
 
+:::
+::::
+
+::::div{ className="w-full bg-[#e9eff2] rounded-md overflow-hidden" }
+
+:::div{ className="max-w-[75ch] mx-auto" }
 ## O logotipo
 
 O logotipo é composto por uma tipografia em letras minúsculas e de formas arredondadas, que reforça uma comunicação acessível, direta e sem formalidades desnecessárias. A escolha visual reflete a proposta da marca: aproximar, simplificar e criar conexão real com quem está aprendendo.
@@ -44,9 +50,6 @@ O “J” foi desenhado do zero, com traços inspirados na escrita manual. Um de
 
 A divisão entre “Ana” e “Ju” também tem função: enquanto o primeiro nome sustenta a autoridade profissional, o apelido aproxima. Juntos, traduzem uma marca que ensina com método, mas também com empatia.
 :::
-::::
-
-::::div{ className="w-full bg-[#e9eff2] rounded-md overflow-hidden" }
 
 :::div{ className="w-full" }
 :image{src="posts/idv_teacher-ana-julia/02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" className="w-full h-auto object-cover" }
