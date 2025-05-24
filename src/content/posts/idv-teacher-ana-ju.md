@@ -84,4 +84,5 @@ Mais do que agradáveis, as cores ajudam a posicionar a marca de forma clara: lo
 :image{src="posts/idv_teacher-ana-julia/05_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_teacher-ana-julia/05_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_teacher-ana-julia/06.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/07.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
+:image{src="posts/idv_teacher-ana-julia/07.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/final.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
