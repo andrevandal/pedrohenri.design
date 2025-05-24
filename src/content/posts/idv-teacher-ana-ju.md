@@ -11,7 +11,7 @@ description: >-
 socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_liryo-kids/social-image.png
 cover:
   provider: imagekit
-  image: posts/idv_teacher-ana-julia/00_cover.png
+  image: posts/idv_teacher-ana-julia/00_cover.jpg
   alternativeText: ""
   source: " "
 draft: false
@@ -21,7 +21,7 @@ categories:
 updatedAt: 2025-05-20T15:17:00.000Z
 createdAt: 2025-05-20T15:17:00.000Z
 ---
-:image{ src="posts/idv_teacher-ana-julia/01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
+:image{ src="posts/idv_teacher-ana-julia/01.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 ::::div{ className="w-full" }
 :::div{ className="max-w-[75ch] mx-auto mb-12" }
 ## Sobre a marca
