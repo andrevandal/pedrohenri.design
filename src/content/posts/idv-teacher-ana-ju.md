@@ -79,10 +79,11 @@ A paleta foi definida para refletir a energia e a proximidade que fazem parte da
 Mais do que agradáveis, as cores ajudam a posicionar a marca de forma clara: longe da rigidez dos cursos tradicionais e próxima de quem busca uma experiência de aprendizado mais humana, dinâmica e estimulante.
 :::
 ::::
-:image{src="posts/idv_teacher-ana-julia/04_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/04_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t }
-:image{src="posts/idv_teacher-ana-julia/05_01.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/05_02.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/06.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_teacher-ana-julia/07.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/04_01.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/04_02.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/04_03.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/05_01.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/05_02.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/06.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_teacher-ana-julia/07.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_teacher-ana-julia/final.jpg" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-b }
