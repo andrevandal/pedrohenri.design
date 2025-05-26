@@ -71,7 +71,7 @@ O ícone da marca foi pensado como uma solução versátil para espaços reduzid
 
 
 ::::div{ className="w-full" }
-:::div{ className="max-w-[75ch] mx-auto mb-12" }
+:::div{ className="max-w-[75ch] mx-auto mb-10" }
 ## Cores que falam com clareza
 
 A paleta foi definida para refletir a energia e a proximidade que fazem parte da proposta da Teacher Ana Ju. As cores escolhidas criam um ambiente leve e acolhedor, que convida o aluno a se expressar sem medo e se sentir parte do processo.
