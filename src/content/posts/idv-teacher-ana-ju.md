@@ -8,10 +8,10 @@ description: >-
 
 
   Essa identidade visual nasce para expressar a leveza de um método que acredita no acolhimento como ferramenta de ensino, e no afeto como ponto de partida da confiança.
-socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_liryo-kids/social-image.png
+socialImage: https://ik.imagekit.io/pedrohenri/tr:w-1200,h-630/posts/idv_teacher-ana-julia/social-image.png
 cover:
   provider: imagekit
-  image: posts/idv_teacher-ana-julia/00_cover.jpg
+  image: posts/idv_teacher-ana-julia/00-01_cover.jpg
   alternativeText: ""
   source: " "
 draft: false
