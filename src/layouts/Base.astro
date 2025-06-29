@@ -5,6 +5,7 @@ import TheFooter from '@components/TheFooter.astro'
 import TheHeader from '@components/TheHeader.astro'
 import BaseButton from '@components/BaseButton.astro'
 import Image from '@components/Image.astro'
+import { getImageUrl } from '@utils'
 
 type Props = {
   title: string
@@ -17,11 +18,25 @@ type Props = {
 const { isDev, PUBLIC_GOOGLE_ANALYTICS_ID: googleAnalyticsId } = import.meta.env
 const { title, description, schema, links, url } = Astro.props
 const domain = url.hostname
-const image =
-  Astro.props.image.includes(url.toString()) ||
-  Astro.props.image.startsWith('/')
-    ? new URL(Astro.props.image, Astro.site ?? url).toString()
-    : Astro.props.image
+
+const chooseSocialImagem = (image?: string) => {
+  if (!image || !image.length) return ''
+  console.log(image)
+  if (/^(https?:)?\/\//.test(image)) return image
+  return getImageUrl(
+    image.startsWith('/') ? image : `/${image}`,
+    'f_auto,q_90,w_1200,h_630'
+  )
+}
+
+const image = chooseSocialImagem(Astro.props.image)
+
+// Astro.props.image.startsWith('/')
+//   ? getImageUrl()
+//   : Astro.props.image.includes(url.toString()) ||
+//       Astro.props.image.startsWith('/')
+//     ? new URL(Astro.props.image, Astro.site ?? url).toString()
+//     : Astro.props.image
 
 const gtagConfig = isDev ? `{ debug_mode: true }` : ''
 ---

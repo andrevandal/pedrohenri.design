@@ -7,7 +7,7 @@ const posts = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    socialImage: z.string().url(),
+    socialImage: z.string(),
     cover: z.object({
       image: z.string(),
       alternativeText: z.string(),
@@ -28,7 +28,7 @@ const categories = defineCollection({
     description: z.string(),
     private: z.boolean().default(false),
     draft: z.boolean().default(true),
-    socialImage: z.string().url(),
+    socialImage: z.string(),
     showcase: z.coerce.number().default(0),
     ctaText: z.string().optional(),
     featuresTitle: z.string().optional(),
