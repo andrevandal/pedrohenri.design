@@ -20,7 +20,8 @@ createdAt: 2025-06-25T19:48:00.000Z
 ---
 :image{ src="posts/idv_jcar-oliveira/01_capa.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" rounded-t rounded-b }
 ::::div{ className="w-full" }
-:::div{ className="max-w-[75ch] mx-auto mb-12" }
+:::div{ className="max-w-\[75ch] mx-auto mb-12" }
+
 ## Sobre a marca
 
 Com mais de uma década de atuação no mercado de serviços automotivos, a JCar Oliveira dá um passo decisivo em direção à profissionalização da sua marca, preparando o terreno para seu plano de expansão e consolidação no setor.
@@ -38,7 +39,7 @@ Este projeto foi pensado para refletir a JCar de hoje — e preparar o caminho p
 
 :image{src="posts/idv_jcar-oliveira/02_palavras-chave.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/03_construction-simbol.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_jcar-oliveira/04_morph-simbol.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_jcar-oliveira/04-01_morph-simbol.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/05_guides-simbol.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/06_logotipo.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/07_cores.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
