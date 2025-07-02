@@ -39,7 +39,7 @@ Este projeto foi pensado para refletir a JCar de hoje — e preparar o caminho p
 
 :image{src="posts/idv_jcar-oliveira/02_palavras-chave.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/03_construction-simbol.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
-:image{src="posts/idv_jcar-oliveira/04-01_morph-simbol.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+:image{src="posts/idv_jcar-oliveira/04_morph-simbol.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/05_guides-simbol.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/06_logotipo.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/07_cores.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
