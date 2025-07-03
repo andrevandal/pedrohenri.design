@@ -40,6 +40,16 @@ Este projeto foi pensado para refletir a JCar de hoje — e preparar o caminho p
 :image{src="posts/idv_jcar-oliveira/02_palavras-chave.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/03_construction-simbol.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/04_morph-simbol.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
+::::div{ className="w-full my-8" }
+:iframe{
+  src="https://www.youtube-nocookie.com/embed/6mrUt6DoQqs?autoplay=1&loop=1&playlist=6mrUt6DoQqs&controls=0&mute=1&modestbranding=1&rel=0&showinfo=0"
+  width="100%"
+  height="315"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  className="rounded"
+}
+::::
 :image{src="posts/idv_jcar-oliveira/05_guides-simbol.gif" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/06_logotipo.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
 :image{src="posts/idv_jcar-oliveira/07_cores.png" width="375" height="210" sizes="375px sm:496px lg:960px" alt="" }
