@@ -15,7 +15,7 @@ type Props = {
   schema?: Record<string, unknown>
   links?: Record<string, unknown>[]
 }
-const { isDev, PUBLIC_GOOGLE_ANALYTICS_ID: googleAnalyticsId } = import.meta.env
+const { PUBLIC_GOOGLE_ANALYTICS_ID: googleAnalyticsId } = import.meta.env
 const { title, description, schema, links, url } = Astro.props
 const domain = url.hostname
 
@@ -30,15 +30,6 @@ const chooseSocialImagem = (image?: string) => {
 }
 
 const image = chooseSocialImagem(Astro.props.image)
-
-// Astro.props.image.startsWith('/')
-//   ? getImageUrl()
-//   : Astro.props.image.includes(url.toString()) ||
-//       Astro.props.image.startsWith('/')
-//     ? new URL(Astro.props.image, Astro.site ?? url).toString()
-//     : Astro.props.image
-
-const gtagConfig = isDev ? `{ debug_mode: true }` : ''
 ---
 
 <html class='font-stara h-full scroll-p-20.5 scroll-smooth' lang='pt-br'>
@@ -84,7 +75,7 @@ const gtagConfig = isDev ? `{ debug_mode: true }` : ''
                 dataLayer.push(arguments);
               };
               window.gtag('js', new Date());
-              window.gtag('config', '${googleAnalyticsId}', ${gtagConfig});`}
+              window.gtag('config', '${googleAnalyticsId}');`}
           />
         </>
       )
