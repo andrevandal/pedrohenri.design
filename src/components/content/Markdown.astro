@@ -3,6 +3,7 @@
 import { toHast } from 'mdast-util-to-hast'
 import { toHtml } from 'hast-util-to-html'
 import Image from './Image.astro'
+import Youtube from './Youtube.astro'
 import type { RootContent, Root } from 'mdast'
 type NodeType = RootContent | Root
 type Props = {
@@ -15,6 +16,12 @@ type CustomImage = RootContent & {
   type: 'textDirective'
   attributes: {
     src: string
+  }
+}
+type CustomYoutube = RootContent & {
+  type: 'textDirective'
+  attributes: {
+    id: string
   }
 }
 type CustomDiv = RootContent & {
@@ -36,6 +43,12 @@ const isCustomImage = (node: NodeType): node is CustomImage => {
   )
 }
 
+const isCustomYoutube = (node: NodeType): node is CustomYoutube => {
+  return (
+    isTextDirective(node) && node.name === 'youtube' && !!node.attributes?.id
+  )
+}
+
 const isCustomDiv = (node: NodeType): node is CustomDiv => {
   return isContainerDirective(node) && node.name === 'div'
 }
@@ -45,6 +58,7 @@ const isOtherType = (node: NodeType) =>
     isRoot(node) ||
     isParagraph(node) ||
     isCustomImage(node) ||
+    isCustomYoutube(node) ||
     isCustomDiv(node)
   )
 ---
@@ -60,6 +74,7 @@ const isOtherType = (node: NodeType) =>
   )
 }
 {isCustomImage(node) && <Image {...node.attributes} />}
+{isCustomYoutube(node) && <Youtube {...node.attributes} />}
 {
   isCustomDiv(node) && (
     <div class:list={node.attributes?.className ?? ''}>

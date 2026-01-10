@@ -24,6 +24,7 @@
     "node": ">=20"
   },
   "dependencies": {
+    "@astro-community/astro-embed-youtube": "^0.5.10",
     "@astrojs/check": "^0.9.6",
     "@astrojs/cloudflare": "^12.6.12",
     "@astrojs/sitemap": "^3.6.1",
