@@ -3,7 +3,7 @@ import { loadEnv } from 'vite'
 import sitemap from '@astrojs/sitemap'
 import partytown from '@astrojs/partytown'
 import cloudflare from '@astrojs/cloudflare'
-import icon from 'astro-icon'
+import icon from 'astro-iconset'
 import tailwindcss from '@tailwindcss/vite'
 const { CF_PAGES_URL, CF_PAGES, CF_PAGES_BRANCH, SITE_URL } = loadEnv(
   import.meta.env.MODE,
@@ -22,7 +22,8 @@ export default defineConfig({
   output: 'server',
 
   adapter: cloudflare({
-    imageService: 'passthrough'
+    imageService: 'passthrough',
+    prerenderEnvironment: 'node',
   }),
 
   env: {
