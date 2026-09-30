@@ -1,0 +1,40 @@
+---
+import { getEmDashEntry, getSeoMeta, getSiteSettings } from 'emdash'
+import BaseLayout from '@layouts/Base.astro'
+import PageBlocks from '@components/PageBlocks.astro'
+
+const { slug } = Astro.params
+
+if (!slug) {
+  return Astro.redirect('/404')
+}
+
+// The "home" page is served at the site root.
+if (slug === 'home') {
+  return Astro.redirect('/', 301)
+}
+
+const { entry: page, cacheHint } = await getEmDashEntry('pages', slug)
+
+if (!page) {
+  return Astro.redirect('/404')
+}
+
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint)
+
+const settings = await getSiteSettings()
+const seo = getSeoMeta(page, {
+  siteTitle: settings.title,
+  titleSeparator: settings.seo?.titleSeparator,
+  defaultDescription: page.data.description
+})
+---
+
+<BaseLayout
+  title={seo.title}
+  pageTitle={seo.ogTitle}
+  description={seo.description}
+  content={{ collection: 'pages', id: page.data.id, slug: page.id }}
+>
+  <PageBlocks value={page.data.layout} />
+</BaseLayout>

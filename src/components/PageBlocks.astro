@@ -1,0 +1,24 @@
+---
+/** Renders a page's `layout` blocks field (Admin → Páginas). */
+import { Blocks, defineBlockComponents } from 'emdash/ui'
+import type { PageLayoutBlock } from '../../emdash-env'
+import CategoryShowcaseBlock from '@components/blocks/CategoryShowcaseBlock.astro'
+import FeatureBlock from '@components/blocks/FeatureBlock.astro'
+import HeroBlock from '@components/blocks/HeroBlock.astro'
+import RichTextBlock from '@components/blocks/RichTextBlock.astro'
+
+type Props = {
+  value?: PageLayoutBlock[] | null
+}
+
+const components = defineBlockComponents<PageLayoutBlock>({
+  hero: HeroBlock,
+  feature: FeatureBlock,
+  category_showcase: CategoryShowcaseBlock,
+  rich_text: RichTextBlock
+})
+---
+
+<div class='container flex flex-col gap-y-4'>
+  <Blocks value={Astro.props.value} components={components} />
+</div>

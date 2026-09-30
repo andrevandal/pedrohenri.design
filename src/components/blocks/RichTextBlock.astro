@@ -1,0 +1,17 @@
+---
+import type { BlockComponentProps } from 'emdash/ui'
+import { PortableText } from 'emdash/ui'
+import type { PageLayoutRichTextBlock } from '../../../emdash-env'
+import ColorPanel from '@components/portable-text/ColorPanel.astro'
+
+type Props = BlockComponentProps<PageLayoutRichTextBlock>
+
+const { value } = Astro.props
+---
+
+<div class='post-content prose w-full max-w-full py-8'>
+  <PortableText
+    value={value.content ?? []}
+    components={{ type: { colorPanel: ColorPanel } }}
+  />
+</div>

@@ -26,3 +26,6 @@ pnpm-debug.log*
 _old/
 coverage/
 .wrangler
+# EmDash local data (sqlite database)
+data/
+.emdash/

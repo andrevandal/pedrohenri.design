@@ -1,0 +1,42 @@
+---
+import { getEmDashCollection, getEmDashReferences } from 'emdash'
+import type { BlockComponentProps } from 'emdash/ui'
+import type { PageLayoutCategoryShowcaseBlock, Post } from '../../../emdash-env'
+import TheHomeCategoryListing from '@components/TheHomeCategoryListing.astro'
+import { sortPostsByDate, toCategoryListing } from '@utils/cms'
+
+type Props = BlockComponentProps<PageLayoutCategoryShowcaseBlock>
+
+const postsPerCategory = Astro.props.value.posts_per_category || 7
+
+// Categories with a home page position (> 0), in that order.
+const { entries: categories, cacheHint } = await getEmDashCollection(
+  'categories',
+  { status: 'published', orderBy: { showcase: 'asc' } }
+)
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint)
+
+const listings = await Promise.all(
+  categories
+    .filter((category) => (category.data.showcase ?? 0) > 0)
+    .map(async (category) => {
+      const { entries: posts, cacheHint: postsCacheHint } =
+        await getEmDashReferences<Post>('categories', category.id, 'posts', {
+          limit: 100
+        })
+      if (Astro.cache?.enabled && postsCacheHint) {
+        Astro.cache.set(postsCacheHint)
+      }
+      return toCategoryListing(
+        category,
+        sortPostsByDate(posts).slice(0, postsPerCategory)
+      )
+    })
+)
+---
+
+<div class='flex flex-col gap-y-16 pt-12 pb-16 lg:gap-y-22 lg:pt-18 lg:pb-22'>
+  {listings.map((category) => (
+    <TheHomeCategoryListing {...category} shrink />
+  ))}
+</div>

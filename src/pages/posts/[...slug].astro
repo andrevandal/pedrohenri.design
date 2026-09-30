@@ -1,72 +1,71 @@
 ---
-// https://stackoverflow.com/questions/74919230/how-to-customize-markdown-with-astro-components
-import type { ComponentProps } from 'astro/types'
-import { getCollection, getEntry } from 'astro:content'
-import { fromMarkdown } from 'mdast-util-from-markdown'
-import { directive } from 'micromark-extension-directive'
-import { directiveFromMarkdown } from 'mdast-util-directive'
+import { getEmDashEntry, getSeoMeta, getSiteSettings } from 'emdash'
+import { PortableText } from 'emdash/ui'
 
 import BaseLayout from '@layouts/Base.astro'
-import ContentMarkdown from '@components/content/Markdown.astro'
+import ColorPanel from '@components/portable-text/ColorPanel.astro'
+import { socialImageUrl } from '@utils/media'
 
 const { slug } = Astro.params
 
-if (slug === undefined) {
-  throw new Error('Slug is required')
-}
-
-export const prerender = true
-
-export async function getStaticPaths() {
-  const allPosts = await getCollection('posts', (post) => {
-    return !post.data.draft && !post.data.private
-  })
-  return allPosts.map((post) => ({
-    params: { slug: post.id }
-  }))
-}
-
-const post = await getEntry('posts', slug)
-
-if (post === undefined || post.data.draft || !post.body) {
+if (!slug) {
   return Astro.redirect('/404')
 }
 
-const meta = {
-  title: `${post.data.title} - Pedro Henri Design`,
-  description: post.data.description,
-  image: post.data.socialImage,
-  url: Astro.url
-} satisfies ComponentProps<typeof BaseLayout>
-
-const contentTree = fromMarkdown(post.body, {
-  extensions: [directive()],
-  mdastExtensions: [directiveFromMarkdown()]
+const { entry: post, cacheHint } = await getEmDashEntry('posts', slug, {
+  references: { category: true }
 })
 
-const mainCategory = await getEntry('categories', post.data.categories[0].id)
+if (!post) {
+  return Astro.redirect('/404')
+}
+
+if (Astro.cache?.enabled) Astro.cache.set(cacheHint)
+
+const category = post.references?.category.entries[0]
+const settings = await getSiteSettings()
+
+// SEO panel values win; the post's description and social image (or cover)
+// are the fallbacks.
+const seo = getSeoMeta(post, {
+  siteTitle: settings.title,
+  titleSeparator: settings.seo?.titleSeparator,
+  defaultDescription: post.data.description
+})
 ---
 
-<BaseLayout {...meta}>
+<BaseLayout
+  title={seo.title}
+  pageTitle={seo.ogTitle}
+  description={seo.description}
+  image={socialImageUrl(
+    post.data.social_image ?? post.data.cover,
+    Astro.url,
+    Astro.locals.emdash?.getPublicMediaUrl
+  )}
+  pageType='article'
+  content={{ collection: 'posts', id: post.data.id, slug: post.id }}
+>
   <article class='container mx-auto flex flex-col pt-6 pb-8 lg:pt-10 lg:pb-12'>
     <header class='flex flex-col pb-4'>
-      {
-        mainCategory && (
-          <a
-            href={`/categorias/${mainCategory.id}/`}
-            class='text-sm leading-[1.059rem] text-gray-500 uppercase'
-          >
-            {mainCategory.data.name}
-          </a>
-        )
-      }
+      {category && (
+        <a
+          href={`/categorias/${category.id}/`}
+          class='text-sm leading-[1.059rem] text-gray-500 uppercase'
+        >
+          {category.data.name}
+        </a>
+      )}
 
       <h1 class='text-[2rem] leading-[2.421rem] font-bold text-gray-900'>
         {post.data.title}
       </h1>
     </header>
-    <div class='prose w-full max-w-full'>
-      <ContentMarkdown node={contentTree} />
+    <div class='post-content prose w-full max-w-full'>
+      <PortableText
+        value={post.data.content ?? []}
+        components={{ type: { colorPanel: ColorPanel } }}
+      />
     </div>
   </article>
 </BaseLayout>

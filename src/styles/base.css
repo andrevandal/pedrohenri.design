@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@plugin "@tailwindcss/typography";
+@plugin '@tailwindcss/typography';
 
 @theme {
   --breakpoint-sm: 640px;
@@ -79,4 +79,35 @@
   @variant xl {
     max-width: 1216px;
   }
+}
+
+/*
+ * Case-study content (EmDash Portable Text): image blocks stack edge to edge
+ * and round the corners at the start and end of every consecutive run.
+ */
+.post-content figure.emdash-image {
+  margin: 0;
+}
+
+.post-content figure.emdash-image img {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.post-content figure.emdash-image:first-child img,
+.post-content :not(figure.emdash-image) + figure.emdash-image img {
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+}
+
+.post-content figure.emdash-image:last-child img,
+.post-content figure.emdash-image:has(+ :not(figure.emdash-image)) img {
+  border-bottom-left-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-lg);
+}
+
+.color-panel.prose > :not(figure) {
+  max-width: 42rem;
+  margin-inline: auto;
 }

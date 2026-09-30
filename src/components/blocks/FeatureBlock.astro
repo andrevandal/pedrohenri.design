@@ -1,0 +1,42 @@
+---
+import type { BlockComponentProps } from 'emdash/ui'
+import { Image } from 'emdash/ui'
+import type { PageLayoutFeatureBlock } from '../../../emdash-env'
+
+type Props = BlockComponentProps<PageLayoutFeatureBlock>
+
+const { value } = Astro.props
+const imageLeft = value.image_position === 'left'
+---
+
+<section class='flex flex-col gap-y-6 lg:grid lg:grid-cols-12 lg:flex-row lg:items-center lg:justify-between lg:gap-x-6'>
+  {value.image && (
+    <div
+      class:list={[
+        'order-1 lg:col-span-5 lg:flex-1',
+        imageLeft ? 'lg:order-1 lg:col-start-1' : 'lg:order-2 lg:col-start-8'
+      ]}
+    >
+      <Image
+        image={value.image}
+        sizes='(min-width: 1280px) 493px, (min-width: 1024px) 386px, (min-width: 640px) 496px, 343px'
+        class='aspect-square h-auto w-full rounded-lg object-cover'
+      />
+    </div>
+  )}
+  <div
+    class:list={[
+      'order-2 lg:col-span-7 lg:flex lg:flex-1 lg:flex-col lg:justify-center lg:px-0',
+      imageLeft ? 'lg:order-2 lg:col-start-6' : 'lg:order-1 lg:col-start-1'
+    ]}
+  >
+    <h2 class='typography-title max-w-[38ch] font-extrabold text-gray-900'>
+      {value.heading}
+    </h2>
+    {value.text && (
+      <p class='mt-2 max-w-[38ch] text-xl text-gray-900 lg:text-2xl'>
+        {value.text}
+      </p>
+    )}
+  </div>
+</section>
