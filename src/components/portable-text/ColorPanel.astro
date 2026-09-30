@@ -1,0 +1,64 @@
+---
+/**
+ * Portable Text `colorPanel` block: one or more solid-colour panels wrapping
+ * rich text (brand colour swatches, highlighted sections in case studies).
+ *
+ * Shape: { _type: 'colorPanel', layout: 'stack' | 'row',
+ *          items: [{ _key, backgroundColor, tone: 'light' | 'dark', content }] }
+ * `tone: 'light'` means light text on a dark background.
+ */
+import type { PortableTextBlock } from 'emdash'
+import { PortableText } from 'emdash/ui'
+
+type PanelItem = {
+  _key: string
+  backgroundColor: string
+  tone?: 'light' | 'dark'
+  content?: PortableTextBlock[]
+}
+
+type Props = {
+  node: {
+    _type: 'colorPanel'
+    _key: string
+    layout?: 'stack' | 'row'
+    items?: PanelItem[]
+  }
+}
+
+const { node } = Astro.props
+const items = node.items ?? []
+const HEX_COLOR = /^#[0-9a-fA-F]{3,8}$/
+---
+
+{items.length > 0 && (
+  <div
+    class:list={[
+      'my-8 flex gap-4',
+      node.layout === 'row' ? 'flex-col sm:flex-row' : 'flex-col'
+    ]}
+  >
+    {items.map((item) => (
+      <div
+        class='flex-1 overflow-hidden rounded-lg px-6 py-8 sm:px-8 sm:py-12'
+        style={
+          HEX_COLOR.test(item.backgroundColor)
+            ? `background-color: ${item.backgroundColor}`
+            : undefined
+        }
+      >
+        <div
+          class:list={[
+            'color-panel post-content prose max-w-none',
+            { 'prose-invert': item.tone === 'light' }
+          ]}
+        >
+          <PortableText
+            value={item.content ?? []}
+            components={{ type: { colorPanel: Astro.self } }}
+          />
+        </div>
+      </div>
+    ))}
+  </div>
+)}

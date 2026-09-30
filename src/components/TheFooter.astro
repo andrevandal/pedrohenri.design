@@ -1,7 +1,18 @@
 ---
+import { getSiteSettings } from 'emdash'
+import { Image } from 'emdash/ui'
 import Icon from '@components/Icon.astro'
+import { getImageUrl } from '@utils'
 
+const settings = await getSiteSettings()
 const currentYear = new Date().getFullYear()
+
+// Admin → Settings: social profile URLs and logo (falls back to the bucket's
+// horizontal logo).
+const socialLinks = [
+  { name: 'Instagram', icon: 'instagram', href: settings.social?.instagram },
+  { name: 'LinkedIn', icon: 'linkedin', href: settings.social?.linkedin }
+] as const
 ---
 
 <footer class='flex flex-col gap-y-12'>
@@ -9,43 +20,53 @@ const currentYear = new Date().getFullYear()
   <div class='container mx-auto flex flex-col gap-y-4'>
     <div class='flex w-full justify-between'>
       <a href='/' class='transition-opacity hover:opacity-80 focus:opacity-60'>
-        <span class='sr-only'>Pedro Henrique Design</span>
-        <img
-          class='aspect-171/32 h-8 w-auto'
-          src='/images/logo-horizontal.svg'
-          height='32'
-          width='171'
-          alt=''
-        />
+        <span class='sr-only'>{settings.title}</span>
+        {settings.logo?.url ? (
+          <Image
+            image={{
+              id: settings.logo.mediaId,
+              src: settings.logo.url,
+              width: settings.logo.width,
+              height: settings.logo.height
+            }}
+            alt=''
+            class='h-8 w-auto'
+          />
+        ) : (
+          <img
+            class='h-8 w-auto'
+            src={getImageUrl(
+              'images/horizontal-dark-logo.png',
+              'f_auto,q_90,h_64'
+            )}
+            height='32'
+            width='198'
+            alt=''
+          />
+        )}
       </a>
       <div class='flex gap-x-4 text-[2rem] text-gray-900'>
-        <a
-          href='https://www.instagram.com/pedrohenri.design/'
-          target='_blank'
-          rel='noopener noreferrer'
-          class='transition-opacity hover:opacity-80 focus:opacity-60'
-        >
-          <span class='sr-only'>Instagram</span>
-          <Icon name='instagram' />
-        </a>
-        <a
-          href='https://www.linkedin.com/in/pedro-henrique-92b806bb/'
-          target='_blank'
-          rel='noopener noreferrer'
-          class='transition-opacity hover:opacity-80 focus:opacity-60'
-        >
-          <span class='sr-only'>LinkedIn</span>
-          <Icon name='linkedin' />
-        </a>
+        {socialLinks.map(
+          ({ name, icon, href }) =>
+            href && (
+              <a
+                href={href}
+                target='_blank'
+                rel='noopener noreferrer'
+                class='transition-opacity hover:opacity-80 focus:opacity-60'
+              >
+                <span class='sr-only'>{name}</span>
+                <Icon name={icon} />
+              </a>
+            )
+        )}
       </div>
     </div>
 
-    <div
-      class='mx-auto flex h-12 w-full items-center justify-center border-t border-t-gray-100'
-    >
-      <span class='text-center text-base leading-4 text-gray-900'
-        >© {currentYear} | Pedro Henri Design</span
-      >
+    <div class='mx-auto flex h-12 w-full items-center justify-center border-t border-t-gray-100'>
+      <span class='text-center text-base leading-4 text-gray-900'>
+        © {currentYear} | {settings.title}
+      </span>
     </div>
   </div>
 </footer>

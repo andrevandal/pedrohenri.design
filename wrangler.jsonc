@@ -1,3 +1,14 @@
 {
-  "compatibility_flags": ["nodejs_compat"]
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "andrevandal-pedrohenri-design",
+  "main": "./src/worker.ts",
+  "compatibility_date": "2026-09-30",
+  "compatibility_flags": ["nodejs_compat"],
+  // Production settings (SITE_URL, LIBSQL_*, S3_*, SMTP_*) live in the
+  // Worker's variables and secrets; don't wipe them on deploy.
+  "keep_vars": true,
+  // EmDash scheduled publishing and maintenance
+  "triggers": {
+    "crons": ["* * * * *"]
+  }
 }

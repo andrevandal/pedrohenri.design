@@ -9,13 +9,11 @@ const { caption, class: className, ...props } = Astro.props
 
 <figure class:list={['relative', className]} {...props}>
   <slot />
-  {
-    caption && (
-      <>
-        <figcaption class='absolute right-0 left-0 mt-auto -translate-y-full rounded-b-lg bg-linear-to-b from-black/0 to-black/70 px-6 py-3 text-left text-base leading-5 font-bold text-white'>
-          {caption}
-        </figcaption>
-      </>
-    )
-  }
+  {caption && (
+    <>
+      <figcaption class='absolute right-0 left-0 mt-auto -translate-y-full rounded-b-lg bg-linear-to-b from-black/0 to-black/70 px-6 py-3 text-left text-base leading-5 font-bold text-white'>
+        {caption}
+      </figcaption>
+    </>
+  )}
 </figure>
