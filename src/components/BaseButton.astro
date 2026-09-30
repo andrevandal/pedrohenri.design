@@ -54,7 +54,9 @@ const isExternalLink =
   target={isExternalLink ? '_blank' : undefined}
   rel={isExternalLink ? 'noopener noreferrer' : undefined}
 >
-  <span><slot /></span>
+  <span>
+    <slot />
+  </span>
   {icon && <Icon name={icon} width={20} height={20} />}
 </a>
 
